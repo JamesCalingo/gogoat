@@ -1,6 +1,7 @@
 package main
 
 import (
+	"gogoat/bot"
 	"log"
 	"os"
 
@@ -17,6 +18,6 @@ func getToken(key string) string {
 
 func main() {
 
-	// bot.Token = getToken("TOKEN")
-	// bot.Run()
+	bot.Token = getToken("TOKEN")
+	bot.Run()
 }
