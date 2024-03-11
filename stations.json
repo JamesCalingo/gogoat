@@ -1,0 +1,54 @@
+[
+    {
+        "name": "Alewife",
+        "id": "place-alfcl"
+    },
+    {
+        "name": "Davis",
+        "id": "place-davis"
+    },
+    {
+        "name": "Porter",
+        "id": "place-portr"
+    },
+    {
+        "name": "Harvard",
+        "id": "place-harsq"
+    },
+    {
+        "name": "Central",
+        "id": "place-cntsq"
+    },
+    {
+        "name": "Kendall",
+        "id": "place-knncl"
+    },
+    {
+        "name": "Charles/MGH",
+        "id": "place-chmnl"
+    },
+    {
+        "name": "Park Street",
+        "id": "place-pktrm"
+    },
+    {
+        "name": "Downtown Crossing",
+        "id": "place-dwnxg"
+    },
+    {
+        "name": "South Station",
+        "id": "place-sstat"
+    },
+    {
+        "name": "Broadway",
+        "id": "place-brdwy"
+    },
+    {
+        "name": "Andrew",
+        "id": "place-andrw"
+    },
+    {
+        "name": "JFK/UMass",
+        "id": "place-jfk"
+    }
+]
