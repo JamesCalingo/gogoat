@@ -19,9 +19,9 @@ func getToken(key string) string {
 }
 
 func main() {
-	pieces := os.Args[1:]
-	name := strings.Join(pieces, " ")
-	fmt.Println(bot.When(name))
-	// bot.Token = getToken("TOKEN")
-	// bot.Run()
+
+
+	bot.Token = getToken("TOKEN")
+	bot.Run()
+
 }
