@@ -2,7 +2,6 @@ package bot
 
 import (
 	"fmt"
-	"log"
 	"os"
 	"os/signal"
 	"strings"
@@ -12,15 +11,9 @@ import (
 
 var Token string
 
-func checkError(err error) {
-	if err != nil {
-		log.Fatal(err)
-	}
-}
-
 func Run() {
 	discord, err := discordgo.New("Bot " + Token)
-	checkError(err)
+	CheckError(err)
 
 	discord.AddHandler(newMessage)
 
@@ -43,7 +36,10 @@ func newMessage(discord *discordgo.Session, message *discordgo.MessageCreate) {
 		discord.ChannelMessageSend(message.ChannelID, "See a live map of the T here: https://mbta.sites.fas.harvard.edu/T/subway-map.html")
 	case strings.HasPrefix(message.Content, "&when"):
 		_, station, _ := strings.Cut(message.Content, " ")
-		discord.ChannelMessageSend(message.ChannelID, When(station))
+		discord.ChannelMessageSend(message.ChannelID, Info(station))
+	case strings.HasPrefix(message.Content, "&next"):
+		_, station, _ := strings.Cut(message.Content, " ")
+		discord.ChannelMessageSend(message.ChannelID, Predict(station))
 
 	}
 }

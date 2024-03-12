@@ -35,9 +35,14 @@
     "id": "place-chmnl"
   },
   {
-    "name": "Downtown Crossing",
-    "alt_name": ["Downtown Xing", "DTX"],
+    "name": "Downtown Crossing (Red Line)",
+    "alt_name": ["Downtown Xing Red", "DTX Red"],
     "id": "place-dwnxg"
+  },
+  {
+    "name": "Park Street (Red Line)",
+    "alt_name": ["Park St Red", "Park Red"],
+    "id": "place-pktrm"
   },
   {
     "name": "South Station",
@@ -170,9 +175,24 @@
     "id": "place-ccmnl"
   },
   {
-    "name": "State",
-    "alt_name": [""],
+    "name": "North Station (Orange Line)",
+    "alt_name": ["North Station Orange, North Orange"],
+    "id": "place-north"
+  },
+  {
+    "name": "Haymarket (Orange Line)",
+    "alt_name": ["Haymarket Orange"],
+    "id": "place-haecl"
+  },
+  {
+    "name": "State (Orange Line)",
+    "alt_name": ["State Orange"],
     "id": "place-state"
+  },
+  {
+    "name": "Downtown Crossing (Orange Line)",
+    "alt_name": ["Downtown Xing Orange", "DTX Orange"],
+    "id": "place-dwnxg"
   },
   {
     "name": "Chinatown",
@@ -270,6 +290,16 @@
     "id": "place-aqucl"
   },
   {
+    "name": "State (Blue Line)",
+    "alt_name": ["State Blue"],
+    "id": "place-state"
+  },
+  {
+    "name": "Government Center (Blue Line)",
+    "alt_name": ["Gov Center Blue", "GC Blue"],
+    "id": "place-gover"
+  },
+  {
     "name": "Bowdoin",
     "alt_name": [""],
     "id": "place-bomnl"
@@ -315,23 +345,23 @@
     "id": "place-spmnl"
   },
   {
-    "name": "North Station",
-    "alt_name": [""],
+    "name": "North Station (Green Line)",
+    "alt_name": ["North Station Green, North Green"],
     "id": "place-north"
   },
   {
-    "name": "Haymarket",
-    "alt_name": [""],
+    "name": "Haymarket (Green Line)",
+    "alt_name": ["Haymarket Green"],
     "id": "place-haecl"
   },
   {
-    "name": "Government Center",
-    "alt_name": ["Gov Center", "GC"],
+    "name": "Government Center (Green Line)",
+    "alt_name": ["Gov Center Green", "GC Green"],
     "id": "place-gover"
   },
   {
-    "name": "Park Street",
-    "alt_name": ["Park St", "Park"],
+    "name": "Park Street (Green Line)",
+    "alt_name": ["Park St Green", "Park Green"],
     "id": "place-pktrm"
   },
   {
