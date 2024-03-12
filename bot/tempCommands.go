@@ -10,8 +10,9 @@ import (
 )
 
 type Station struct {
-	Name string `json:"name"`
-	ID   string `json:"id"`
+	Name    string   `json:"name"`
+	AltName []string `json:"alt_name"`
+	ID      string   `json:"id"`
 }
 
 type Stations []Station
@@ -28,10 +29,22 @@ func Open(fileName string) Stations {
 	return list
 }
 
+func verifyAltNames(name string, alts []string) bool {
+	for _, altName := range alts {
+		if strings.EqualFold(name, altName) {
+			return true
+		}
+	}
+	return false
+}
+
 func When(name string) string {
-	greenLine := Open("greenline.json")
-	for _, station := range greenLine {
-		if strings.EqualFold(name, station.Name) {
+	subway := Open("stations.json")
+	if name == "" {
+		return "Use this command ($when) with a station name and I'll give you a prediction of when the next train will arrive."
+	}
+	for _, station := range subway {
+		if strings.EqualFold(name, station.Name) || (verifyAltNames(name, station.AltName)) {
 			return fmt.Sprintf("Predictions for %s: %s", station.Name, fmt.Sprintf("https://mbta.com/stops/%s", station.ID))
 		}
 	}

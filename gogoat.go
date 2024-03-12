@@ -1,9 +1,11 @@
 package main
 
 import (
+	"fmt"
 	"gogoat/bot"
 	"log"
 	"os"
+	"strings"
 
 	"github.com/joho/godotenv"
 )
@@ -17,7 +19,9 @@ func getToken(key string) string {
 }
 
 func main() {
-
-	bot.Token = getToken("TOKEN")
-	bot.Run()
+	pieces := os.Args[1:]
+	name := strings.Join(pieces, " ")
+	fmt.Println(bot.When(name))
+	// bot.Token = getToken("TOKEN")
+	// bot.Run()
 }
