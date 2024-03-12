@@ -39,8 +39,11 @@ func newMessage(discord *discordgo.Session, message *discordgo.MessageCreate) {
 	}
 
 	switch {
-	case strings.Contains(message.Content, "&hello"):
-		greeting := "Hello " + message.Author.Username
-		discord.ChannelMessageSend(message.ChannelID, greeting)
+	case message.Content == "&where":
+		discord.ChannelMessageSend(message.ChannelID, "See a live map of the T here: https://mbta.sites.fas.harvard.edu/T/subway-map.html")
+	case strings.HasPrefix(message.Content, "&when"):
+		_, station, _ := strings.Cut(message.Content, " ")
+		discord.ChannelMessageSend(message.ChannelID, When(station))
+
 	}
 }

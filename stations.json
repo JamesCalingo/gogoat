@@ -1,0 +1,667 @@
+[
+  {
+    "name": "Alewife",
+    "alt_name": [""],
+    "id": "place-alfcl"
+  },
+  {
+    "name": "Davis",
+    "alt_name": [""],
+    "id": "place-davis"
+  },
+  {
+    "name": "Porter",
+    "alt_name": [""],
+    "id": "place-portr"
+  },
+  {
+    "name": "Harvard",
+    "alt_name": ["Harvard Square"],
+    "id": "place-harsq"
+  },
+  {
+    "name": "Central",
+    "alt_name": ["Central Square"],
+    "id": "place-cntsq"
+  },
+  {
+    "name": "Kendall",
+    "alt_name": ["Kendall/MIT", "Kendall Square"],
+    "id": "place-knncl"
+  },
+  {
+    "name": "Charles/MGH",
+    "alt_name": ["Charles", "MGH"],
+    "id": "place-chmnl"
+  },
+  {
+    "name": "Downtown Crossing",
+    "alt_name": ["Downtown Xing", "DTX"],
+    "id": "place-dwnxg"
+  },
+  {
+    "name": "South Station",
+    "alt_name": [""],
+    "id": "place-sstat"
+  },
+  {
+    "name": "Broadway",
+    "alt_name": [""],
+    "id": "place-brdwy"
+  },
+  {
+    "name": "Andrew",
+    "alt_name": [""],
+    "id": "place-andrw"
+  },
+  {
+    "name": "JFK/UMass",
+    "alt_name": ["JFK"],
+    "id": "place-jfk"
+  },
+  {
+    "name": "Savin Hill",
+    "alt_name": [""],
+    "id": "place-shmnl"
+  },
+  {
+    "name": "Fields Corner",
+    "alt_name": [""],
+    "id": "place-fldcr"
+  },
+  {
+    "name": "Shawmut",
+    "alt_name": [""],
+    "id": "place-smmnl"
+  },
+  {
+    "name": "Ashmont",
+    "alt_name": [""],
+    "id": "place-asmnl"
+  },
+  {
+    "name": "North Quincy",
+    "alt_name": [""],
+    "id": "place-nqncy"
+  },
+  {
+    "name": "Wollaston",
+    "alt_name": [""],
+    "id": "place-wlsta"
+  },
+  {
+    "name": "Quincy Center",
+    "alt_name": [""],
+    "id": "place-qnctr"
+  },
+  {
+    "name": "Quincy Adams",
+    "alt_name": [""],
+    "id": "place-qamnl"
+  },
+  {
+    "name": "Braintree",
+    "alt_name": [""],
+    "id": "place-brntn"
+  },
+  {
+    "name": "Cedar Grove",
+    "alt_name": [""],
+    "id": "place-cedgr"
+  },
+  {
+    "name": "Butler",
+    "alt_name": [""],
+    "id": "place-butlr"
+  },
+  {
+    "name": "Milton",
+    "alt_name": [""],
+    "id": "place-miltt"
+  },
+  {
+    "name": "Central Avenue",
+    "alt_name": ["Central Ave"],
+    "id": "place-cenav"
+  },
+  {
+    "name": "Valley Road",
+    "alt_name": [""],
+    "id": "place-valrd"
+  },
+  {
+    "name": "Capen Street",
+    "alt_name": [""],
+    "id": "place-capst"
+  },
+  {
+    "name": "Mattapan",
+    "alt_name": [""],
+    "id": "place-matt"
+  },
+  {
+    "name": "Oak Grove",
+    "alt_name": [""],
+    "id": "place-ogmnl"
+  },
+  {
+    "name": "Malden Center",
+    "alt_name": ["Malden"],
+    "id": "place-mlmnl"
+  },
+  {
+    "name": "Wellington",
+    "alt_name": [""],
+    "id": "place-welln"
+  },
+  {
+    "name": "Assembly",
+    "alt_name": [""],
+    "id": "place-astao"
+  },
+  {
+    "name": "Sullivan Square",
+    "alt_name": ["Sullivan"],
+    "id": "place-sull"
+  },
+  {
+    "name": "Community College",
+    "alt_name": [""],
+    "id": "place-ccmnl"
+  },
+  {
+    "name": "State",
+    "alt_name": [""],
+    "id": "place-state"
+  },
+  {
+    "name": "Chinatown",
+    "alt_name": [""],
+    "id": "place-chncl"
+  },
+  {
+    "name": "Tufts Medical Center",
+    "alt_name": ["Tufts Medical", "Tufts"],
+    "id": "place-tumnl"
+  },
+  {
+    "name": "Back Bay",
+    "alt_name": ["Back Bay/South End", "Back Bay Station"],
+    "id": "place-bbsta"
+  },
+  {
+    "name": "Massachusetts Avenue",
+    "alt_name": ["Massachusetts Ave", "Mass Ave"],
+    "id": "place-masta"
+  },
+  {
+    "name": "Ruggles",
+    "alt_name": [""],
+    "id": "place-rugg"
+  },
+  {
+    "name": "Roxbury Crossing",
+    "alt_name": ["Roxbury Xing", "Roxbury"],
+    "id": "place-rcmnl"
+  },
+  {
+    "name": "Jackson Square",
+    "alt_name": ["Jackson Sq", "Jackson"],
+    "id": "place-jaksn"
+  },
+  {
+    "name": "Stony Brook",
+    "alt_name": [""],
+    "id": "place-sbmnl"
+  },
+  {
+    "name": "Green Street",
+    "alt_name": [""],
+    "id": "place-grnst"
+  },
+  {
+    "name": "Forest Hills",
+    "alt_name": [""],
+    "id": "place-forhl"
+  },
+  {
+    "name": "Wonderland",
+    "alt_name": [""],
+    "id": "place-wondl"
+  },
+  {
+    "name": "Revere Beach",
+    "alt_name": [""],
+    "id": "place-rbmnl"
+  },
+  {
+    "name": "Beachmont",
+    "alt_name": [""],
+    "id": "place-bmmnl"
+  },
+  {
+    "name": "Suffolk Downs",
+    "alt_name": [""],
+    "id": "place-sdmnl"
+  },
+  {
+    "name": "Orient Heights",
+    "alt_name": ["Orient"],
+    "id": "place-orhte"
+  },
+  {
+    "name": "Wood Island",
+    "alt_name": [""],
+    "id": "place-wimnl"
+  },
+  {
+    "name": "Airport",
+    "alt_name": [""],
+    "id": "place-aport"
+  },
+  {
+    "name": "Maverick",
+    "alt_name": ["Mav"],
+    "id": "place-mvbcl"
+  },
+  {
+    "name": "Aquarium",
+    "alt_name": [""],
+    "id": "place-aqucl"
+  },
+  {
+    "name": "Bowdoin",
+    "alt_name": [""],
+    "id": "place-bomnl"
+  },
+  {
+    "name": "Medford/Tufts",
+    "alt_name": ["Medford"],
+    "id": "place-mdftf"
+  },
+  {
+    "name": "Ball Square",
+    "alt_name": ["Ball Sq"],
+    "id": "place-balsq"
+  },
+  {
+    "name": "Magoun Square",
+    "alt_name": ["Magoun Sq", "Magoun"],
+    "id": "place-mgngl"
+  },
+  {
+    "name": "Gilman Square",
+    "alt_name": ["Gilman Sq", "Gilman"],
+    "id": "place-gilmn"
+  },
+  {
+    "name": "East Somerville",
+    "alt_name": [""],
+    "id": "place-esomr"
+  },
+  {
+    "name": "Union Square",
+    "alt_name": ["Union Sq", "Union"],
+    "id": "place-unsqu"
+  },
+  {
+    "name": "Lechmere",
+    "alt_name": [""],
+    "id": "place-lech"
+  },
+  {
+    "name": "Science Park/West End",
+    "alt_name": ["Science Park"],
+    "id": "place-spmnl"
+  },
+  {
+    "name": "North Station",
+    "alt_name": [""],
+    "id": "place-north"
+  },
+  {
+    "name": "Haymarket",
+    "alt_name": [""],
+    "id": "place-haecl"
+  },
+  {
+    "name": "Government Center",
+    "alt_name": ["Gov Center", "GC"],
+    "id": "place-gover"
+  },
+  {
+    "name": "Park Street",
+    "alt_name": ["Park St", "Park"],
+    "id": "place-pktrm"
+  },
+  {
+    "name": "Boylston",
+    "alt_name": [""],
+    "id": "place-boyls"
+  },
+  {
+    "name": "Arlington",
+    "alt_name": [""],
+    "id": "place-armnl"
+  },
+  {
+    "name": "Copley",
+    "alt_name": [""],
+    "id": "place-coecl"
+  },
+  {
+    "name": "Prudential",
+    "alt_name": ["Pru"],
+    "id": "place-prmnl"
+  },
+  {
+    "name": "Symphony",
+    "alt_name": [""],
+    "id": "place-symcl"
+  },
+  {
+    "name": "Northeastern",
+    "alt_name": ["NU"],
+    "id": "place-nuniv"
+  },
+  {
+    "name": "Museum of Fine Arts",
+    "alt_name": ["MFA"],
+    "id": "place-mfa"
+  },
+  {
+    "name": "Longwood Medical Area",
+    "alt_name": "Longwood Medical",
+    "id": "place-lngmd"
+  },
+  {
+    "name": "Brigham Circle",
+    "alt_name": ["Brigham"],
+    "id": "place-brmnl"
+  },
+  {
+    "name": "Fenwood Road",
+    "alt_name": ["Fenwood"],
+    "id": "place-fenwd"
+  },
+  {
+    "name": "Mission Park",
+    "alt_name": [""],
+    "id": "place-mispk"
+  },
+  {
+    "name": "Riverway",
+    "alt_name": [""],
+    "id": "place-rvrwy"
+  },
+  {
+    "name": "Back of the Hill",
+    "alt_name": [""],
+    "id": "place-bckhl"
+  },
+  {
+    "name": "Heath Street",
+    "alt_name": ["Heath"],
+    "id": "place-hsmnl"
+  },
+  {
+    "name": "Hynes Convention Center",
+    "alt_name": ["Hynes"],
+    "id": "place-hymnl"
+  },
+  {
+    "name": "Kenmore",
+    "alt_name": [""],
+    "id": "place-kencl"
+  },
+  {
+    "name": "Fenway",
+    "alt_name": [""],
+    "id": "place-fenwy"
+  },
+  {
+    "name": "Longwood",
+    "alt_name": [""],
+    "id": "place-longw"
+  },
+  {
+    "name": "Brookline Village",
+    "alt_name": [""],
+    "id": "place-bvmnl"
+  },
+  {
+    "name": "Brookline Hills",
+    "alt_name": [""],
+    "id": "place-brkhl"
+  },
+  {
+    "name": "Beaconfield",
+    "alt_name": [""],
+    "id": "place-bcnfd"
+  },
+  {
+    "name": "Reservoir",
+    "alt_name": [""],
+    "id": "place-rsmnl"
+  },
+  {
+    "name": "Chestnut Hill",
+    "alt_name": [""],
+    "id": "place-chhil"
+  },
+  {
+    "name": "Newton Centre",
+    "alt_name": [""],
+    "id": "place-newto"
+  },
+  {
+    "name": "Newton Highlands",
+    "alt_name": [""],
+    "id": "place-newtn"
+  },
+  {
+    "name": "Eliot",
+    "alt_name": [""],
+    "id": "place-eliot"
+  },
+  {
+    "name": "Waban",
+    "alt_name": [""],
+    "id": "place-waban"
+  },
+  {
+    "name": "Woodland",
+    "alt_name": [""],
+    "id": "place-woodl"
+  },
+  {
+    "name": "Riverside",
+    "alt_name": [""],
+    "id": "place-river"
+  },
+  {
+    "name": "Saint Mary's Street",
+    "alt_name": [
+      "Saint Marys Street",
+      "Saint Mary's St",
+      "Saint Marys St",
+      "Saint Mary's",
+      "Saint Marys",
+      "St Mary's Street",
+      "St Marys Street",
+      "St Mary's St",
+      "St Marys St",
+      "St Mary's",
+      "St Marys",
+      "St. Mary's Street",
+      "St. Marys Street",
+      "St. Mary's St",
+      "St. Marys St",
+      "St. Mary's",
+      "St. Marys"
+    ],
+    "id": "place-smary"
+  },
+  {
+    "name": "Hawes Street",
+    "alt_name": ["Hawes St", "Hawes"],
+    "id": "place-hwsst"
+  },
+  {
+    "name": "Kent Street",
+    "alt_name": ["Kent St", "Kent"],
+    "id": "place-kntst"
+  },
+  {
+    "name": "Saint Paul Street",
+    "alt_name": [
+      "Saint Paul St",
+      "Saint Paul",
+      "St Paul Street",
+      "St Paul St",
+      "St Paul",
+      "St. Paul Street",
+      "St. Paul St",
+      "St. Paul"
+    ],
+    "id": "place-stpul"
+  },
+  {
+    "name": "Coolidge Corner",
+    "alt_name": ["Coolidge"],
+    "id": "place-cool"
+  },
+  {
+    "name": "Summit Avenue",
+    "alt_name": [
+      "Summit Ave",
+      "Summit Av",
+      "Summit",
+      "Winchester Street",
+      "Winchester St",
+      "Winchester/Summit"
+    ],
+    "id": "place-sumav"
+  },
+  {
+    "name": "Brandon Hall",
+    "alt_name": [""],
+    "id": "place-bndhl"
+  },
+  {
+    "name": "Fairbanks Street",
+    "alt_name": ["Fairbanks St", "Fairbanks"],
+    "id": "place-fbkst"
+  },
+  {
+    "name": "Washington Square",
+    "alt_name": "Washington Sq",
+    "id": "place-bcnwa"
+  },
+  {
+    "name": "Tappan Street",
+    "alt_name": ["Tappan St", "Tappan"],
+    "id": "place-tapst"
+  },
+  {
+    "name": "Dean Road",
+    "alt_name": ["Dean Rd"],
+    "id": "place-denrd"
+  },
+  {
+    "name": "Englewood Avenue",
+    "alt_name": ["Englewood Ave", "Englewood Av", "Englewood"],
+    "id": "place-engav"
+  },
+  {
+    "name": "Cleveland Circle",
+    "alt_name": [""],
+    "id": "place-clmnl"
+  },
+  {
+    "name": "Blandford Street",
+    "alt_name": ["Blandford St", "Blandford"],
+    "id": "place-bland"
+  },
+  {
+    "name": "Boston University East",
+    "alt_name": ["BU East"],
+    "id": "place-buest"
+  },
+  {
+    "name": "Boston University Central",
+    "alt_name": ["BU Central"],
+    "id": "place-"
+  },
+  {
+    "name": "Amory Street",
+    "alt_name": ["Amory St", "Amory", "Boston University West", "BU West"],
+    "id": "place-amory"
+  },
+  {
+    "name": "Babcock Street",
+    "alt_name": ["Babcock St", "Babcock", "Pleasant Street"],
+    "id": "place-babck"
+  },
+  {
+    "name": "Packard's Corner",
+    "alt_name": [
+      "Packard's",
+      "Packards",
+      "Brighton Avenue",
+      "Brighton Ave",
+      "Brighton Av"
+    ],
+    "id": "place-brico"
+  },
+  {
+    "name": "Harvard Avenue",
+    "alt_name": ["Harvard Ave", "Harvard Av"],
+    "id": "place-harvd"
+  },
+  {
+    "name": "Griggs Street",
+    "alt_name": ["Griggs St", "Griggs", "Griggs/Long"],
+    "id": "place-grigg"
+  },
+  {
+    "name": "Allston Street",
+    "alt_name": ["Allston St"],
+    "id": "place-alsgr"
+  },
+  {
+    "name": "Warren Street",
+    "alt_name": ["Warren St", "Warren"],
+    "id": "place-wrnst"
+  },
+  {
+    "name": "Washington Street",
+    "alt_name": ["Washington St"],
+    "id": "place-wascm"
+  },
+  {
+    "name": "Sutherland Road",
+    "alt_name": ["Sutherland Rd", "Sutherland"],
+    "id": "place-sthld"
+  },
+  {
+    "name": "Chiswick Road",
+    "alt_name": ["Chiswick Rd", "Chiswick"],
+    "id": "place-chswk"
+  },
+  {
+    "name": "Chestnut Hill Avenue",
+    "alt_name": ["Chestnut Hill Ave", "Chestnut Hill Av"],
+    "id": "place-chill"
+  },
+  {
+    "name": "South Street",
+    "alt_name": ["South St"],
+    "id": "place-sougr"
+  },
+  {
+    "name": "Boston College",
+    "alt_name": ["BC", "Lake Street", "Lake St", "Lake"],
+    "id": "place-lake"
+  }
+]
