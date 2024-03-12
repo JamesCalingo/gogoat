@@ -34,11 +34,11 @@ func newMessage(discord *discordgo.Session, message *discordgo.MessageCreate) {
 	switch {
 	case message.Content == "&where":
 		discord.ChannelMessageSend(message.ChannelID, "See a live map of the T here: https://mbta.sites.fas.harvard.edu/T/subway-map.html")
-	case strings.HasPrefix(message.Content, "&when"):
-		_, station, _ := strings.Cut(message.Content, " ")
+	case strings.HasPrefix(message.Content, "&info"):
+		station := GetStationFromMessage(message.Content)
 		discord.ChannelMessageSend(message.ChannelID, Info(station))
 	case strings.HasPrefix(message.Content, "&next"):
-		_, station, _ := strings.Cut(message.Content, " ")
+		station := GetStationFromMessage(message.Content)
 		discord.ChannelMessageSend(message.ChannelID, Predict(station))
 
 	}

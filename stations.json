@@ -176,7 +176,7 @@
   },
   {
     "name": "North Station (Orange Line)",
-    "alt_name": ["North Station Orange, North Orange"],
+    "alt_name": ["North Station Orange", "North Orange"],
     "id": "place-north"
   },
   {
@@ -346,7 +346,7 @@
   },
   {
     "name": "North Station (Green Line)",
-    "alt_name": ["North Station Green, North Green"],
+    "alt_name": ["North Station Green", "North Green"],
     "id": "place-north"
   },
   {
@@ -630,7 +630,7 @@
   },
   {
     "name": "Babcock Street",
-    "alt_name": ["Babcock St", "Babcock", "Pleasant Street"],
+    "alt_name": ["Babcock St", "Babcock", "Pleasant Street", "Pleasant St"],
     "id": "place-babck"
   },
   {
