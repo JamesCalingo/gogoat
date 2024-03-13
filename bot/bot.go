@@ -30,6 +30,7 @@ func newMessage(discord *discordgo.Session, message *discordgo.MessageCreate) {
 	if message.Author.ID == discord.State.User.ID {
 		return
 	}
+	discord.ChannelMessageSend(message.ChannelID, "finding your info...")
 	_, name := BreakMessage(message.Content, " ")
 	station, _ := FindStation(name)
 

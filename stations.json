@@ -179,7 +179,7 @@
     "name": "Cedar Grove",
     "alt_name": [""],
     "id": "place-cedgr",
-    "line": "Ashmont-Mattapan",
+    "line": "Mattapan",
     "destination_0": "Mattapan",
     "destination_1": "Ashmont"
   },
@@ -187,7 +187,7 @@
     "name": "Butler",
     "alt_name": [""],
     "id": "place-butlr",
-    "line": "Ashmont-Mattapan",
+    "line": "Mattapan",
     "destination_0": "Mattapan",
     "destination_1": "Ashmont"
   },
@@ -195,7 +195,7 @@
     "name": "Milton",
     "alt_name": [""],
     "id": "place-miltt",
-    "line": "Ashmont-Mattapan",
+    "line": "Mattapan",
     "destination_0": "Mattapan",
     "destination_1": "Ashmont"
   },
@@ -203,7 +203,7 @@
     "name": "Central Avenue",
     "alt_name": ["Central Ave", "Central Av"],
     "id": "place-cenav",
-    "line": "Ashmont-Mattapan",
+    "line": "Mattapan",
     "destination_0": "Mattapan",
     "destination_1": "Ashmont"
   },
@@ -211,7 +211,7 @@
     "name": "Valley Road",
     "alt_name": ["Valley Rd"],
     "id": "place-valrd",
-    "line": "Ashmont-Mattapan",
+    "line": "Mattapan",
     "destination_0": "Mattapan",
     "destination_1": "Ashmont"
   },
@@ -219,7 +219,7 @@
     "name": "Capen Street",
     "alt_name": ["Capen St", "Capen"],
     "id": "place-capst",
-    "line": "Ashmont-Mattapan",
+    "line": "Mattapan",
     "destination_0": "Mattapan",
     "destination_1": "Ashmont"
   },
@@ -227,7 +227,7 @@
     "name": "Mattapan",
     "alt_name": [""],
     "id": "place-matt",
-    "line": "Ashmont-Mattapan",
+    "line": "Mattapan",
     "destination_0": "",
     "destination_1": "Ashmont"
   },

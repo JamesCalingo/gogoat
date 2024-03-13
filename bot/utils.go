@@ -14,11 +14,23 @@ import (
 
 var TransferStations = []string{"North Station", "Haymarket", "Government Center", "Gov Center", "GC", "State", "Park Street", "Park", "Downtown Crossing", "DTX", "Downtown Xing"}
 
+var Lines = []string{"Red", "Orange", "Blue", "Green-B", "Green-C", "Green-D", "Green-E", "Mattapan"}
+
 // Go standard error checking
 func CheckError(err error) {
 	if err != nil {
 		log.Fatal(err)
 	}
+}
+
+// Check if a slice contains a certain element
+func Contains(list []string, match string) bool {
+	for _, elem := range list {
+		if elem == match {
+			return true
+		}
+	}
+	return false
 }
 
 // Opens the internal station list
