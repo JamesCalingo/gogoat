@@ -14,13 +14,14 @@ import (
 
 var TransferStations = []string{"North Station", "Haymarket", "Government Center", "Gov Center", "GC", "State", "Park Street", "Park", "Downtown Crossing", "DTX", "Downtown Xing"}
 
+// Go standard error checking
 func CheckError(err error) {
 	if err != nil {
 		log.Fatal(err)
 	}
 }
 
-// for the internal station list
+// Opens the internal station list
 func Open(fileName string) models.Stations {
 	var list models.Stations
 	file, fileErr := os.Open(fileName)
@@ -33,11 +34,13 @@ func Open(fileName string) models.Stations {
 	return list
 }
 
-func GetStationFromMessage(message string) (station string) {
-	_, station, _ = strings.Cut(message, " ")
+// Function to separate commands from messages (and station names from directions)
+func BreakMessage(message string, separator string) (pre string, post string) {
+	pre, post, _ = strings.Cut(message, separator)
 	return
 }
 
+// Gets the station struct from our json list
 func FindStation(name string) (models.Station, error) {
 	var empty models.Station
 
@@ -55,7 +58,7 @@ func FindStation(name string) (models.Station, error) {
 	return empty, errors.New("station not found")
 }
 
-// this function is purely local (thus not exported); because users may have different "pet names" for stations other than what the bot expects, it's important to check for them
+// Because users may have different "pet names" for stations other than what the bot expects, it's important to check for them
 func VerifyAltNames(name string, alts []string) bool {
 	for _, altName := range alts {
 		if strings.EqualFold(name, altName) {

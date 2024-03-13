@@ -2,19 +2,13 @@ package bot
 
 import (
 	"fmt"
-	"strings"
+	"gogoat/internal/models"
 )
 
-func Info(name string) string {
+func Info(station models.Station) string {
 
-	subway := Open("stations.json")
-	if name == "" {
-		return "Use this command (&info) with a station name and I'll link you to that station's page. There, you can see a ton of info such as its location, next train predictions, and parking information."
+	if station.Name == "" {
+		return "I couldn't find that station. Check that it's spelled correctly and try again. If it's a station with multiple lines, specify a line."
 	}
-	for _, station := range subway {
-		if strings.EqualFold(name, station.Name) || (VerifyAltNames(name, station.AltName)) {
-			return fmt.Sprintf("https://mbta.com/stops/%s", station.ID)
-		}
-	}
-	return "I couldn't find that station. Check that it's spelled correctly and try again. If it's a station with multiple lines, specify a line."
+	return fmt.Sprintf("https://mbta.com/stops/%s", station.ID)
 }

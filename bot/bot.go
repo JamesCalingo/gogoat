@@ -30,16 +30,24 @@ func newMessage(discord *discordgo.Session, message *discordgo.MessageCreate) {
 	if message.Author.ID == discord.State.User.ID {
 		return
 	}
+	_, name := BreakMessage(message.Content, " ")
+	station, _ := FindStation(name)
 
 	switch {
 	case message.Content == "&where":
 		discord.ChannelMessageSend(message.ChannelID, "See a live map of the T here: https://mbta.sites.fas.harvard.edu/T/subway-map.html")
-	case strings.HasPrefix(message.Content, "&info"):
-		station := GetStationFromMessage(message.Content)
+	case message.Content == "&info":
+		discord.ChannelMessageSend(message.ChannelID, "Use this command (&info) with a station name to get the webpage for that station.")
+	case strings.HasPrefix(message.Content, "&info "):
 		discord.ChannelMessageSend(message.ChannelID, Info(station))
-	case strings.HasPrefix(message.Content, "&next"):
-		station := GetStationFromMessage(message.Content)
-		discord.ChannelMessageSend(message.ChannelID, Predict(station))
-
+	case message.Content == "&next":
+		discord.ChannelMessageSend(message.ChannelID, "Use this command (&next) with a station name to get the next train from that station.")
+	case strings.HasPrefix(message.Content, "&next "):
+		discord.ChannelMessageSend(message.ChannelID, PredictNext(station))
+	case strings.HasPrefix(message.Content, "&nextfrom "):
+		//Newton breaks this if the spaces aren't present...
+		stationName, direction := BreakMessage(name, " to ")
+		station, _ = FindStation(stationName)
+		discord.ChannelMessageSend(message.ChannelID, PredictDirection(station, direction))
 	}
 }
