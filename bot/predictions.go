@@ -117,7 +117,10 @@ func PredictDestination(station models.Station, destination string) string {
 		}
 	}
 	if next.Attributes.DepartureTime.IsZero() {
-		return "I couldn't get a prediction for the next train. Try again in a sec.\n(NOTE: I am still in beta, so this may be an API issue)"
+		if time.Now().Hour() < 4 {
+			return "I couldn't get a prediction for the next train. It's pretty late, so the line may not be running right now."
+		}
+		return "I couldn't get a prediction for the next train. Try again.\n(NOTE: I am still in beta, so this may be an API issue)"
 	}
 
 	if station.Direction0 == "Ashmont/Braintree" && directionInt == 0 {
@@ -148,7 +151,10 @@ func predictDirection(station models.Station, direction string) string {
 	}
 
 	if next.Attributes.DepartureTime.IsZero() {
-		return "I couldn't get a prediction for the next train. Try again in a sec.\n(NOTE: I am still in beta, so this may be an API issue)"
+		if time.Now().Hour() < 4 {
+			return "I couldn't get a prediction for the next train. It's pretty late, so the line may not be running right now."
+		}
+		return "I couldn't get a prediction for the next train. Try again.\n(NOTE: I am still in beta, so this may be an API issue)"
 	}
 
 	if directionInt == 0 {
