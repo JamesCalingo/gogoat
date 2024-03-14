@@ -10,6 +10,7 @@ import (
 )
 
 var Token string
+var Key string
 
 func Run() {
 	discord, err := discordgo.New("Bot " + Token)
@@ -48,15 +49,14 @@ func newMessage(discord *discordgo.Session, message *discordgo.MessageCreate) {
 		stationName, destination := BreakMessage(name, " to ")
 		station = FindStation(stationName)
 		discord.ChannelMessageSend(message.ChannelID, PredictDestination(station, destination))
+	case strings.HasPrefix(message.Content, "&next "):
+		discord.ChannelMessageSend(message.ChannelID, ListNext(station))
 	case message.Content == "&nextfrom":
 		discord.ChannelMessageSend(message.ChannelID, "Use this command (&nextfrom) with a station name and a direction or destination to get the next train from that station in the specified direction.")
-	case strings.HasPrefix(message.Content, "&nextfrom ") || strings.HasPrefix(message.Content, "&next from "):
+	case strings.HasPrefix(message.Content, "&nextfrom "):
 		//This breaks somewhat easily if the spaces aren't present...
 		stationName, destination := BreakMessage(name, " to ")
 		station = FindStation(stationName)
 		discord.ChannelMessageSend(message.ChannelID, PredictDestination(station, destination))
-	case strings.HasPrefix(message.Content, "&next "):
-		discord.ChannelMessageSend(message.ChannelID, PredictNext(station))
-
 	}
 }

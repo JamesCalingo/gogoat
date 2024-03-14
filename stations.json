@@ -128,8 +128,8 @@
     "destination_1": "Alewife"
   },
   {
-    "name": "Ashmont",
-    "alt_name": [""],
+    "name": "Ashmont (Red Line)",
+    "alt_name": ["Ashmont Red"],
     "id": "place-asmnl",
     "line": "Red",
     "destination_0": "",
@@ -174,6 +174,14 @@
     "line": "Red",
     "destination_0": "",
     "destination_1": "Alewife"
+  },
+  {
+    "name": "Ashmont (Mattapan Line)",
+    "alt_name": ["Ashmont Trolley"],
+    "id": "place-asmnl",
+    "line": "Red",
+    "destination_0": "Mattapan",
+    "destination_1": ""
   },
   {
     "name": "Cedar Grove",
@@ -503,7 +511,7 @@
     "name": "Medford/Tufts",
     "alt_name": ["Medford"],
     "id": "place-mdftf",
-    "line": "Green(E)",
+    "line": "Green-E",
     "destination_0": "Heath Street",
     "destination_1": ""
   },
@@ -511,7 +519,7 @@
     "name": "Ball Square",
     "alt_name": ["Ball Sq"],
     "id": "place-balsq",
-    "line": "Green(E)",
+    "line": "Green-E",
     "destination_0": "Heath Street",
     "destination_1": "Medford/Tufts"
   },
@@ -519,7 +527,7 @@
     "name": "Magoun Square",
     "alt_name": ["Magoun Sq", "Magoun"],
     "id": "place-mgngl",
-    "line": "Green(E)",
+    "line": "Green-E",
     "destination_0": "Heath Street",
     "destination_1": "Medford/Tufts"
   },
@@ -527,7 +535,7 @@
     "name": "Gilman Square",
     "alt_name": ["Gilman Sq", "Gilman"],
     "id": "place-gilmn",
-    "line": "Green(E)",
+    "line": "Green-E",
     "destination_0": "Heath Street",
     "destination_1": "Medford/Tufts"
   },
@@ -535,95 +543,87 @@
     "name": "East Somerville",
     "alt_name": [""],
     "id": "place-esomr",
-    "line": "Green(E)",
+    "line": "Green-E",
     "destination_0": "Heath Street",
     "destination_1": "Medford/Tufts"
   },
   {
-    "name": "Union Square",
-    "alt_name": ["Union Sq", "Union"],
-    "id": "place-unsqu",
-    "line": "Green(D)",
-    "destination_0": "Riverside",
-    "destination_1": ""
-  },
-  {
-    "name": "Lechmere",
+    "name": "Lechmere (E)",
     "alt_name": [""],
     "id": "place-lech",
-    "line": "Green(D/E)",
-    "destination_0": "Riverside/Heath Street",
-    "destination_1": "Union Square/Medford"
+    "line": "Green-E",
+    "destination_0": "Heath Street",
+    "destination_1": "Medford/Tufts"
   },
   {
-    "name": "Science Park/West End",
-    "alt_name": ["Science Park"],
+    "name": "Science Park/West End (E)",
+    "alt_name": ["Science Park E"],
     "id": "place-spmnl",
-    "line": "Green(D/E)",
-    "destination_0": "Riverside/Heath Street",
-    "destination_1": "Union Square/Medford"
+    "line": "Green-E",
+    "destination_0": "Heath Street",
+    "destination_1": "Medford/Tufts"
   },
   {
-    "name": "North Station (Green Line)",
-    "alt_name": ["North Station Green", "North Green"],
+    "name": "North Station (E)",
+    "alt_name": ["North Station E", "North E"],
     "id": "place-north",
-    "line": "Green(D/E)",
-    "destination_0": "Riverside/Heath Street",
-    "destination_1": "Union Square/Medford"
+    "line": "Green-E",
+    "destination_0": "Heath Street",
+    "destination_1": "Medford/Tufts"
   },
   {
-    "name": "Haymarket (Green Line)",
-    "alt_name": ["Haymarket Green"],
+    "name": "Haymarket (E)",
+    "alt_name": ["Haymarket E"],
     "id": "place-haecl",
-    "line": "Green(D/E)",
-    "destination_0": "Riverside/Heath Street",
-    "destination_1": "Union Square/Medford"
+    "line": "Green-E",
+    "destination_0": "Heath Street",
+    "destination_1": "Medford/Tufts"
   },
   {
-    "name": "Government Center (Green Line)",
-    "alt_name": ["Gov Center Green", "GC Green"],
+    "name": "Government Center (E)",
+    "alt_name": ["Gov Center E", "GC E"],
     "id": "place-gover",
-    "line": "Green(B/C/D/E)",
-    "destination_0": "Boston College/Cleveland Circle/Riverside/Heath Street",
-    "destination_1": "Union Square/Medford"
+    "line": "Green-E",
+    "destination_0": "Heath Street",
+    "destination_1": "Medford/Tufts"
   },
   {
-    "name": "Park Street (Green Line)",
-    "alt_name": ["Park St Green", "Park Green"],
+    "name": "Park Street (E)",
+    "alt_name": ["Park St E", "Park E"],
     "id": "place-pktrm",
-    "line": "Green(B/C/D/E)",
-    "destination_0": "Boston College/Cleveland Circle/Riverside/Heath Street",
-    "destination_1": "Government Center/Union Square/Medford"
+    "line": "Green-E",
+    "destination_0": "Heath Street",
+    "destination_1": "Medford/Tufts"
   },
   {
-    "name": "Boylston",
-    "alt_name": [""],
+    "name": "Boylston (E)",
+    "alt_name": ["Boylston E"],
     "id": "place-boyls",
-    "line": "Green(B/C/D/E)",
-    "destination_0": "Boston College/Cleveland Circle/Riverside/Heath Street",
-    "destination_1": "Government Center/Union Square/Medford"
+    "line": "Green-E",
+    "destination_0": "Heath Street",
+    "destination_1": "Medford/Tufts"
   },
   {
-    "name": "Arlington",
-    "alt_name": [""],
+    "name": "Arlington (E)",
+    "alt_name": ["Arlington E"],
     "id": "place-armnl",
-    "line": "Green(B/C/D/E)",
-    "destination_0": "Boston College/Cleveland Circle/Riverside/Heath Street",
-    "destination_1": "Government Center/Union Square/Medford"
+    "line": "Green-E",
+    "destination_0": "Heath Street",
+    "destination_1": "Medford/Tufts"
   },
   {
-    "name": "Copley",
-    "alt_name": [""],
+    "name": "Copley (E)",
+    "alt_name": ["Copley E"],
     "id": "place-coecl",
-    "line": "Green(B/C/D/E)",
-    "destination_0": "Boston College/Cleveland Circle/Riverside/Heath Street",
-    "destination_1": "Government Center/Union Square/Medford"
+    "line": "Green-E",
+    "destination_0": "Heath Street",
+    "destination_1": "Medford/Tufts"
   },
   {
     "name": "Prudential",
     "alt_name": ["Pru"],
     "id": "place-prmnl",
-    "line": "Green(E)",
+    "line": "Green-E",
     "destination_0": "Heath Street",
     "destination_1": "Medford/Tufts"
   },
@@ -631,7 +631,7 @@
     "name": "Symphony",
     "alt_name": [""],
     "id": "place-symcl",
-    "line": "Green(E)",
+    "line": "Green-E",
     "destination_0": "Heath Street",
     "destination_1": "Medford/Tufts"
   },
@@ -639,7 +639,7 @@
     "name": "Northeastern",
     "alt_name": ["NU"],
     "id": "place-nuniv",
-    "line": "Green(E)",
+    "line": "Green-E",
     "destination_0": "Heath Street",
     "destination_1": "Medford/Tufts"
   },
@@ -647,20 +647,23 @@
     "name": "Museum of Fine Arts",
     "alt_name": ["MFA"],
     "id": "place-mfa",
-    "line": "Green(E)",
+    "line": "Green-E",
     "destination_0": "Heath Street",
     "destination_1": "Medford/Tufts"
   },
   {
     "name": "Longwood Medical Area",
     "alt_name": ["Longwood Medical"],
-    "id": "place-lngmd"
+    "id": "place-lngmd",
+    "line": "Green-E",
+    "destination_0": "Heath Street",
+    "destination_1": "Medford/Tufts"
   },
   {
     "name": "Brigham Circle",
     "alt_name": ["Brigham"],
     "id": "place-brmnl",
-    "line": "Green(E)",
+    "line": "Green-E",
     "destination_0": "Heath Street",
     "destination_1": "Medford/Tufts"
   },
@@ -668,7 +671,7 @@
     "name": "Fenwood Road",
     "alt_name": ["Fenwood Rd", "Fenwood"],
     "id": "place-fenwd",
-    "line": "Green(E)",
+    "line": "Green-E",
     "destination_0": "Heath Street",
     "destination_1": "Medford/Tufts"
   },
@@ -676,7 +679,7 @@
     "name": "Mission Park",
     "alt_name": [""],
     "id": "place-mispk",
-    "line": "Green(E)",
+    "line": "Green-E",
     "destination_0": "Heath Street",
     "destination_1": "Medford/Tufts"
   },
@@ -684,7 +687,7 @@
     "name": "Riverway",
     "alt_name": [""],
     "id": "place-rvrwy",
-    "line": "Green(E)",
+    "line": "Green-E",
     "destination_0": "Heath Street",
     "destination_1": "Medford/Tufts"
   },
@@ -692,39 +695,124 @@
     "name": "Back of the Hill",
     "alt_name": [""],
     "id": "place-bckhl",
-    "line": "Green(E)",
+    "line": "Green-E",
     "destination_0": "Heath Street",
     "destination_1": "Medford/Tufts"
   },
   {
     "name": "Heath Street",
-    "alt_name": ["Heath St", "Heath"],
+    "alt_name": [
+      "Heath St",
+      "Heath",
+      "Heath Street/VA Medical Center",
+      "Heath St/VA Medical Center"
+    ],
     "id": "place-hsmnl",
-    "line": "Green(E)",
+    "line": "Green-E",
     "destination_0": "",
     "destination_1": "Medford/Tufts"
   },
   {
-    "name": "Hynes Convention Center",
-    "alt_name": ["Hynes"],
-    "id": "place-hymnl",
-    "line": "Green(B/C/D)",
-    "destination_0": "Boston College/Cleveland Circle/Riverside",
-    "destination_1": "Government Center/Union Square"
+    "name": "Union Square",
+    "alt_name": ["Union Sq", "Union"],
+    "id": "place-unsqu",
+    "line": "Green-D",
+    "destination_0": "Riverside",
+    "destination_1": ""
   },
   {
-    "name": "Kenmore",
-    "alt_name": [""],
-    "id": "place-kencl",
-    "line": "Green(B/C/D)",
+    "name": "Lechmere (D)",
+    "alt_name": ["Lechmere D"],
+    "id": "place-lech",
+    "line": "Green-D",
+    "destination_0": "Riverside",
+    "destination_1": "Union Square"
+  },
+  {
+    "name": "Science Park/West End (D)",
+    "alt_name": ["Science Park D"],
+    "id": "place-spmnl",
+    "line": "Green-D",
+    "destination_0": "Riverside",
+    "destination_1": "Union Square/Medford"
+  },
+  {
+    "name": "North Station (D)",
+    "alt_name": ["North Station D", "North Green"],
+    "id": "place-north",
+    "line": "Green-D",
+    "destination_0": "Riverside",
+    "destination_1": "Union Square/Medford"
+  },
+  {
+    "name": "Haymarket (D)",
+    "alt_name": ["Haymarket D"],
+    "id": "place-haecl",
+    "line": "Green-D",
+    "destination_0": "Riverside",
+    "destination_1": "Union Square"
+  },
+  {
+    "name": "Government Center (D)",
+    "alt_name": ["Gov Center D", "GC D"],
+    "id": "place-gover",
+    "line": "Green-D",
+    "destination_0": "Riverside",
+    "destination_1": "Union Square"
+  },
+  {
+    "name": "Park Street (D)",
+    "alt_name": ["Park St D", "Park D"],
+    "id": "place-pktrm",
+    "line": "Green-D",
+    "destination_0": "Riverside",
+    "destination_1": "/Union Square"
+  },
+  {
+    "name": "Boylston (D)",
+    "alt_name": ["Boylston D"],
+    "id": "place-boyls",
+    "line": "Green-D",
+    "destination_0": "Riverside",
+    "destination_1": "Union Square"
+  },
+  {
+    "name": "Arlington (D)",
+    "alt_name": ["Arlington D"],
+    "id": "place-armnl",
+    "line": "Green-D",
+    "destination_0": "Riverside",
+    "destination_1": "Union Square"
+  },
+  {
+    "name": "Copley (D)",
+    "alt_name": ["Copley D"],
+    "id": "place-coecl",
+    "line": "Green(B/C/D/E)",
     "destination_0": "Boston College/Cleveland Circle/Riverside",
-    "destination_1": "Government Center/Union Square"
+    "destination_1": "Government Center/Union Square/Medford"
+  },
+  {
+    "name": "Hynes Convention Center (D)",
+    "alt_name": ["Hynes Convention Center D", "Hynes D"],
+    "id": "place-hymnl",
+    "line": "Green-D",
+    "destination_0": "Riverside",
+    "destination_1": "Union Square"
+  },
+  {
+    "name": "Kenmore (D)",
+    "alt_name": ["Kenmore D"],
+    "id": "place-kencl",
+    "line": "Green-D",
+    "destination_0": "Riverside",
+    "destination_1": "Union Square"
   },
   {
     "name": "Fenway",
     "alt_name": [""],
     "id": "place-fenwy",
-    "line": "Green(D)",
+    "line": "Green-D",
     "destination_0": "Riverside",
     "destination_1": "Union Square"
   },
@@ -732,7 +820,7 @@
     "name": "Longwood",
     "alt_name": [""],
     "id": "place-longw",
-    "line": "Green(D)",
+    "line": "Green-D",
     "destination_0": "Riverside",
     "destination_1": "Union Square"
   },
@@ -740,7 +828,7 @@
     "name": "Brookline Village",
     "alt_name": [""],
     "id": "place-bvmnl",
-    "line": "Green(D)",
+    "line": "Green-D",
     "destination_0": "Riverside",
     "destination_1": "Union Square"
   },
@@ -748,7 +836,7 @@
     "name": "Brookline Hills",
     "alt_name": [""],
     "id": "place-brkhl",
-    "line": "Green(D)",
+    "line": "Green-D",
     "destination_0": "Riverside",
     "destination_1": "Union Square"
   },
@@ -756,7 +844,7 @@
     "name": "Beaconfield",
     "alt_name": [""],
     "id": "place-bcnfd",
-    "line": "Green(D)",
+    "line": "Green-D",
     "destination_0": "Riverside",
     "destination_1": "Union Square"
   },
@@ -764,7 +852,7 @@
     "name": "Reservoir",
     "alt_name": [""],
     "id": "place-rsmnl",
-    "line": "Green(D)",
+    "line": "Green-D",
     "destination_0": "Riverside",
     "destination_1": "Union Square"
   },
@@ -772,7 +860,7 @@
     "name": "Chestnut Hill",
     "alt_name": [""],
     "id": "place-chhil",
-    "line": "Green(D)",
+    "line": "Green-D",
     "destination_0": "Riverside",
     "destination_1": "Union Square"
   },
@@ -780,7 +868,7 @@
     "name": "Newton Centre",
     "alt_name": ["Newton Center"],
     "id": "place-newto",
-    "line": "Green(D)",
+    "line": "Green-D",
     "destination_0": "Riverside",
     "destination_1": "Union Square"
   },
@@ -788,7 +876,7 @@
     "name": "Newton Highlands",
     "alt_name": [""],
     "id": "place-newtn",
-    "line": "Green(D)",
+    "line": "Green-D",
     "destination_0": "Riverside",
     "destination_1": "Union Square"
   },
@@ -796,7 +884,7 @@
     "name": "Eliot",
     "alt_name": [""],
     "id": "place-eliot",
-    "line": "Green(D)",
+    "line": "Green-D",
     "destination_0": "Riverside",
     "destination_1": "Union Square"
   },
@@ -804,7 +892,7 @@
     "name": "Waban",
     "alt_name": [""],
     "id": "place-waban",
-    "line": "Green(D)",
+    "line": "Green-D",
     "destination_0": "Riverside",
     "destination_1": "Union Square"
   },
@@ -812,7 +900,7 @@
     "name": "Woodland",
     "alt_name": [""],
     "id": "place-woodl",
-    "line": "Green(D)",
+    "line": "Green-D",
     "destination_0": "Riverside",
     "destination_1": "Union Square"
   },
@@ -820,9 +908,65 @@
     "name": "Riverside",
     "alt_name": [""],
     "id": "place-river",
-    "line": "Green(D)",
+    "line": "Green-D",
     "destination_0": "",
     "destination_1": "Union Square"
+  },
+  {
+    "name": "Government Center (C)",
+    "alt_name": ["Gov Center C", "GC C"],
+    "id": "place-gover",
+    "line": "Green-C",
+    "destination_0": "Cleveland Circle",
+    "destination_1": ""
+  },
+  {
+    "name": "Park Street (C)",
+    "alt_name": ["Park St C", "Park C"],
+    "id": "place-pktrm",
+    "line": "Green-C",
+    "destination_0": "Cleveland Circle",
+    "destination_1": "Government Center"
+  },
+  {
+    "name": "Boylston (C)",
+    "alt_name": ["Boylston C"],
+    "id": "place-boyls",
+    "line": "Green-C",
+    "destination_0": "Cleveland Circle",
+    "destination_1": "Government Center"
+  },
+  {
+    "name": "Arlington (C)",
+    "alt_name": ["Arlington C"],
+    "id": "place-armnl",
+    "line": "Green-C",
+    "destination_0": "Cleveland Circle",
+    "destination_1": "Government Center"
+  },
+  {
+    "name": "Copley (C)",
+    "alt_name": ["Copley C"],
+    "id": "place-coecl",
+    "line": "Green(B/C/D/E)",
+    "destination_0": "Cleveland Circle",
+    "destination_1": "Government Center"
+  },
+  {
+    "name": "Hynes Convention Center (C)",
+    "alt_name": ["Hynes Convention Center C", "Hynes C"],
+    "id": "place-hymnl",
+    "line": "Green-C",
+    "destination_0": "Cleveland Circle",
+    "destination_1": "Government Center"
+  },
+  {
+    "name": "Kenmore (C)",
+    "alt_name": ["Kenmore C"],
+    "id": "place-kencl",
+    "line": "Green-C",
+    "destination_0": "Cleveland Circle",
+    "destination_1": "Government Center"
   },
   {
     "name": "Saint Mary's Street",
@@ -846,7 +990,7 @@
       "St. Marys"
     ],
     "id": "place-smary",
-    "line": "Green(C)",
+    "line": "Green-C",
     "destination_0": "Cleveland Circle",
     "destination_1": "Government Center"
   },
@@ -854,7 +998,7 @@
     "name": "Hawes Street",
     "alt_name": ["Hawes St", "Hawes"],
     "id": "place-hwsst",
-    "line": "Green(C)",
+    "line": "Green-C",
     "destination_0": "Cleveland Circle",
     "destination_1": "Government Center"
   },
@@ -862,7 +1006,7 @@
     "name": "Kent Street",
     "alt_name": ["Kent St", "Kent"],
     "id": "place-kntst",
-    "line": "Green(C)",
+    "line": "Green-C",
     "destination_0": "Cleveland Circle",
     "destination_1": "Government Center"
   },
@@ -879,7 +1023,7 @@
       "St. Paul"
     ],
     "id": "place-stpul",
-    "line": "Green(C)",
+    "line": "Green-C",
     "destination_0": "Cleveland Circle",
     "destination_1": "Government Center"
   },
@@ -887,7 +1031,7 @@
     "name": "Coolidge Corner",
     "alt_name": ["Coolidge"],
     "id": "place-cool",
-    "line": "Green(C)",
+    "line": "Green-C",
     "destination_0": "Cleveland Circle",
     "destination_1": "Government Center"
   },
@@ -902,7 +1046,7 @@
       "Winchester/Summit"
     ],
     "id": "place-sumav",
-    "line": "Green(C)",
+    "line": "Green-C",
     "destination_0": "Cleveland Circle",
     "destination_1": "Government Center"
   },
@@ -910,7 +1054,7 @@
     "name": "Brandon Hall",
     "alt_name": [""],
     "id": "place-bndhl",
-    "line": "Green(C)",
+    "line": "Green-C",
     "destination_0": "Cleveland Circle",
     "destination_1": "Government Center"
   },
@@ -918,7 +1062,7 @@
     "name": "Fairbanks Street",
     "alt_name": ["Fairbanks St", "Fairbanks"],
     "id": "place-fbkst",
-    "line": "Green(C)",
+    "line": "Green-C",
     "destination_0": "Cleveland Circle",
     "destination_1": "Government Center"
   },
@@ -926,7 +1070,7 @@
     "name": "Washington Square",
     "alt_name": "Washington Sq",
     "id": "place-bcnwa",
-    "line": "Green(C)",
+    "line": "Green-C",
     "destination_0": "Cleveland Circle",
     "destination_1": "Government Center"
   },
@@ -934,7 +1078,7 @@
     "name": "Tappan Street",
     "alt_name": ["Tappan St", "Tappan"],
     "id": "place-tapst",
-    "line": "Green(C)",
+    "line": "Green-C",
     "destination_0": "Cleveland Circle",
     "destination_1": "Government Center"
   },
@@ -942,7 +1086,7 @@
     "name": "Dean Road",
     "alt_name": ["Dean Rd"],
     "id": "place-denrd",
-    "line": "Green(C)",
+    "line": "Green-C",
     "destination_0": "Cleveland Circle",
     "destination_1": "Government Center"
   },
@@ -950,7 +1094,7 @@
     "name": "Englewood Avenue",
     "alt_name": ["Englewood Ave", "Englewood Av", "Englewood"],
     "id": "place-engav",
-    "line": "Green(C)",
+    "line": "Green-C",
     "destination_0": "Cleveland Circle",
     "destination_1": "Government Center"
   },
@@ -958,15 +1102,71 @@
     "name": "Cleveland Circle",
     "alt_name": [""],
     "id": "place-clmnl",
-    "line": "Green(C)",
+    "line": "Green-C",
     "destination_0": "",
+    "destination_1": "Government Center"
+  },
+  {
+    "name": "Government Center (B)",
+    "alt_name": ["Gov Center B", "GC B"],
+    "id": "place-gover",
+    "line": "Green-B",
+    "destination_0": "Boston College",
+    "destination_1": ""
+  },
+  {
+    "name": "Park Street (B)",
+    "alt_name": ["Park St B", "Park B"],
+    "id": "place-pktrm",
+    "line": "Green-B",
+    "destination_0": "Boston College",
+    "destination_1": "Government Center"
+  },
+  {
+    "name": "Boylston (B)",
+    "alt_name": ["Boylston B"],
+    "id": "place-boyls",
+    "line": "Green-B",
+    "destination_0": "Boston College",
+    "destination_1": "Government Center"
+  },
+  {
+    "name": "Arlington (B)",
+    "alt_name": ["Arlington B"],
+    "id": "place-armnl",
+    "line": "Green-B",
+    "destination_0": "Boston College",
+    "destination_1": "Government Center"
+  },
+  {
+    "name": "Copley (B)",
+    "alt_name": ["Copley B"],
+    "id": "place-coecl",
+    "line": "Green-B",
+    "destination_0": "Boston College",
+    "destination_1": "Government Center"
+  },
+  {
+    "name": "Hynes Convention Center (B)",
+    "alt_name": ["Hynes Convention Center B", "Hynes B"],
+    "id": "place-hymnl",
+    "line": "Green-B",
+    "destination_0": "Boston College",
+    "destination_1": "Government Center"
+  },
+  {
+    "name": "Kenmore (B)",
+    "alt_name": ["Kenmore B"],
+    "id": "place-kencl",
+    "line": "Green-B",
+    "destination_0": "Boston College",
     "destination_1": "Government Center"
   },
   {
     "name": "Blandford Street",
     "alt_name": ["Blandford St", "Blandford"],
     "id": "place-bland",
-    "line": "Green(B)",
+    "line": "Green-B",
     "destination_0": "Boston College",
     "destination_1": "Government Center"
   },
@@ -974,23 +1174,23 @@
     "name": "Boston University East",
     "alt_name": ["BU East"],
     "id": "place-buest",
-    "line": "Green(B)",
-    "destination_0": "Boston College (sucks)",
+    "line": "Green-B",
+    "destination_0": "Boston College",
     "destination_1": "Government Center"
   },
   {
     "name": "Boston University Central",
     "alt_name": ["BU Central"],
     "id": "place-bucen",
-    "line": "Green(B)",
-    "destination_0": "Boston College (sucks)",
+    "line": "Green-B",
+    "destination_0": "Boston College",
     "destination_1": "Government Center"
   },
   {
     "name": "Amory Street",
     "alt_name": ["Amory St", "Amory", "Boston University West", "BU West"],
     "id": "place-amory",
-    "line": "Green(B)",
+    "line": "Green-B",
     "destination_0": "Boston College",
     "destination_1": "Government Center"
   },
@@ -998,7 +1198,7 @@
     "name": "Babcock Street",
     "alt_name": ["Babcock St", "Babcock", "Pleasant Street", "Pleasant St"],
     "id": "place-babck",
-    "line": "Green(B)",
+    "line": "Green-B",
     "destination_0": "Boston College",
     "destination_1": "Government Center"
   },
@@ -1012,7 +1212,7 @@
       "Brighton Av"
     ],
     "id": "place-brico",
-    "line": "Green(B)",
+    "line": "Green-B",
     "destination_0": "Boston College",
     "destination_1": "Government Center"
   },
@@ -1020,7 +1220,7 @@
     "name": "Harvard Avenue",
     "alt_name": ["Harvard Ave", "Harvard Av"],
     "id": "place-harvd",
-    "line": "Green(B)",
+    "line": "Green-B",
     "destination_0": "Boston College",
     "destination_1": "Government Center"
   },
@@ -1028,7 +1228,7 @@
     "name": "Griggs Street",
     "alt_name": ["Griggs St", "Griggs", "Griggs/Long"],
     "id": "place-grigg",
-    "line": "Green(B)",
+    "line": "Green-B",
     "destination_0": "Boston College",
     "destination_1": "Government Center"
   },
@@ -1036,7 +1236,7 @@
     "name": "Allston Street",
     "alt_name": ["Allston St"],
     "id": "place-alsgr",
-    "line": "Green(B)",
+    "line": "Green-B",
     "destination_0": "Boston College",
     "destination_1": "Government Center"
   },
@@ -1044,7 +1244,7 @@
     "name": "Warren Street",
     "alt_name": ["Warren St", "Warren"],
     "id": "place-wrnst",
-    "line": "Green(B)",
+    "line": "Green-B",
     "destination_0": "Boston College",
     "destination_1": "Government Center"
   },
@@ -1052,7 +1252,7 @@
     "name": "Washington Street",
     "alt_name": ["Washington St"],
     "id": "place-wascm",
-    "line": "Green(B)",
+    "line": "Green-B",
     "destination_0": "Boston College",
     "destination_1": "Government Center"
   },
@@ -1060,7 +1260,7 @@
     "name": "Sutherland Road",
     "alt_name": ["Sutherland Rd", "Sutherland"],
     "id": "place-sthld",
-    "line": "Green(B)",
+    "line": "Green-B",
     "destination_0": "Boston College",
     "destination_1": "Government Center"
   },
@@ -1068,7 +1268,7 @@
     "name": "Chiswick Road",
     "alt_name": ["Chiswick Rd", "Chiswick"],
     "id": "place-chswk",
-    "line": "Green(B)",
+    "line": "Green-B",
     "destination_0": "Boston College",
     "destination_1": "Government Center"
   },
@@ -1076,7 +1276,7 @@
     "name": "Chestnut Hill Avenue",
     "alt_name": ["Chestnut Hill Ave", "Chestnut Hill Av"],
     "id": "place-chill",
-    "line": "Green(B)",
+    "line": "Green-B",
     "destination_0": "Boston College",
     "destination_1": "Government Center"
   },
@@ -1084,7 +1284,7 @@
     "name": "South Street",
     "alt_name": ["South St"],
     "id": "place-sougr",
-    "line": "Green(B)",
+    "line": "Green-B",
     "destination_0": "Boston College",
     "destination_1": "Government Center"
   },
@@ -1092,7 +1292,7 @@
     "name": "Boston College",
     "alt_name": ["BC", "Lake Street", "Lake St", "Lake"],
     "id": "place-lake",
-    "line": "Green(B)",
+    "line": "Green-B",
     "destination_0": "",
     "destination_1": "Government Center"
   },
@@ -1143,5 +1343,85 @@
     "line": "Transfer",
     "destination_0": "",
     "destination_1": ""
+  },
+  {
+    "name": "Ashmont",
+    "alt_name": [],
+    "id": "place-asmnl",
+    "line": "Red/Mattapan",
+    "destination_0": "Mattapan",
+    "destination_1": ""
+  },
+  {
+    "name": "Lechmere",
+    "alt_name": [""],
+    "id": "place-lech",
+    "line": "Green",
+    "destination_0": "Riverside/Heath Street",
+    "destination_1": "Union Square/Medford"
+  },
+  {
+    "name": "Science Park/West End",
+    "alt_name": ["Science Park"],
+    "id": "place-spmnl",
+    "line": "Green",
+    "destination_0": "Riverside/Heath Street",
+    "destination_1": "Union Square/Medford"
+  },
+  {
+    "name": "North Station (Green Line)",
+    "alt_name": ["North Station Green", "North Green"],
+    "id": "place-north",
+    "line": "Green",
+    "destination_0": "Riverside/Heath Street",
+    "destination_1": "Union Square/Medford"
+  },
+  {
+    "name": "Haymarket (Green Line)",
+    "alt_name": ["Haymarket Green"],
+    "id": "place-haecl",
+    "line": "Green",
+    "destination_0": "Riverside/Heath Street",
+    "destination_1": "Union Square/Medford"
+  },
+  {
+    "name": "Government Center (Green Line)",
+    "alt_name": ["Gov Center Green", "GC Green"],
+    "id": "place-gover",
+    "line": "Green",
+    "destination_0": "Boston College/Cleveland Circle/Riverside/Heath Street",
+    "destination_1": "Union Square/Medford"
+  },
+  {
+    "name": "Park Street (Green Line)",
+    "alt_name": ["Park St Green", "Park Green"],
+    "id": "place-pktrm",
+    "line": "Green",
+    "destination_0": "Boston College/Cleveland Circle/Riverside/Heath Street",
+    "destination_1": "Government Center/Union Square/Medford"
+  },
+  {
+    "name": "Boylston",
+    "alt_name": [""],
+    "id": "place-boyls",
+    "line": "Green",
+    "destination_0": "Boston College/Cleveland Circle/Riverside/Heath Street",
+    "destination_1": "Government Center/Union Square/Medford"
+  },
+  {
+    "name": "Arlington",
+    "alt_name": [""],
+    "id": "place-armnl",
+    "line": "Green",
+    "destination_0": "Boston College/Cleveland Circle/Riverside/Heath Street",
+    "destination_1": "Government Center/Union Square/Medford"
+  },
+  {
+    "name": "Copley",
+    "alt_name": [""],
+    "id": "place-coecl",
+    "line": "Green",
+    "destination_0": "Boston College/Cleveland Circle/Riverside/Heath Street",
+    "destination_1": "Government Center/Union Square/Medford"
   }
 ]
