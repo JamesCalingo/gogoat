@@ -56,17 +56,17 @@
     "destination_1": "Alewife"
   },
   {
-    "name": "Downtown Crossing (Red Line)",
-    "alt_name": ["Downtown Xing Red", "DTX Red"],
-    "id": "place-dwnxg",
+    "name": "Park Street (Red Line)",
+    "alt_name": ["Park St Red", "Park Red"],
+    "id": "place-pktrm",
     "line": "Red",
     "destination_0": "Ashmont/Braintree",
     "destination_1": "Alewife"
   },
   {
-    "name": "Park Street (Red Line)",
-    "alt_name": ["Park St Red", "Park Red"],
-    "id": "place-pktrm",
+    "name": "Downtown Crossing (Red Line)",
+    "alt_name": ["Downtown Xing Red", "DTX Red"],
+    "id": "place-dwnxg",
     "line": "Red",
     "destination_0": "Ashmont/Braintree",
     "destination_1": "Alewife"
@@ -235,7 +235,7 @@
     "name": "Oak Grove",
     "alt_name": [""],
     "id": "place-ogmnl",
-   "line": "Orange",
+    "line": "Orange",
     "destination_0": "Forest Hills",
     "destination_1": ""
   },
@@ -243,7 +243,7 @@
     "name": "Malden Center",
     "alt_name": ["Malden"],
     "id": "place-mlmnl",
-   "line": "Orange",
+    "line": "Orange",
     "destination_0": "Forest Hills",
     "destination_1": "Oak Grove"
   },
@@ -251,7 +251,7 @@
     "name": "Wellington",
     "alt_name": ["Welly"],
     "id": "place-welln",
-   "line": "Orange",
+    "line": "Orange",
     "destination_0": "Forest Hills",
     "destination_1": "Oak Grove"
   },
@@ -259,7 +259,7 @@
     "name": "Assembly",
     "alt_name": [""],
     "id": "place-astao",
-   "line": "Orange",
+    "line": "Orange",
     "destination_0": "Forest Hills",
     "destination_1": "Oak Grove"
   },
@@ -267,7 +267,7 @@
     "name": "Sullivan Square",
     "alt_name": ["Sullivan"],
     "id": "place-sull",
-   "line": "Orange",
+    "line": "Orange",
     "destination_0": "Forest Hills",
     "destination_1": "Oak Grove"
   },
@@ -275,7 +275,7 @@
     "name": "Community College",
     "alt_name": [""],
     "id": "place-ccmnl",
-   "line": "Orange",
+    "line": "Orange",
     "destination_0": "Forest Hills",
     "destination_1": "Oak Grove"
   },
@@ -283,7 +283,7 @@
     "name": "North Station (Orange Line)",
     "alt_name": ["North Station Orange", "North Orange"],
     "id": "place-north",
-   "line": "Orange",
+    "line": "Orange",
     "destination_0": "Forest Hills",
     "destination_1": "Oak Grove"
   },
@@ -291,15 +291,21 @@
     "name": "Haymarket (Orange Line)",
     "alt_name": ["Haymarket Orange"],
     "id": "place-haecl",
-   "line": "Orange",
+    "line": "Orange",
     "destination_0": "Forest Hills",
     "destination_1": "Oak Grove"
   },
   {
     "name": "State (Orange Line)",
-    "alt_name": ["State Orange"],
+    "alt_name": [
+      "State Street (Orange Line)",
+      "State St (Orange Line",
+      "State Street Orange",
+      "State St Orange",
+      "State Orange"
+    ],
     "id": "place-state",
-   "line": "Orange",
+    "line": "Orange",
     "destination_0": "Forest Hills",
     "destination_1": "Oak Grove"
   },
@@ -307,7 +313,7 @@
     "name": "Downtown Crossing (Orange Line)",
     "alt_name": ["Downtown Xing Orange", "DTX Orange"],
     "id": "place-dwnxg",
-   "line": "Orange",
+    "line": "Orange",
     "destination_0": "Forest Hills",
     "destination_1": "Oak Grove"
   },
@@ -315,7 +321,7 @@
     "name": "Chinatown",
     "alt_name": [""],
     "id": "place-chncl",
-   "line": "Orange",
+    "line": "Orange",
     "destination_0": "Forest Hills",
     "destination_1": "Oak Grove"
   },
@@ -323,7 +329,7 @@
     "name": "Tufts Medical Center",
     "alt_name": ["Tufts Medical", "Tufts"],
     "id": "place-tumnl",
-   "line": "Orange",
+    "line": "Orange",
     "destination_0": "Forest Hills",
     "destination_1": "Oak Grove"
   },
@@ -331,7 +337,7 @@
     "name": "Back Bay",
     "alt_name": ["Back Bay/South End", "Back Bay Station"],
     "id": "place-bbsta",
-   "line": "Orange",
+    "line": "Orange",
     "destination_0": "Forest Hills",
     "destination_1": "Oak Grove"
   },
@@ -339,7 +345,7 @@
     "name": "Massachusetts Avenue",
     "alt_name": ["Massachusetts Ave", "Mass Ave"],
     "id": "place-masta",
-   "line": "Orange",
+    "line": "Orange",
     "destination_0": "Forest Hills",
     "destination_1": "Oak Grove"
   },
@@ -347,7 +353,7 @@
     "name": "Ruggles",
     "alt_name": [""],
     "id": "place-rugg",
-   "line": "Orange",
+    "line": "Orange",
     "destination_0": "Forest Hills",
     "destination_1": "Oak Grove"
   },
@@ -355,7 +361,7 @@
     "name": "Roxbury Crossing",
     "alt_name": ["Roxbury Xing", "Roxbury"],
     "id": "place-rcmnl",
-   "line": "Orange",
+    "line": "Orange",
     "destination_0": "Forest Hills",
     "destination_1": "Oak Grove"
   },
@@ -363,7 +369,7 @@
     "name": "Jackson Square",
     "alt_name": ["Jackson Sq", "Jackson"],
     "id": "place-jaksn",
-   "line": "Orange",
+    "line": "Orange",
     "destination_0": "Forest Hills",
     "destination_1": "Oak Grove"
   },
@@ -371,7 +377,7 @@
     "name": "Stony Brook",
     "alt_name": [""],
     "id": "place-sbmnl",
-   "line": "Orange",
+    "line": "Orange",
     "destination_0": "Forest Hills",
     "destination_1": "Oak Grove"
   },
@@ -379,7 +385,7 @@
     "name": "Green Street",
     "alt_name": ["Green St"],
     "id": "place-grnst",
-   "line": "Orange",
+    "line": "Orange",
     "destination_0": "Forest Hills",
     "destination_1": "Oak Grove"
   },
@@ -465,7 +471,13 @@
   },
   {
     "name": "State (Blue Line)",
-    "alt_name": ["State Blue"],
+    "alt_name": [
+      "State Street (Blue Line)",
+      "State St (Blue Line)",
+      "State Street Blue",
+      "State St Blue",
+      "State Blue"
+    ],
     "id": "place-state",
     "line": "Blue",
     "destination_0": "Bowdoin",
@@ -1083,5 +1095,53 @@
     "line": "Green(B)",
     "destination_0": "",
     "destination_1": "Government Center"
+  },
+  {
+    "name": "Park Street",
+    "alt_name": ["Park St", "Park"],
+    "id": "place-pktrm",
+    "line": "Transfer",
+    "destination_0": "",
+    "destination_1": ""
+  },
+  {
+    "name": "Downtown Crossing",
+    "alt_name": ["Downtown Xing", "DTX"],
+    "id": "place-dwnxg",
+    "line": "Transfer",
+    "destination_0": "",
+    "destination_1": ""
+  },
+  {
+    "name": "State (Orange Line)",
+    "alt_name": ["State Street", "State St"],
+    "id": "place-state",
+    "line": "Transfer",
+    "destination_0": "",
+    "destination_1": ""
+  },
+  {
+    "name": "North Station",
+    "alt_name": ["North"],
+    "id": "place-north",
+    "line": "Transfer",
+    "destination_0": "",
+    "destination_1": ""
+  },
+  {
+    "name": "Haymarket",
+    "alt_name": [],
+    "id": "place-haecl",
+    "line": "Transfer",
+    "destination_0": "",
+    "destination_1": ""
+  },
+  {
+    "name": "Government Center",
+    "alt_name": ["Gov Center", "GC"],
+    "id": "place-gover",
+    "line": "Transfer",
+    "destination_0": "",
+    "destination_1": ""
   }
 ]

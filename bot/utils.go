@@ -2,7 +2,6 @@ package bot
 
 import (
 	"encoding/json"
-	"errors"
 	"gogoat/internal/models"
 	"io"
 	"log"
@@ -12,7 +11,7 @@ import (
 
 // These are functions used around the other parts of this bot. None of them send messages to Discord, thus why I've collected them here.
 
-var TransferStations = []string{"North Station", "Haymarket", "Government Center", "Gov Center", "GC", "State", "Park Street", "Park", "Downtown Crossing", "DTX", "Downtown Xing"}
+var TransferStations = []string{"North Station", "Haymarket", "Government Center", "Gov Center", "GC", "State", "State Street", "State St", "Park Street", "Park St", "Park", "Downtown Crossing", "DTX", "Downtown Xing"}
 
 var Lines = []string{"Red", "Orange", "Blue", "Green-B", "Green-C", "Green-D", "Green-E", "Mattapan"}
 
@@ -26,7 +25,7 @@ func CheckError(err error) {
 // Check if a slice contains a certain element
 func Contains(list []string, match string) bool {
 	for _, elem := range list {
-		if elem == match {
+		if strings.EqualFold(elem, match) {
 			return true
 		}
 	}
@@ -53,21 +52,16 @@ func BreakMessage(message string, separator string) (pre string, post string) {
 }
 
 // Gets the station struct from our json list
-func FindStation(name string) (models.Station, error) {
+func FindStation(name string) models.Station {
 	var empty models.Station
 
 	subway := Open("stations.json")
-	// for _, station := range TransferStations {
-	// 	if strings.EqualFold(name, station) {
-	// 		return empty, errors.New("transfer station")
-	// 	}
-	// }
 	for _, station := range subway {
 		if strings.EqualFold(name, station.Name) || (VerifyAltNames(name, station.AltName)) {
-			return station, nil
+			return station
 		}
 	}
-	return empty, errors.New("station not found")
+	return empty
 }
 
 // Because users may have different "pet names" for stations other than what the bot expects, it's important to check for them
