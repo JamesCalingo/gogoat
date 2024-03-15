@@ -11,11 +11,9 @@ import (
 
 // These are functions used around the other parts of this bot. None of them send messages to Discord, thus why I've collected them here.
 
-var TransferStations = []string{"North Station", "Haymarket", "Government Center", "Gov Center", "GC", "State", "State Street", "State St", "Park Street", "Park St", "Park", "Downtown Crossing", "DTX", "Downtown Xing"}
-
 var Lines = []string{"Red", "Orange", "Blue", "Green-B", "Green-C", "Green-D", "Green-E", "Mattapan"}
 
-// Go standard error checking
+// Remember kids: always check for errors if they can be returned by a function
 func CheckError(err error) {
 	if err != nil {
 		log.Fatal(err)
@@ -32,7 +30,7 @@ func Contains(list []string, match string) bool {
 	return false
 }
 
-// Opens the internal station list
+// Opens files - in GogoaT's case, the internal station list
 func Open(fileName string) models.Stations {
 	var list models.Stations
 	file, fileErr := os.Open(fileName)

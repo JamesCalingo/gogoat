@@ -10,6 +10,7 @@ import (
 	"time"
 )
 
+// Check if the station is labeled as "Transfer" in stations.json
 func checkForTransfer(station models.Station) bool {
 	return station.Line == "Transfer"
 }
@@ -17,11 +18,6 @@ func checkForTransfer(station models.Station) bool {
 // Get list of all predictions for a station
 func getPredictions(station models.Station) []models.Prediction {
 	var predictions models.Predictions
-	// for _, transferStation := range TransferStations {
-	// 	if strings.EqualFold(name, transferStation) {
-	// 		return "This is a transfer station, please specify which line you're looking for."
-	// 	}
-	// }
 
 	url := fmt.Sprintf("https://api-v3.mbta.com/predictions?sort=departure_time&filter[stop]=%s&filter[route]=%s", station.ID, station.Filter)
 	res, err := http.Get(url)
@@ -41,7 +37,7 @@ func getPredictions(station models.Station) []models.Prediction {
 	return filter(predictions)
 }
 
-// find the immediate next prediction ignoring direction
+// Creates a list of future departures from a station in both directions
 func ListNext(station models.Station) string {
 	if checkForTransfer(station) {
 		return "This is a transfer station. Please specify a line for data."
@@ -60,6 +56,7 @@ func ListNext(station models.Station) string {
 	if station.Name == "" {
 		return "Station not found. Check it and try again."
 	}
+	// Turn lists of times into single string so they can be broadcast
 	listTimes := func(destination string, predictions []models.Prediction) string {
 		if destination == "" {
 			return destination
@@ -77,6 +74,7 @@ func ListNext(station models.Station) string {
 
 }
 
+// Predict the next train from a given station to the terminus of the line
 func PredictDestination(station models.Station, destination string) string {
 	if station.Name == "" {
 		return "Station not found. Check it and try again."
@@ -127,6 +125,7 @@ func PredictDestination(station models.Station, destination string) string {
 	return fmt.Sprintf("The next train from %s to %s is expected around %s", station.Name, strings.Title(destination), next.Attributes.DepartureTime.Format(time.Kitchen))
 }
 
+// Predict the next train from a given station that is heading in the specified direction
 func predictDirection(station models.Station, direction string) string {
 	if station.Name == "" {
 		return "Station not found. Check it and try again."
