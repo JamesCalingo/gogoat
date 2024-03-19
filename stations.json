@@ -581,7 +581,7 @@
   },
   {
     "name": "Government Center (E)",
-    "alt_name": ["Gov Center E", "GC E"],
+    "alt_name": ["Government Center E","Gov Center E", "GC E"],
     "id": "place-gover",
     "line": "Green-E",
     "destination_0": "Heath Street",
@@ -589,7 +589,7 @@
   },
   {
     "name": "Park Street (E)",
-    "alt_name": ["Park St E", "Park E"],
+    "alt_name": ["Park Street E","Park St E", "Park E"],
     "id": "place-pktrm",
     "line": "Green-E",
     "destination_0": "Heath Street",
@@ -754,7 +754,7 @@
   },
   {
     "name": "Government Center (D)",
-    "alt_name": ["Gov Center D", "GC D"],
+    "alt_name": ["Government Center D", "Gov Center D", "GC D"],
     "id": "place-gover",
     "line": "Green-D",
     "destination_0": "Riverside",
@@ -762,11 +762,11 @@
   },
   {
     "name": "Park Street (D)",
-    "alt_name": ["Park St D", "Park D"],
+    "alt_name": ["Park Street D", "Park St D", "Park D"],
     "id": "place-pktrm",
     "line": "Green-D",
     "destination_0": "Riverside",
-    "destination_1": "/Union Square"
+    "destination_1": "Union Square"
   },
   {
     "name": "Boylston (D)",
@@ -788,7 +788,7 @@
     "name": "Copley (D)",
     "alt_name": ["Copley D"],
     "id": "place-coecl",
-    "line": "Green(B/C/D/E)",
+    "line": "Green-D",
     "destination_0": "Boston College/Cleveland Circle/Riverside",
     "destination_1": "Government Center/Union Square/Medford"
   },
@@ -914,7 +914,7 @@
   },
   {
     "name": "Government Center (C)",
-    "alt_name": ["Gov Center C", "GC C"],
+    "alt_name": ["Government Center C", "Gov Center C", "GC C"],
     "id": "place-gover",
     "line": "Green-C",
     "destination_0": "Cleveland Circle",
@@ -922,7 +922,7 @@
   },
   {
     "name": "Park Street (C)",
-    "alt_name": ["Park St C", "Park C"],
+    "alt_name": ["Park Street C", "Park St C", "Park C"],
     "id": "place-pktrm",
     "line": "Green-C",
     "destination_0": "Cleveland Circle",
@@ -948,7 +948,7 @@
     "name": "Copley (C)",
     "alt_name": ["Copley C"],
     "id": "place-coecl",
-    "line": "Green(B/C/D/E)",
+    "line": "Green-C",
     "destination_0": "Cleveland Circle",
     "destination_1": "Government Center"
   },
@@ -1108,7 +1108,7 @@
   },
   {
     "name": "Government Center (B)",
-    "alt_name": ["Gov Center B", "GC B"],
+    "alt_name": ["Government Center B","Gov Center B", "GC B"],
     "id": "place-gover",
     "line": "Green-B",
     "destination_0": "Boston College",
@@ -1116,7 +1116,7 @@
   },
   {
     "name": "Park Street (B)",
-    "alt_name": ["Park St B", "Park B"],
+    "alt_name": ["Park Street B", "Park St B", "Park B"],
     "id": "place-pktrm",
     "line": "Green-B",
     "destination_0": "Boston College",
@@ -1348,7 +1348,7 @@
     "name": "Ashmont",
     "alt_name": [],
     "id": "place-asmnl",
-    "line": "Red/Mattapan",
+    "line": "Transfer",
     "destination_0": "Mattapan",
     "destination_1": ""
   },

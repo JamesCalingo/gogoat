@@ -39,7 +39,7 @@ func newMessage(discord *discordgo.Session, message *discordgo.MessageCreate) {
 	case message.Content == "&where":
 		discord.ChannelMessageSend(message.ChannelID, "See a live map of the T here: https://mbta.sites.fas.harvard.edu/T/subway-map.html")
 	case message.Content == "&info":
-		discord.ChannelMessageSend(message.ChannelID, "Use this command (&info) with a station name to get the webpage for that station.")
+		discord.ChannelMessageSend(message.ChannelID, "Use this command (&info) with a station name to get the MBTA website for that station.")
 	case strings.HasPrefix(message.Content, "&info "):
 		discord.ChannelMessageSend(message.ChannelID, Info(station))
 	case message.Content == "&next":
@@ -48,15 +48,8 @@ func newMessage(discord *discordgo.Session, message *discordgo.MessageCreate) {
 		//This breaks somewhat easily if the spaces aren't present...
 		stationName, destination := BreakMessage(name, " to ")
 		station = FindStation(stationName)
-		discord.ChannelMessageSend(message.ChannelID, PredictDestination(station, destination))
+		discord.ChannelMessageSend(message.ChannelID, station.PredictDestination(destination))
 	case strings.HasPrefix(message.Content, "&next "):
-		discord.ChannelMessageSend(message.ChannelID, ListNext(station))
-	case message.Content == "&nextfrom":
-		discord.ChannelMessageSend(message.ChannelID, "Use this command (&nextfrom) with a station name and a direction or destination to get the next train from that station in the specified direction.")
-	case strings.HasPrefix(message.Content, "&nextfrom "):
-		//This breaks somewhat easily if the spaces aren't present...
-		stationName, destination := BreakMessage(name, " to ")
-		station = FindStation(stationName)
-		discord.ChannelMessageSend(message.ChannelID, PredictDestination(station, destination))
+		discord.ChannelMessageSend(message.ChannelID, station.ListNext())
 	}
 }

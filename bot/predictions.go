@@ -10,16 +10,30 @@ import (
 	"time"
 )
 
+type Station struct {
+	Name         string   `json:"name"`
+	AltName      []string `json:"alt_name"`
+	ID           string   `json:"id"`
+	Line         string   `json:"line"`
+	Destination0 string   `json:"destination_0"`
+	Destination1 string   `json:"destination_1"`
+}
+
+// Check that a station exists. If it doesn't, it will return an empty name
+func (station *Station) check() bool {
+	return station.Name != ""
+}
+
 // Check if the station is labeled as "Transfer" in stations.json
-func checkForTransfer(station models.Station) bool {
+func (station *Station) checkForTransfer() bool {
 	return station.Line == "Transfer"
 }
 
 // Get list of all predictions for a station
-func getPredictions(station models.Station) []models.Prediction {
+func (station *Station) getPredictions() []models.Prediction {
 	var predictions models.Predictions
 
-	url := fmt.Sprintf("https://api-v3.mbta.com/predictions?sort=departure_time&filter[stop]=%s&filter[route]=%s", station.ID, station.Filter)
+	url := fmt.Sprintf("https://api-v3.mbta.com/predictions?sort=departure_time&filter[stop]=%s&filter[route]=%s", station.ID, station.Line)
 	res, err := http.Get(url)
 	CheckError(err)
 	data, _ := io.ReadAll(res.Body)
@@ -38,26 +52,27 @@ func getPredictions(station models.Station) []models.Prediction {
 }
 
 // Creates a list of future departures from a station in both directions
-func ListNext(station models.Station) string {
-	if checkForTransfer(station) {
+func (station *Station) ListNext() string {
+	if station.checkForTransfer() {
 		return "This is a transfer station. Please specify a line for data."
 	}
-	predictions := getPredictions(station)
+	predictions := station.getPredictions()
 	var next0 []models.Prediction
 	var next1 []models.Prediction
 	for _, prediction := range predictions {
-		if prediction.Attributes.Direction == 0 {
+		if prediction.Attributes.DirectionID == 0 {
 			next0 = append(next0, prediction)
 		} else {
 			next1 = append(next1, prediction)
 		}
 	}
 
-	if station.Name == "" {
+	if !station.check() {
 		return "Station not found. Check it and try again."
 	}
 	// Turn lists of times into single string so they can be broadcast
 	listTimes := func(destination string, predictions []models.Prediction) string {
+		//For terminal stations
 		if destination == "" {
 			return destination
 		}
@@ -75,30 +90,40 @@ func ListNext(station models.Station) string {
 }
 
 // Predict the next train from a given station to the terminus of the line
-func PredictDestination(station models.Station, destination string) string {
-	if station.Name == "" {
+func (station *Station) PredictDestination(destination string) string {
+	if !station.check() {
 		return "Station not found. Check it and try again."
 	}
-	if checkForTransfer(station) {
+	if station.checkForTransfer() {
 		return "This is a transfer station. Please specify a line for data."
 	}
 
 	if station.Line == "Green" {
 		return "Please specify which branch you're looking for."
 	}
+	//This allows the user to use a direction instead of the destination if they so choose
 	acceptedDirections := []string{"east", "west", "north", "south"}
 	if Contains(acceptedDirections, destination) {
-		return predictDirection(station, destination)
+		return station.predictDirection(destination)
 	}
 
 	destinations := []string{strings.ToLower(station.Destination0), strings.ToLower(station.Destination1)}
+	// For southbound Red Line trains. There is a way to get the exact destination, but that's under construction for now
 	if station.Destination0 == "Ashmont/Braintree" {
 		destinations = append(destinations, "ashmont", "braintree")
+	}
+	// Boston College and Heath Street have alternate names, so we need to be able to check those as well
+	if station.Destination0 == "Boston College" || station.Destination0 == "Heath Street" {
+		destinationStat := FindStation(destination)
+		for _, altName := range destinationStat.AltName {
+			lowercased := strings.ToLower(altName)
+			destinations = append(destinations, lowercased)
+		}
 	}
 	if !Contains(destinations, strings.ToLower(destination)) {
 		return "Cannot currently predict next train for this trip. Try again."
 	}
-	predictions := getPredictions(station)
+	predictions := station.getPredictions()
 
 	directionInt := 0
 	if strings.EqualFold(destination, station.Destination1) {
@@ -106,7 +131,7 @@ func PredictDestination(station models.Station, destination string) string {
 	}
 	var next models.Prediction
 	for _, prediction := range predictions {
-		if time.Now().Before(prediction.Attributes.DepartureTime) && prediction.Attributes.Direction == directionInt {
+		if time.Now().Before(prediction.Attributes.DepartureTime) && prediction.Attributes.DirectionID == directionInt {
 			next = prediction
 			break
 		}
@@ -126,11 +151,11 @@ func PredictDestination(station models.Station, destination string) string {
 }
 
 // Predict the next train from a given station that is heading in the specified direction
-func predictDirection(station models.Station, direction string) string {
-	if station.Name == "" {
+func (station *Station) predictDirection(direction string) string {
+	if !station.check() {
 		return "Station not found. Check it and try again."
 	}
-	predictions := getPredictions(station)
+	predictions := station.getPredictions()
 	if ((station.Line == "Red" || station.Line == "Orange" || station.Line == "Mattapan") && (strings.EqualFold(direction, "east") || strings.EqualFold(direction, "west"))) || ((station.Line == "Blue" || strings.HasPrefix(station.Line, "Green")) && (strings.EqualFold(direction, "north") || strings.EqualFold(direction, "south"))) {
 		return "This line does not go in this direction (technically). Please use North/South for the Red, Mattapan, and Orange lines, East/West for the Green ane Blue lines)"
 	}
@@ -140,7 +165,7 @@ func predictDirection(station models.Station, direction string) string {
 	}
 	var next models.Prediction
 	for _, prediction := range predictions {
-		if time.Now().Before(prediction.Attributes.DepartureTime) && prediction.Attributes.Direction == directionInt {
+		if time.Now().Before(prediction.Attributes.DepartureTime) && prediction.Attributes.DirectionID == directionInt {
 			next = prediction
 			break
 		}

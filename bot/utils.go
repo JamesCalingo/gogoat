@@ -2,7 +2,6 @@ package bot
 
 import (
 	"encoding/json"
-	"gogoat/internal/models"
 	"io"
 	"log"
 	"os"
@@ -31,8 +30,8 @@ func Contains(list []string, match string) bool {
 }
 
 // Opens files - in GogoaT's case, the internal station list
-func Open(fileName string) models.Stations {
-	var list models.Stations
+func Open(fileName string) []Station {
+	var list []Station
 	file, fileErr := os.Open(fileName)
 	if fileErr != nil {
 		log.Fatal(fileErr)
@@ -50,8 +49,8 @@ func BreakMessage(message string, separator string) (pre string, post string) {
 }
 
 // Gets the station struct from our json list
-func FindStation(name string) models.Station {
-	var empty models.Station
+func FindStation(name string) Station {
+	var empty Station
 
 	subway := Open("stations.json")
 	for _, station := range subway {
