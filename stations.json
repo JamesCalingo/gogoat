@@ -57,7 +57,7 @@
   },
   {
     "name": "Park Street (Red Line)",
-    "alt_name": ["Park St Red", "Park Red"],
+    "alt_name": ["Park Street Red", "Park St Red", "Park Red"],
     "id": "place-pktrm",
     "line": "Red",
     "destination_0": "Ashmont/Braintree",
@@ -65,7 +65,7 @@
   },
   {
     "name": "Downtown Crossing (Red Line)",
-    "alt_name": ["Downtown Xing Red", "DTX Red"],
+    "alt_name": ["Downtown Crossing Red", "Downtown Xing Red", "DTX Red"],
     "id": "place-dwnxg",
     "line": "Red",
     "destination_0": "Ashmont/Braintree",
@@ -319,7 +319,7 @@
   },
   {
     "name": "Downtown Crossing (Orange Line)",
-    "alt_name": ["Downtown Xing Orange", "DTX Orange"],
+    "alt_name": ["Downtown Crossing Orange", "Downtown Xing Orange", "DTX Orange"],
     "id": "place-dwnxg",
     "line": "Orange",
     "destination_0": "Forest Hills",
@@ -493,7 +493,7 @@
   },
   {
     "name": "Government Center (Blue Line)",
-    "alt_name": ["Gov Center Blue", "GC Blue"],
+    "alt_name": ["Government Center Blue", "Gov Center Blue", "GC Blue"],
     "id": "place-gover",
     "line": "Blue",
     "destination_0": "Bowdoin",
@@ -1313,7 +1313,7 @@
     "destination_1": ""
   },
   {
-    "name": "State (Orange Line)",
+    "name": "State",
     "alt_name": ["State Street", "State St"],
     "id": "place-state",
     "line": "Transfer",
@@ -1386,7 +1386,7 @@
   },
   {
     "name": "Government Center (Green Line)",
-    "alt_name": ["Gov Center Green", "GC Green"],
+    "alt_name": ["Government Center Green", "Gov Center Green", "GC Green"],
     "id": "place-gover",
     "line": "Green",
     "destination_0": "Boston College/Cleveland Circle/Riverside/Heath Street",
@@ -1394,7 +1394,7 @@
   },
   {
     "name": "Park Street (Green Line)",
-    "alt_name": ["Park St Green", "Park Green"],
+    "alt_name": ["Park Street Green", "Park St Green", "Park Green"],
     "id": "place-pktrm",
     "line": "Green",
     "destination_0": "Boston College/Cleveland Circle/Riverside/Heath Street",

@@ -17,7 +17,7 @@ import (
 func (s *Station) getPredictions() []models.Prediction {
 	var predictions models.Predictions
 
-	url := fmt.Sprintf("https://api-v3.mbta.com/predictions?sort=departure_time&filter[stop]=%s&filter[route]=%s", s.ID, s.Line)
+	url := fmt.Sprintf("https://api-v3.mbta.com/predictions?sort=departure_time&filter[stop]=%s&filter[route]=%s&filter[revenue]=REVENUE", s.ID, s.Line)
 	res, err := http.Get(url)
 	CheckError(err)
 	defer res.Body.Close()
@@ -56,22 +56,30 @@ func (s *Station) ListNext() string {
 	if !s.CheckForStation() {
 		return "Station not found. Check your station name and try again."
 	}
+
+	if len(next0) == 0 && len(next1) == 0 {
+		return "I couldn't find any trains for that station. There may be a service disruption - lerts that may be affecting it:\n" + s.LinkToStationPage()
+	}
 	// Turn lists of times into single string so they can be broadcast
 	listTimes := func(destination string, predictions []models.Prediction) string {
 		//For terminal stations
 		if destination == "" {
 			return destination
 		}
-		output := fmt.Sprintf("to %s:\n", destination)
+		output := fmt.Sprintf("To %s:\n", destination)
 		if len(predictions) == 0 {
-			output += "No trains found.\n(NOTE: This may be an API issue)\n"
+			output += "No trains found.\n\n"
 		}
 		for _, prediction := range predictions {
 			output += fmt.Sprintf("%s\n", prediction.Attributes.DepartureTime.Format(time.Kitchen))
 		}
 		return output
 	}
-	return fmt.Sprintf("Next trains from %s\n%s%s", s.Name, listTimes(s.Destination0, next0), listTimes(s.Destination1, next1))
+
+	if len(next0) == 0 {
+		return fmt.Sprintf("Next trains from %s:\n\n%s", s.Name, listTimes(s.Destination1, next1))
+	}
+	return fmt.Sprintf("Next trains from %s:\n\n%s\n%s", s.Name, listTimes(s.Destination0, next0), listTimes(s.Destination1, next1))
 
 }
 
