@@ -26,5 +26,7 @@ func (s *Station) LinkToStationPage() string {
 	if s.Name == "" {
 		return "I couldn't find that station. Check that it's spelled correctly and try again."
 	}
-	return fmt.Sprintf("https://mbta.com/stops/%s", s.ID)
+	website := fmt.Sprintf("https://mbta.com/stops/%s", s.ID)
+	alerts := s.GetAlerts()
+	return website + alerts
 }

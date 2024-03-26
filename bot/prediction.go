@@ -58,7 +58,12 @@ func (s *Station) ListNext() string {
 	}
 
 	if len(next0) == 0 && len(next1) == 0 {
-		return "I couldn't find any trains for that station. There may be a service disruption - lerts that may be affecting it:\n" + s.LinkToStationPage()
+		output := "I couldn't find any trains for that station."
+		alerts := s.GetCurrentAlerts()
+		if alerts == "" {
+			return fmt.Sprintf("%s There don't seem to be any active alerts for that station either...", output)
+		}
+		return fmt.Sprintf("%s There's at least one alert affecting service, however:\n%s", output, alerts)
 	}
 	// Turn lists of times into single string so they can be broadcast
 	listTimes := func(destination string, predictions []models.Prediction) string {
