@@ -63,7 +63,7 @@ func (s *Station) ListNext() string {
 		if alerts == "" {
 			return fmt.Sprintf("%s There don't seem to be any active alerts for that station either...", output)
 		}
-		return fmt.Sprintf("%s There's at least one alert affecting service, however:\n%s", output, alerts)
+		return fmt.Sprintf("%s There is at least one alert that may be affecting service right now:\n%s", output, alerts)
 	}
 	// Turn lists of times into single string so they can be broadcast
 	listTimes := func(destination string, predictions []models.Prediction) string {

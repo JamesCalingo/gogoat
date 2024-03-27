@@ -12,7 +12,7 @@ import (
 
 var Lines = []string{"Red", "Orange", "Blue", "Green-B", "Green-C", "Green-D", "Green-E", "Mattapan"}
 
-// Remember kids: always check for errors if they can be returned by a function
+// Check for an error
 func CheckError(err error) {
 	if err != nil {
 		log.Fatal(err)
@@ -30,7 +30,7 @@ func Contains(list []string, match string) bool {
 }
 
 // Opens files - in GogoaT's case, the internal station list
-func Open(fileName string) []Station {
+func OpenFile(fileName string) []Station {
 	var list []Station
 	file, fileErr := os.Open(fileName)
 	if fileErr != nil {
@@ -52,7 +52,7 @@ func BreakMessage(message string, separator string) (pre string, post string) {
 func FindStation(name string) Station {
 	var empty Station
 
-	subway := Open("stations.json")
+	subway := OpenFile("subway.json")
 	for _, station := range subway {
 		if strings.EqualFold(name, station.Name) || (VerifyAltNames(name, station.AltName)) {
 			return station

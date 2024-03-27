@@ -43,6 +43,9 @@ func newMessage(discord *discordgo.Session, message *discordgo.MessageCreate) {
 	case strings.HasPrefix(message.Content, "info "):
 		discord.ChannelMessageSend(message.ChannelID, "finding your info...")
 		discord.ChannelMessageSend(message.ChannelID, station.LinkToStationPage())
+	case strings.HasPrefix(message.Content, "schedule "):
+		discord.ChannelMessageSend(message.ChannelID, "finding your info...")
+		discord.ChannelMessageSend(message.ChannelID, GetSchedules(name))
 	case message.Content == "next":
 		discord.ChannelMessageSend(message.ChannelID, "Use this command (next) with:\n- a station name to get a list of train predictions from that station\n- a station name, then \"to\", then one of the ends of a line to get the next train from that station to the destination station")
 	case strings.HasPrefix(message.Content, "next ") && strings.Contains(message.Content, " to "):
