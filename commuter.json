@@ -1,82 +1,87 @@
 [
-    {
-        "name": "South Station",
-        "alt_name": ["Boston"],
-        "id": "place-south"
-    },
-    {
-        "name": "Back Bay",
-        "alt_name": [],
-        "id": "place-bbsta"
-    },
-    {
-        "name": "Ruggles ",
-        "alt_name": [],
-        "id": "place-rugg"
-    },
-    {
-        "name": "Forest Hills",
-        "alt_name": [],
-        "id": "place-forhl"
-    },
-    {
-        "name": "Hyde Park",
-        "alt_name": ["Cleary Square"],
-        "id": "place-NEC-2203"
-    },
-    {
-        "name": "Route 128",
-        "alt_name": ["128", "University"],
-        "id": "place-NEC-2173"
-    },
-    {
-        "name": "Canton Junction",
-        "alt_name": [],
-        "id": "place-NEC-2139"
-    },
-    {
-        "name": "Canton Center",
-        "alt_name": [],
-        "id": "place-SB-0156"
-    },
-    {
-        "name": "Stoughton",
-        "alt_name": [],
-        "id": "place-SB-0189"
-    },
-    {
-        "name": "Sharon",
-        "alt_name": [],
-        "id": "place-NEC-2108"
-    },
-    {
-        "name": "Mansfield",
-        "alt_name": [],
-        "id": "place-NEC-2040"
-    },
-    {
-        "name": "Attleboro",
-        "alt_name": [],
-        "id": "place-NEC-1969"
-    },
-    {
-        "name": "Pawtucket/Central Falls",
-        "alt_name": ["Pawtucket"],
-        "id": "place-NEC-1891"
-    },
-    {
-        "name": "Providence",
-        "alt_name": [],
-        "id": "place-NEC-1851"
-    },
-    {
-        "name": "TF Green Airport",
-        "alt_name": ["TF Green"],
-        "id": "place-NEC-1768"
-    },
-    {
-        "name": "Wickford Junction",
-        "alt_name": ["Wickford"],
-        "id": "place-NEC-1659"
-    },
+  {
+    "name": "South Station",
+    "alt_name": ["Boston"],
+    "id": "place-south"
+  },
+  {
+    "name": "Back Bay",
+    "alt_name": [],
+    "id": "place-bbsta"
+  },
+  {
+    "name": "Ruggles ",
+    "alt_name": [],
+    "id": "place-rugg"
+  },
+  {
+    "name": "Forest Hills",
+    "alt_name": [],
+    "id": "place-forhl"
+  },
+  {
+    "name": "Hyde Park",
+    "alt_name": ["Cleary Square"],
+    "id": "place-NEC-2203"
+  },
+  {
+    "name": "Route 128",
+    "alt_name": ["128", "University"],
+    "id": "place-NEC-2173"
+  },
+  {
+    "name": "Canton Junction",
+    "alt_name": [],
+    "id": "place-NEC-2139"
+  },
+  {
+    "name": "Canton Center",
+    "alt_name": [],
+    "id": "place-SB-0156"
+  },
+  {
+    "name": "Stoughton",
+    "alt_name": [],
+    "id": "place-SB-0189"
+  },
+  {
+    "name": "Sharon",
+    "alt_name": [],
+    "id": "place-NEC-2108"
+  },
+  {
+    "name": "Mansfield",
+    "alt_name": [],
+    "id": "place-NEC-2040"
+  },
+  {
+    "name": "Attleboro",
+    "alt_name": [],
+    "id": "place-NEC-1969"
+  },
+  {
+    "name": "Pawtucket/Central Falls",
+    "alt_name": ["Pawtucket"],
+    "id": "place-NEC-1891"
+  },
+  {
+    "name": "Providence",
+    "alt_name": [],
+    "id": "place-NEC-1851"
+  },
+  {
+    "name": "TF Green Airport",
+    "alt_name": ["TF Green"],
+    "id": "place-NEC-1768"
+  },
+  {
+    "name": "Wickford Junction",
+    "alt_name": ["Wickford"],
+    "id": "place-NEC-1659"
+  },
+  {
+    "name": "",
+    "alt_name": [],
+    "id": "place-"
+  },
 ]

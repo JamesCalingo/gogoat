@@ -10,7 +10,9 @@ import (
 
 // These are functions used around the other parts of this bot. None of them send messages to Discord, thus why I've collected them here.
 
-var Lines = []string{"Red", "Orange", "Blue", "Green-B", "Green-C", "Green-D", "Green-E", "Mattapan"}
+var SubwayLines = []string{"Red", "Orange", "Blue", "Green", "Green-B", "Green-C", "Green-D", "Green-E", "Mattapan"}
+
+var CommuterLines = []string{"Fairmount", "Fitchburg", "Worcester", "Franklin", "Greenbush", "Haverhill", "Kingston", "Lowell", "Middleborough", "Needham", "Newburyport", "Providence", "Foxboro"}
 
 // Check for an error
 func CheckError(err error) {
@@ -53,7 +55,13 @@ func FindStation(name string) Station {
 	var empty Station
 
 	subway := OpenFile("subway.json")
+	commuter := OpenFile("commuter.json")
 	for _, station := range subway {
+		if strings.EqualFold(name, station.Name) || (VerifyAltNames(name, station.AltName)) {
+			return station
+		}
+	}
+	for _, station := range commuter {
 		if strings.EqualFold(name, station.Name) || (VerifyAltNames(name, station.AltName)) {
 			return station
 		}

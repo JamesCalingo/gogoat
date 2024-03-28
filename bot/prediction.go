@@ -28,7 +28,7 @@ func (s *Station) getPredictions() []models.Prediction {
 	filter := func(predictions models.Predictions) []models.Prediction {
 		var filtered []models.Prediction
 		for _, prediction := range predictions.Predictions {
-			if Contains(Lines, prediction.Relationships.Route.Data.ID) && !prediction.Attributes.DepartureTime.IsZero() {
+			if Contains(SubwayLines, prediction.Relationships.Route.Data.ID) && !prediction.Attributes.DepartureTime.IsZero() {
 				filtered = append(filtered, prediction)
 			}
 		}

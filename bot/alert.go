@@ -43,3 +43,20 @@ func (s *Station) GetCurrentAlerts() string {
 	}
 	return formatted
 }
+
+func GetBusAlerts(line string) string {
+	var alerts models.Alerts
+	url := fmt.Sprintf("https://api-v3.mbta.com/alerts?fields[alert]=header&filter[route]=%s&filter[datetime]=NOW", line)
+
+	res, err := http.Get(url)
+	CheckError(err)
+	defer res.Body.Close()
+	data, _ := io.ReadAll(res.Body)
+	json.Unmarshal(data, &alerts)
+
+	var formatted string
+	for _, alert := range alerts.Alerts {
+		formatted += "ALERT: " + alert.Attributes.Header + "\n"
+	}
+	return formatted
+}
