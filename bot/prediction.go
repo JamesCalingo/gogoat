@@ -42,6 +42,9 @@ func (s *Station) ListNext() string {
 	if s.CheckForTransfer() {
 		return "This is a transfer station. Please specify a line for data."
 	}
+	if s.Line == "" {
+		return "In progress."
+	}
 	predictions := s.getPredictions()
 	var next0 []models.Prediction
 	var next1 []models.Prediction
@@ -99,7 +102,9 @@ func (s *Station) PredictDestination(destination string) string {
 	if s.Line == "Green" {
 		return "Please specify which branch you're looking for."
 	}
-
+	if s.Line == "" {
+		return "In progress."
+	}
 	//This allows the user to use a direction instead of the destination if they so choose
 	acceptedDirections := []string{"east", "west", "north", "south"}
 	if Contains(acceptedDirections, destination) {
@@ -156,6 +161,9 @@ func (s *Station) PredictDestination(destination string) string {
 func (s *Station) predictDirection(direction string) string {
 	if !s.CheckForStation() {
 		return "Station not found. Check it and try again."
+	}
+	if s.Line == "" {
+		return "In progress."
 	}
 	predictions := s.getPredictions()
 	if ((s.Line == "Red" || s.Line == "Orange" || s.Line == "Mattapan") && (strings.EqualFold(direction, "east") || strings.EqualFold(direction, "west"))) || ((s.Line == "Blue" || strings.HasPrefix(s.Line, "Green")) && (strings.EqualFold(direction, "north") || strings.EqualFold(direction, "south"))) {

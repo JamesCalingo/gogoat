@@ -46,6 +46,7 @@ func OpenFile(fileName string) []Station {
 
 // Function to separate commands from messages (and station names from directions)
 func BreakMessage(message string, separator string) (pre string, post string) {
+	message = strings.ToLower(message)
 	pre, post, _ = strings.Cut(message, separator)
 	return
 }
