@@ -10,19 +10,19 @@ import (
 
 // These are functions used around the other parts of this bot. None of them send messages to Discord, thus why I've collected them here.
 
-var SubwayLines = []string{"Red", "Orange", "Blue", "Green", "Green-B", "Green-C", "Green-D", "Green-E", "Mattapan"}
+var subwayLines = []string{"Red", "Orange", "Blue", "Green", "Green-B", "Green-C", "Green-D", "Green-E", "Mattapan"}
 
-var CommuterLines = []string{"Fairmount", "Fitchburg", "Worcester", "Franklin", "Greenbush", "Haverhill", "Kingston", "Lowell", "Middleborough", "Needham", "Newburyport", "Providence", "Foxboro"}
+var commuterLines = []string{"Fairmount", "Fitchburg", "Worcester", "Franklin", "Greenbush", "Haverhill", "Kingston", "Lowell", "Middleborough", "Needham", "Newburyport", "Providence", "Foxboro"}
 
 // Check for an error
-func CheckError(err error) {
+func checkError(err error) {
 	if err != nil {
 		log.Fatal(err)
 	}
 }
 
 // Check if a slice contains a certain element
-func Contains(list []string, match string) bool {
+func contains(list []string, match string) bool {
 	for _, elem := range list {
 		if strings.EqualFold(elem, match) {
 			return true
@@ -32,7 +32,7 @@ func Contains(list []string, match string) bool {
 }
 
 // Opens files - in GogoaT's case, the internal station list
-func OpenFile(fileName string) []Station {
+func openFile(fileName string) []Station {
 	var list []Station
 	file, fileErr := os.Open(fileName)
 	if fileErr != nil {
@@ -45,25 +45,25 @@ func OpenFile(fileName string) []Station {
 }
 
 // Function to separate commands from messages (and station names from directions)
-func BreakMessage(message string, separator string) (pre string, post string) {
+func breakMessage(message string, separator string) (pre string, post string) {
 	message = strings.ToLower(message)
 	pre, post, _ = strings.Cut(message, separator)
 	return
 }
 
 // Gets the station struct from our json list
-func FindStation(name string) Station {
+func findStation(name string) Station {
 	var empty Station
 
-	subway := OpenFile("subway.json")
-	commuter := OpenFile("commuter.json")
+	subway := openFile("subway.json")
+	commuter := openFile("commuter.json")
 	for _, station := range subway {
-		if strings.EqualFold(name, station.Name) || (VerifyAltNames(name, station.AltName)) {
+		if strings.EqualFold(name, station.Name) || (verifyAltName(name, station.AltName)) {
 			return station
 		}
 	}
 	for _, station := range commuter {
-		if strings.EqualFold(name, station.Name) || (VerifyAltNames(name, station.AltName)) {
+		if strings.EqualFold(name, station.Name) || (verifyAltName(name, station.AltName)) {
 			return station
 		}
 	}
@@ -71,7 +71,7 @@ func FindStation(name string) Station {
 }
 
 // Because users may have different "pet names" for stations other than what the bot expects, it's important to check for them
-func VerifyAltNames(name string, alts []string) bool {
+func verifyAltName(name string, alts []string) bool {
 	for _, altName := range alts {
 		if strings.EqualFold(name, altName) {
 			return true

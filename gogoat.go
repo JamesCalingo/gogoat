@@ -2,6 +2,7 @@ package main
 
 import (
 	"gogoat/bot"
+	"log"
 	"os"
 
 	"github.com/joho/godotenv"
@@ -9,7 +10,9 @@ import (
 
 func getValueFromEnv(key string) string {
 	err := godotenv.Load(".env")
-	bot.CheckError(err)
+	if err != nil {
+		log.Fatal(err)
+	}
 	return os.Getenv(key)
 }
 

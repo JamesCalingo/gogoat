@@ -12,10 +12,10 @@ import (
 
 // get schedules for a line
 
-func GetSchedules(line string) string {
+func getSchedules(line string) string {
 	silver := []string{"SL1", "SL2", "SL3", "SL4", "SL5", "SLW"}
 	_, err := strconv.Atoi(line)
-	if err != nil && !Contains(silver, strings.ToUpper(line)) {
+	if err != nil && !contains(silver, strings.ToUpper(line)) {
 		return getTrainSchedules(line)
 	}
 	return getBusSchedules(line)
@@ -35,12 +35,12 @@ func getTrainSchedules(line string) string {
 	if strings.EqualFold(line, "Stoughton") || strings.EqualFold(line, "Providence/Stoughton") {
 		line = "Providence"
 	}
-	if Contains(SubwayLines, line) {
+	if contains(subwayLines, line) {
 		caser := cases.Title(language.AmericanEnglish)
 		name := caser.String(line)
 		return fmt.Sprintf("https://www.mbta.com/schedules/%s/line", name)
 	}
-	if Contains(CommuterLines, line) {
+	if contains(commuterLines, line) {
 		caser := cases.Title(language.AmericanEnglish)
 		name := caser.String(line)
 		return fmt.Sprintf("https://www.mbta.com/schedules/CR-%s/timetable", name)
@@ -70,9 +70,9 @@ func getBusSchedules(line string) string {
 	}
 	url := fmt.Sprintf("https://www.mbta.com/schedules/%s/line", line)
 	res, err := http.Get(url)
-	CheckError(err)
+	checkError(err)
 	if res.StatusCode != 200 {
 		return "This is not a valid bus line."
 	}
-	return fmt.Sprintf("%s\n%s", url, GetBusAlerts(line))
+	return fmt.Sprintf("%s\n%s", url, getBusAlerts(line))
 }
