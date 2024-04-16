@@ -7,21 +7,21 @@ Discord Bot for Public Transportation
 |  |  |
 |-|--|
 | **map** | link to a live map of the MBTA subway system |
-| **info** <station name> | link to a station's web page for prediction info|
+| **info** <station name> | link to a station's web page for prediction info (subway and commuter rail)|
+| **schedule** <line name/number> | link to the MBTA's schedule for that line  (subway, commuter rail, and bus) |
 |**next** <station name> | get a list of the next predicted departures from a station|
-|**next** <station name> **to** <direction> | get the next predicted train from that station in the specified direction. The Red, Mattapan*, and Orange lines use north/south, while the Green and Blue lines use east/west
-(*Technically the Mattapan line is inbound/outbound, but this was easier to start with)|
+|**next** <station name> **to** <direction> | get the next predicted train from that station in the specified direction. The Red, Mattapan*, and Orange lines use north/south, while the Green and Blue lines use east/west (*Technically the Mattapan line is inbound/outbound, but this was easier to start with)|
 |**next** <station name> **to** <destination>` | get the next predicted train from that station to the specified destination|
 
 ## The Story
 
-I've always had an interest in trains,
+I've always had an interest in trains since I was a kid.
 
-One day, when thinking of fun ideas to build, I came up with the idea of a bot based around informing users about
+One day, when thinking of fun ideas to build, I came up with the idea of a bot based around informing users about their transportation info. 
 
-Will the bot be right all of the time? No. This is the T we're talkinb about.
+Will the bot be right all of the time? No. This is the T we're talkin about.
 
-However, I do hope that
+However, I do hope that it can be useful so that you can attempt to keep your sanity while navigating the T.
 
 ### The Name
 
