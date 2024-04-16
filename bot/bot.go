@@ -45,6 +45,7 @@ func newMessage(discord *discordgo.Session, message *discordgo.MessageCreate) {
 		dm, dmErr := discord.UserChannelCreate(message.Author.ID)
 		checkError(dmErr)
 		discord.ChannelMessageSend(dm.ID, "Hello!\nThis is a private message where I can tell you what you need.")
+
 	case strings.EqualFold(message.Content, "map"):
 		discord.ChannelMessageSend(message.ChannelID, "See a live map of the T here: https://mbta.sites.fas.harvard.edu/T/subway-map.html")
 
