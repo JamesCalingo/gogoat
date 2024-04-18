@@ -12,19 +12,21 @@ type Station struct {
 }
 
 // Check that a station exists. If it doesn't, it will return an empty name
-func (s *Station) CheckForStation() bool {
+func (s *Station) checkForStation() bool {
 	return s.Name != ""
 }
 
 // Check if the station is labeled as "Transfer" in stations.json
-func (s *Station) CheckForTransfer() bool {
+func (s *Station) checkForTransfer() bool {
 	return s.Line == "Transfer"
 }
 
 // Link to a station's website on mbta.com
-func (s *Station) LinkToStationPage() string {
+func (s *Station) linkToStationPage() string {
 	if s.Name == "" {
 		return "I couldn't find that station. Check that it's spelled correctly and try again."
 	}
-	return fmt.Sprintf("https://mbta.com/stops/%s", s.ID)
+	website := fmt.Sprintf("https://mbta.com/stops/%s", s.ID)
+	alerts := s.getAlerts()
+	return website + alerts
 }
