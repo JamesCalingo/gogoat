@@ -30,6 +30,13 @@ func Run() {
 // Whenever GogoaT receives a message, this function tells it how it should respond
 func newMessage(discord *discordgo.Session, message *discordgo.MessageCreate) {
 
+	channel, err := discord.State.Channel(message.ChannelID)
+	if err != nil {
+		if channel, err = discord.Channel(message.ChannelID); err != nil {
+			fmt.Println(err)
+		}
+	}
+
 	loader := func() {
 		discord.ChannelMessageSend(message.ChannelID, "*working...*")
 	}
@@ -41,36 +48,49 @@ func newMessage(discord *discordgo.Session, message *discordgo.MessageCreate) {
 
 	station := findStation(name)
 	switch {
-	case strings.EqualFold(message.Content, "start"):
+
+	case channel.Type != discordgo.ChannelTypeDM:
+		discord.ChannelMessageSend(message.ChannelID, "To reduce \"clutter\", GogoaT only works in private messages. Please use the \"!start\" command to start a DM with GogoaT where you can access T information.")
+
+	// "start" - starts a private GogoaT instance
+	case strings.EqualFold(message.Content, "!start"):
 		dm, dmErr := discord.UserChannelCreate(message.Author.ID)
 		checkError(dmErr)
-		discord.ChannelMessageSend(dm.ID, "Hello!\nThis is a private message where I can tell you what you need.")
+		discord.ChannelMessageSend(dm.ID, "Hello!\nI'm GogoaT - your helpful, personal guide to MBTA information!\nTo see how I can help you figure out when your train is, use \"commands\" to show my list of commands.")
 
+	// "commands" - link to doc with commands
+	case strings.EqualFold(message.Content, "commands"):
+		discord.ChannelMessageSend(message.ChannelID, "GogoaT's list of commands can be found here: https://github.com/JamesCalingo/gogoat/blob/main/commands.md")
+
+	// "map" - links to a live map of the subway
 	case strings.EqualFold(message.Content, "map"):
 		discord.ChannelMessageSend(message.ChannelID, "See a live map of the T here: https://mbta.sites.fas.harvard.edu/T/subway-map.html")
 
-	case strings.EqualFold(message.Content, "info"):
-		discord.ChannelMessageSend(message.ChannelID, "Use this command (info) with a station name to get the MBTA website for that station.")
-
+	// "info" - links to a station's web page
 	case strings.HasPrefix(strings.ToLower(message.Content), "info "):
 		loader()
 		discord.ChannelMessageSend(message.ChannelID, station.linkToStationPage())
 
+	// "schedule" - links to a line's schedule
 	case strings.HasPrefix(strings.ToLower(message.Content), "schedule "):
 		loader()
 		discord.ChannelMessageSend(message.ChannelID, getSchedules(name))
 
-	case strings.EqualFold(message.Content, "next"):
-		discord.ChannelMessageSend(message.ChannelID, "Use this command (next) with:\n- a station name to get a list of train predictions from that station\n- a station name, then \"to\", then one of the ends of a line to get the next train from that station to the destination station")
-
+	// "next" with "to" - find the next train from a station to a direction/destination (subway)
 	case strings.HasPrefix(strings.ToLower(message.Content), "next ") && strings.Contains(strings.ToLower(message.Content), " to "):
 		loader()
 		//This breaks somewhat easily if the spaces aren't present...
 		stationName, destination := breakMessage(name, " to ")
 		station = findStation(stationName)
 		discord.ChannelMessageSend(message.ChannelID, station.predictDestination(destination))
+
+	// "next" - find the list of predicted departures from a station (subway)
 	case strings.HasPrefix(strings.ToLower(message.Content), "next "):
 		loader()
 		discord.ChannelMessageSend(message.ChannelID, station.listNext())
+
+	default:
+		discord.ChannelMessageSend(message.ChannelID, "I couldn't understand your request. Try again.")
 	}
+
 }
