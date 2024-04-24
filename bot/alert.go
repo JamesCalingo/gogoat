@@ -9,7 +9,7 @@ import (
 )
 
 // Find all alerts (current and upcoming) for a station. As it turns out, there's a lot of data in the T's alerts that may or may not have importance to the end user, so we're just using the header for now since it tends to contain the most pertinent information.
-func (s *Station) getAlerts() string {
+func (s *Station) getAllAlerts() string {
 	var alerts models.Alerts
 	url := fmt.Sprintf("https://api-v3.mbta.com/alerts?fields[alert]=header&filter[stop]=%s&filter[route]=%s", s.ID, s.Line)
 

@@ -50,17 +50,17 @@ func newMessage(discord *discordgo.Session, message *discordgo.MessageCreate) {
 	switch {
 
 	case channel.Type != discordgo.ChannelTypeDM:
-		discord.ChannelMessageSend(message.ChannelID, "To reduce \"clutter\", GogoaT only works in private messages. Please use the \"!start\" command to start a DM with GogoaT where you can access T information.")
+		discord.ChannelMessageSend(message.ChannelID, "To reduce \"clutter\", GogoaT only works in private messages. Please use the \"!start\" command to start a DM with GogoaT where you can access the information you need.")
 
 	// "start" - starts a private GogoaT instance
 	case strings.EqualFold(message.Content, "!start"):
 		dm, dmErr := discord.UserChannelCreate(message.Author.ID)
 		checkError(dmErr)
-		discord.ChannelMessageSend(dm.ID, "Hello!\nI'm GogoaT - your helpful, personal guide to MBTA information!\nTo see how I can help you figure out when your train is, use \"commands\" to show my list of commands.")
+		discord.ChannelMessageSend(dm.ID, "Hello!\nI'm GogoaT - your helpful, personal guide to MBTA information!\nTo see how I can help you figure out when your train or bus is, use \"commands\" to show my list of commands.")
 
 	// "commands" - link to doc with commands
 	case strings.EqualFold(message.Content, "commands"):
-		discord.ChannelMessageSend(message.ChannelID, "GogoaT's list of commands can be found here: https://github.com/JamesCalingo/gogoat/blob/main/commands.md")
+		discord.ChannelMessageSend(message.ChannelID, "My list of commands can be found here: https://github.com/JamesCalingo/gogoat/blob/main/commands.md")
 
 	// "map" - links to a live map of the subway
 	case strings.EqualFold(message.Content, "map"):
