@@ -4,6 +4,7 @@ import "fmt"
 
 type Station struct {
 	Name         string   `json:"name"`
+	Type         string   `json:"type"`
 	AltName      []string `json:"alt_name"`
 	ID           string   `json:"id"`
 	Line         string   `json:"line"`

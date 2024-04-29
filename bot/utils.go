@@ -55,18 +55,13 @@ func breakMessage(message string, separator string) (pre string, post string) {
 func findStation(name string) Station {
 	var empty Station
 
-	subway := openFile("subway.json")
-	commuter := openFile("commuter.json")
-	for _, station := range subway {
+	stations := openFile("stations.json")
+	for _, station := range stations {
 		if strings.EqualFold(name, station.Name) || (verifyAltName(name, station.AltName)) {
 			return station
 		}
 	}
-	for _, station := range commuter {
-		if strings.EqualFold(name, station.Name) || (verifyAltName(name, station.AltName)) {
-			return station
-		}
-	}
+
 	return empty
 }
 
