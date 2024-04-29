@@ -45,7 +45,7 @@ func (s *Station) listNext() string {
 	if s.checkForTransfer() {
 		return "This is a transfer station. Please specify a line for data."
 	}
-	if s.Line == "" {
+	if s.Type == "commuter" {
 		return "*This feature is still under construction.*"
 	}
 	predictions := s.getPredictions()
@@ -108,7 +108,7 @@ func (s *Station) predictDestination(destination string) string {
 	if s.Line == "Green" {
 		return "Please specify which branch you're looking for."
 	}
-	if s.Line == "" {
+	if s.Type == "commuter" {
 		return "This feature is still under construction."
 	}
 	//This allows the user to use a direction instead of the destination if they so choose
@@ -168,7 +168,7 @@ func (s *Station) predictDirection(direction string) string {
 	if !s.checkForStation() {
 		return "Station not found. Check it and try again."
 	}
-	if s.Line == "" {
+	if s.Type == "commuter" {
 		return "In progress."
 	}
 	predictions := s.getPredictions()

@@ -1,6 +1,7 @@
 [
   {
     "name": "Alewife",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-alfcl",
     "line": "Red",
@@ -9,6 +10,7 @@
   },
   {
     "name": "Davis",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-davis",
     "line": "Red",
@@ -17,6 +19,7 @@
   },
   {
     "name": "Porter",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-portr",
     "line": "Red",
@@ -25,6 +28,7 @@
   },
   {
     "name": "Harvard",
+    "type": "subway",
     "alt_name": ["Harvard Square"],
     "id": "place-harsq",
     "line": "Red",
@@ -33,6 +37,7 @@
   },
   {
     "name": "Central",
+    "type": "subway",
     "alt_name": ["Central Square"],
     "id": "place-cntsq",
     "line": "Red",
@@ -41,6 +46,7 @@
   },
   {
     "name": "Kendall",
+    "type": "subway",
     "alt_name": ["Kendall/MIT", "Kendall Square"],
     "id": "place-knncl",
     "line": "Red",
@@ -49,6 +55,7 @@
   },
   {
     "name": "Charles/MGH",
+    "type": "subway",
     "alt_name": ["Charles", "MGH"],
     "id": "place-chmnl",
     "line": "Red",
@@ -57,6 +64,7 @@
   },
   {
     "name": "Park Street (Red Line)",
+    "type": "subway",
     "alt_name": ["Park Street Red", "Park St Red", "Park Red"],
     "id": "place-pktrm",
     "line": "Red",
@@ -65,6 +73,7 @@
   },
   {
     "name": "Downtown Crossing (Red Line)",
+    "type": "subway",
     "alt_name": ["Downtown Crossing Red", "Downtown Xing Red", "DTX Red"],
     "id": "place-dwnxg",
     "line": "Red",
@@ -73,6 +82,7 @@
   },
   {
     "name": "South Station",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-sstat",
     "line": "Red",
@@ -81,6 +91,7 @@
   },
   {
     "name": "Broadway",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-brdwy",
     "line": "Red",
@@ -89,6 +100,7 @@
   },
   {
     "name": "Andrew",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-andrw",
     "line": "Red",
@@ -97,6 +109,7 @@
   },
   {
     "name": "JFK/UMass",
+    "type": "subway",
     "alt_name": ["JFK"],
     "id": "place-jfk",
     "line": "Red",
@@ -105,6 +118,7 @@
   },
   {
     "name": "Savin Hill",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-shmnl",
     "line": "Red",
@@ -113,6 +127,7 @@
   },
   {
     "name": "Fields Corner",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-fldcr",
     "line": "Red",
@@ -121,6 +136,7 @@
   },
   {
     "name": "Shawmut",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-smmnl",
     "line": "Red",
@@ -129,6 +145,7 @@
   },
   {
     "name": "Ashmont (Red Line)",
+    "type": "subway",
     "alt_name": ["Ashmont Red"],
     "id": "place-asmnl",
     "line": "Red",
@@ -137,6 +154,7 @@
   },
   {
     "name": "North Quincy",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-nqncy",
     "line": "Red",
@@ -145,6 +163,7 @@
   },
   {
     "name": "Wollaston",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-wlsta",
     "line": "Red",
@@ -153,6 +172,7 @@
   },
   {
     "name": "Quincy Center",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-qnctr",
     "line": "Red",
@@ -161,6 +181,7 @@
   },
   {
     "name": "Quincy Adams",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-qamnl",
     "line": "Red",
@@ -169,6 +190,7 @@
   },
   {
     "name": "Braintree",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-brntn",
     "line": "Red",
@@ -177,6 +199,7 @@
   },
   {
     "name": "Ashmont (Mattapan Line)",
+    "type": "subway",
     "alt_name": ["Ashmont Trolley"],
     "id": "place-asmnl",
     "line": "Red",
@@ -185,6 +208,7 @@
   },
   {
     "name": "Cedar Grove",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-cedgr",
     "line": "Mattapan",
@@ -193,6 +217,7 @@
   },
   {
     "name": "Butler",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-butlr",
     "line": "Mattapan",
@@ -201,6 +226,7 @@
   },
   {
     "name": "Milton",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-miltt",
     "line": "Mattapan",
@@ -209,6 +235,7 @@
   },
   {
     "name": "Central Avenue",
+    "type": "subway",
     "alt_name": ["Central Ave", "Central Av"],
     "id": "place-cenav",
     "line": "Mattapan",
@@ -217,6 +244,7 @@
   },
   {
     "name": "Valley Road",
+    "type": "subway",
     "alt_name": ["Valley Rd"],
     "id": "place-valrd",
     "line": "Mattapan",
@@ -225,6 +253,7 @@
   },
   {
     "name": "Capen Street",
+    "type": "subway",
     "alt_name": ["Capen St", "Capen"],
     "id": "place-capst",
     "line": "Mattapan",
@@ -233,6 +262,7 @@
   },
   {
     "name": "Mattapan",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-matt",
     "line": "Mattapan",
@@ -241,6 +271,7 @@
   },
   {
     "name": "Oak Grove",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-ogmnl",
     "line": "Orange",
@@ -249,6 +280,7 @@
   },
   {
     "name": "Malden Center",
+    "type": "subway",
     "alt_name": ["Malden"],
     "id": "place-mlmnl",
     "line": "Orange",
@@ -257,6 +289,7 @@
   },
   {
     "name": "Wellington",
+    "type": "subway",
     "alt_name": ["Welly"],
     "id": "place-welln",
     "line": "Orange",
@@ -265,6 +298,7 @@
   },
   {
     "name": "Assembly",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-astao",
     "line": "Orange",
@@ -273,6 +307,7 @@
   },
   {
     "name": "Sullivan Square",
+    "type": "subway",
     "alt_name": ["Sullivan"],
     "id": "place-sull",
     "line": "Orange",
@@ -281,6 +316,7 @@
   },
   {
     "name": "Community College",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-ccmnl",
     "line": "Orange",
@@ -289,6 +325,7 @@
   },
   {
     "name": "North Station (Orange Line)",
+    "type": "subway",
     "alt_name": ["North Station Orange", "North Orange"],
     "id": "place-north",
     "line": "Orange",
@@ -297,6 +334,7 @@
   },
   {
     "name": "Haymarket (Orange Line)",
+    "type": "subway",
     "alt_name": ["Haymarket Orange"],
     "id": "place-haecl",
     "line": "Orange",
@@ -305,6 +343,7 @@
   },
   {
     "name": "State (Orange Line)",
+    "type": "subway",
     "alt_name": [
       "State Street (Orange Line)",
       "State St (Orange Line",
@@ -319,6 +358,7 @@
   },
   {
     "name": "Downtown Crossing (Orange Line)",
+    "type": "subway",
     "alt_name": ["Downtown Crossing Orange", "Downtown Xing Orange", "DTX Orange"],
     "id": "place-dwnxg",
     "line": "Orange",
@@ -327,6 +367,7 @@
   },
   {
     "name": "Chinatown",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-chncl",
     "line": "Orange",
@@ -335,6 +376,7 @@
   },
   {
     "name": "Tufts Medical Center",
+    "type": "subway",
     "alt_name": ["Tufts Medical", "Tufts"],
     "id": "place-tumnl",
     "line": "Orange",
@@ -343,6 +385,7 @@
   },
   {
     "name": "Back Bay",
+    "type": "subway",
     "alt_name": ["Back Bay/South End", "Back Bay Station"],
     "id": "place-bbsta",
     "line": "Orange",
@@ -351,6 +394,7 @@
   },
   {
     "name": "Massachusetts Avenue",
+    "type": "subway",
     "alt_name": ["Massachusetts Ave", "Mass Ave"],
     "id": "place-masta",
     "line": "Orange",
@@ -359,6 +403,7 @@
   },
   {
     "name": "Ruggles",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-rugg",
     "line": "Orange",
@@ -367,6 +412,7 @@
   },
   {
     "name": "Roxbury Crossing",
+    "type": "subway",
     "alt_name": ["Roxbury Xing", "Roxbury"],
     "id": "place-rcmnl",
     "line": "Orange",
@@ -375,6 +421,7 @@
   },
   {
     "name": "Jackson Square",
+    "type": "subway",
     "alt_name": ["Jackson Sq", "Jackson"],
     "id": "place-jaksn",
     "line": "Orange",
@@ -383,6 +430,7 @@
   },
   {
     "name": "Stony Brook",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-sbmnl",
     "line": "Orange",
@@ -391,6 +439,7 @@
   },
   {
     "name": "Green Street",
+    "type": "subway",
     "alt_name": ["Green St"],
     "id": "place-grnst",
     "line": "Orange",
@@ -399,6 +448,7 @@
   },
   {
     "name": "Forest Hills",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-forhl",
     "line": "Orange",
@@ -407,6 +457,7 @@
   },
   {
     "name": "Wonderland",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-wondl",
     "line": "Blue",
@@ -415,6 +466,7 @@
   },
   {
     "name": "Revere Beach",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-rbmnl",
     "line": "Blue",
@@ -423,6 +475,7 @@
   },
   {
     "name": "Beachmont",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-bmmnl",
     "line": "Blue",
@@ -431,6 +484,7 @@
   },
   {
     "name": "Suffolk Downs",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-sdmnl",
     "line": "Blue",
@@ -439,6 +493,7 @@
   },
   {
     "name": "Orient Heights",
+    "type": "subway",
     "alt_name": ["Orient"],
     "id": "place-orhte",
     "line": "Blue",
@@ -447,6 +502,7 @@
   },
   {
     "name": "Wood Island",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-wimnl",
     "line": "Blue",
@@ -455,6 +511,7 @@
   },
   {
     "name": "Airport",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-aport",
     "line": "Blue",
@@ -463,6 +520,7 @@
   },
   {
     "name": "Maverick",
+    "type": "subway",
     "alt_name": ["Mav"],
     "id": "place-mvbcl",
     "line": "Blue",
@@ -471,6 +529,7 @@
   },
   {
     "name": "Aquarium",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-aqucl",
     "line": "Blue",
@@ -479,6 +538,7 @@
   },
   {
     "name": "State (Blue Line)",
+    "type": "subway",
     "alt_name": [
       "State Street (Blue Line)",
       "State St (Blue Line)",
@@ -493,6 +553,7 @@
   },
   {
     "name": "Government Center (Blue Line)",
+    "type": "subway",
     "alt_name": ["Government Center Blue", "Gov Center Blue", "GC Blue"],
     "id": "place-gover",
     "line": "Blue",
@@ -501,6 +562,7 @@
   },
   {
     "name": "Bowdoin",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-bomnl",
     "line": "Blue",
@@ -509,6 +571,7 @@
   },
   {
     "name": "Medford/Tufts",
+    "type": "subway",
     "alt_name": ["Medford"],
     "id": "place-mdftf",
     "line": "Green-E",
@@ -517,6 +580,7 @@
   },
   {
     "name": "Ball Square",
+    "type": "subway",
     "alt_name": ["Ball Sq"],
     "id": "place-balsq",
     "line": "Green-E",
@@ -525,6 +589,7 @@
   },
   {
     "name": "Magoun Square",
+    "type": "subway",
     "alt_name": ["Magoun Sq", "Magoun"],
     "id": "place-mgngl",
     "line": "Green-E",
@@ -533,6 +598,7 @@
   },
   {
     "name": "Gilman Square",
+    "type": "subway",
     "alt_name": ["Gilman Sq", "Gilman"],
     "id": "place-gilmn",
     "line": "Green-E",
@@ -541,6 +607,7 @@
   },
   {
     "name": "East Somerville",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-esomr",
     "line": "Green-E",
@@ -549,6 +616,7 @@
   },
   {
     "name": "Lechmere (E)",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-lech",
     "line": "Green-E",
@@ -557,6 +625,7 @@
   },
   {
     "name": "Science Park/West End (E)",
+    "type": "subway",
     "alt_name": ["Science Park E"],
     "id": "place-spmnl",
     "line": "Green-E",
@@ -565,6 +634,7 @@
   },
   {
     "name": "North Station (E)",
+    "type": "subway",
     "alt_name": ["North Station E", "North E"],
     "id": "place-north",
     "line": "Green-E",
@@ -573,6 +643,7 @@
   },
   {
     "name": "Haymarket (E)",
+    "type": "subway",
     "alt_name": ["Haymarket E"],
     "id": "place-haecl",
     "line": "Green-E",
@@ -581,6 +652,7 @@
   },
   {
     "name": "Government Center (E)",
+    "type": "subway",
     "alt_name": ["Government Center E","Gov Center E", "GC E"],
     "id": "place-gover",
     "line": "Green-E",
@@ -589,6 +661,7 @@
   },
   {
     "name": "Park Street (E)",
+    "type": "subway",
     "alt_name": ["Park Street E","Park St E", "Park E"],
     "id": "place-pktrm",
     "line": "Green-E",
@@ -597,6 +670,7 @@
   },
   {
     "name": "Boylston (E)",
+    "type": "subway",
     "alt_name": ["Boylston E"],
     "id": "place-boyls",
     "line": "Green-E",
@@ -605,6 +679,7 @@
   },
   {
     "name": "Arlington (E)",
+    "type": "subway",
     "alt_name": ["Arlington E"],
     "id": "place-armnl",
     "line": "Green-E",
@@ -613,6 +688,7 @@
   },
   {
     "name": "Copley (E)",
+    "type": "subway",
     "alt_name": ["Copley E"],
     "id": "place-coecl",
     "line": "Green-E",
@@ -621,6 +697,7 @@
   },
   {
     "name": "Prudential",
+    "type": "subway",
     "alt_name": ["Pru"],
     "id": "place-prmnl",
     "line": "Green-E",
@@ -629,6 +706,7 @@
   },
   {
     "name": "Symphony",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-symcl",
     "line": "Green-E",
@@ -637,6 +715,7 @@
   },
   {
     "name": "Northeastern",
+    "type": "subway",
     "alt_name": ["NU"],
     "id": "place-nuniv",
     "line": "Green-E",
@@ -645,6 +724,7 @@
   },
   {
     "name": "Museum of Fine Arts",
+    "type": "subway",
     "alt_name": ["MFA"],
     "id": "place-mfa",
     "line": "Green-E",
@@ -653,6 +733,7 @@
   },
   {
     "name": "Longwood Medical Area",
+    "type": "subway",
     "alt_name": ["Longwood Medical"],
     "id": "place-lngmd",
     "line": "Green-E",
@@ -661,6 +742,7 @@
   },
   {
     "name": "Brigham Circle",
+    "type": "subway",
     "alt_name": ["Brigham"],
     "id": "place-brmnl",
     "line": "Green-E",
@@ -669,6 +751,7 @@
   },
   {
     "name": "Fenwood Road",
+    "type": "subway",
     "alt_name": ["Fenwood Rd", "Fenwood"],
     "id": "place-fenwd",
     "line": "Green-E",
@@ -677,6 +760,7 @@
   },
   {
     "name": "Mission Park",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-mispk",
     "line": "Green-E",
@@ -685,6 +769,7 @@
   },
   {
     "name": "Riverway",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-rvrwy",
     "line": "Green-E",
@@ -693,6 +778,7 @@
   },
   {
     "name": "Back of the Hill",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-bckhl",
     "line": "Green-E",
@@ -701,6 +787,7 @@
   },
   {
     "name": "Heath Street",
+    "type": "subway",
     "alt_name": [
       "Heath St",
       "Heath",
@@ -714,6 +801,7 @@
   },
   {
     "name": "Union Square",
+    "type": "subway",
     "alt_name": ["Union Sq", "Union"],
     "id": "place-unsqu",
     "line": "Green-D",
@@ -722,6 +810,7 @@
   },
   {
     "name": "Lechmere (D)",
+    "type": "subway",
     "alt_name": ["Lechmere D"],
     "id": "place-lech",
     "line": "Green-D",
@@ -730,22 +819,25 @@
   },
   {
     "name": "Science Park/West End (D)",
+    "type": "subway",
     "alt_name": ["Science Park D"],
     "id": "place-spmnl",
     "line": "Green-D",
     "destination_0": "Riverside",
-    "destination_1": "Union Square/Medford"
+    "destination_1": "Union Square"
   },
   {
     "name": "North Station (D)",
+    "type": "subway",
     "alt_name": ["North Station D", "North Green"],
     "id": "place-north",
     "line": "Green-D",
     "destination_0": "Riverside",
-    "destination_1": "Union Square/Medford"
+    "destination_1": "Union Square"
   },
   {
     "name": "Haymarket (D)",
+    "type": "subway",
     "alt_name": ["Haymarket D"],
     "id": "place-haecl",
     "line": "Green-D",
@@ -754,6 +846,7 @@
   },
   {
     "name": "Government Center (D)",
+    "type": "subway",
     "alt_name": ["Government Center D", "Gov Center D", "GC D"],
     "id": "place-gover",
     "line": "Green-D",
@@ -762,6 +855,7 @@
   },
   {
     "name": "Park Street (D)",
+    "type": "subway",
     "alt_name": ["Park Street D", "Park St D", "Park D"],
     "id": "place-pktrm",
     "line": "Green-D",
@@ -770,6 +864,7 @@
   },
   {
     "name": "Boylston (D)",
+    "type": "subway",
     "alt_name": ["Boylston D"],
     "id": "place-boyls",
     "line": "Green-D",
@@ -778,6 +873,7 @@
   },
   {
     "name": "Arlington (D)",
+    "type": "subway",
     "alt_name": ["Arlington D"],
     "id": "place-armnl",
     "line": "Green-D",
@@ -786,6 +882,7 @@
   },
   {
     "name": "Copley (D)",
+    "type": "subway",
     "alt_name": ["Copley D"],
     "id": "place-coecl",
     "line": "Green-D",
@@ -794,6 +891,7 @@
   },
   {
     "name": "Hynes Convention Center (D)",
+    "type": "subway",
     "alt_name": ["Hynes Convention Center D", "Hynes D"],
     "id": "place-hymnl",
     "line": "Green-D",
@@ -802,6 +900,7 @@
   },
   {
     "name": "Kenmore (D)",
+    "type": "subway",
     "alt_name": ["Kenmore D"],
     "id": "place-kencl",
     "line": "Green-D",
@@ -810,6 +909,7 @@
   },
   {
     "name": "Fenway",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-fenwy",
     "line": "Green-D",
@@ -818,6 +918,7 @@
   },
   {
     "name": "Longwood",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-longw",
     "line": "Green-D",
@@ -826,6 +927,7 @@
   },
   {
     "name": "Brookline Village",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-bvmnl",
     "line": "Green-D",
@@ -834,6 +936,7 @@
   },
   {
     "name": "Brookline Hills",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-brkhl",
     "line": "Green-D",
@@ -842,6 +945,7 @@
   },
   {
     "name": "Beaconfield",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-bcnfd",
     "line": "Green-D",
@@ -850,6 +954,7 @@
   },
   {
     "name": "Reservoir",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-rsmnl",
     "line": "Green-D",
@@ -858,6 +963,7 @@
   },
   {
     "name": "Chestnut Hill",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-chhil",
     "line": "Green-D",
@@ -866,6 +972,7 @@
   },
   {
     "name": "Newton Centre",
+    "type": "subway",
     "alt_name": ["Newton Center"],
     "id": "place-newto",
     "line": "Green-D",
@@ -874,6 +981,7 @@
   },
   {
     "name": "Newton Highlands",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-newtn",
     "line": "Green-D",
@@ -882,6 +990,7 @@
   },
   {
     "name": "Eliot",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-eliot",
     "line": "Green-D",
@@ -890,6 +999,7 @@
   },
   {
     "name": "Waban",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-waban",
     "line": "Green-D",
@@ -898,6 +1008,7 @@
   },
   {
     "name": "Woodland",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-woodl",
     "line": "Green-D",
@@ -906,6 +1017,7 @@
   },
   {
     "name": "Riverside",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-river",
     "line": "Green-D",
@@ -914,6 +1026,7 @@
   },
   {
     "name": "Government Center (C)",
+    "type": "subway",
     "alt_name": ["Government Center C", "Gov Center C", "GC C"],
     "id": "place-gover",
     "line": "Green-C",
@@ -922,6 +1035,7 @@
   },
   {
     "name": "Park Street (C)",
+    "type": "subway",
     "alt_name": ["Park Street C", "Park St C", "Park C"],
     "id": "place-pktrm",
     "line": "Green-C",
@@ -930,6 +1044,7 @@
   },
   {
     "name": "Boylston (C)",
+    "type": "subway",
     "alt_name": ["Boylston C"],
     "id": "place-boyls",
     "line": "Green-C",
@@ -938,6 +1053,7 @@
   },
   {
     "name": "Arlington (C)",
+    "type": "subway",
     "alt_name": ["Arlington C"],
     "id": "place-armnl",
     "line": "Green-C",
@@ -946,6 +1062,7 @@
   },
   {
     "name": "Copley (C)",
+    "type": "subway",
     "alt_name": ["Copley C"],
     "id": "place-coecl",
     "line": "Green-C",
@@ -954,6 +1071,7 @@
   },
   {
     "name": "Hynes Convention Center (C)",
+    "type": "subway",
     "alt_name": ["Hynes Convention Center C", "Hynes C"],
     "id": "place-hymnl",
     "line": "Green-C",
@@ -962,6 +1080,7 @@
   },
   {
     "name": "Kenmore (C)",
+    "type": "subway",
     "alt_name": ["Kenmore C"],
     "id": "place-kencl",
     "line": "Green-C",
@@ -970,6 +1089,7 @@
   },
   {
     "name": "Saint Mary's Street",
+    "type": "subway",
     "alt_name": [
       "Saint Marys Street",
       "Saint Mary's St",
@@ -996,6 +1116,7 @@
   },
   {
     "name": "Hawes Street",
+    "type": "subway",
     "alt_name": ["Hawes St", "Hawes"],
     "id": "place-hwsst",
     "line": "Green-C",
@@ -1004,6 +1125,7 @@
   },
   {
     "name": "Kent Street",
+    "type": "subway",
     "alt_name": ["Kent St", "Kent"],
     "id": "place-kntst",
     "line": "Green-C",
@@ -1012,6 +1134,7 @@
   },
   {
     "name": "Saint Paul Street",
+    "type": "subway",
     "alt_name": [
       "Saint Paul St",
       "Saint Paul",
@@ -1029,6 +1152,7 @@
   },
   {
     "name": "Coolidge Corner",
+    "type": "subway",
     "alt_name": ["Coolidge"],
     "id": "place-cool",
     "line": "Green-C",
@@ -1037,6 +1161,7 @@
   },
   {
     "name": "Summit Avenue",
+    "type": "subway",
     "alt_name": [
       "Summit Ave",
       "Summit Av",
@@ -1052,6 +1177,7 @@
   },
   {
     "name": "Brandon Hall",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-bndhl",
     "line": "Green-C",
@@ -1060,6 +1186,7 @@
   },
   {
     "name": "Fairbanks Street",
+    "type": "subway",
     "alt_name": ["Fairbanks St", "Fairbanks"],
     "id": "place-fbkst",
     "line": "Green-C",
@@ -1068,6 +1195,7 @@
   },
   {
     "name": "Washington Square",
+    "type": "subway",
     "alt_name": "Washington Sq",
     "id": "place-bcnwa",
     "line": "Green-C",
@@ -1076,6 +1204,7 @@
   },
   {
     "name": "Tappan Street",
+    "type": "subway",
     "alt_name": ["Tappan St", "Tappan"],
     "id": "place-tapst",
     "line": "Green-C",
@@ -1084,6 +1213,7 @@
   },
   {
     "name": "Dean Road",
+    "type": "subway",
     "alt_name": ["Dean Rd"],
     "id": "place-denrd",
     "line": "Green-C",
@@ -1092,6 +1222,7 @@
   },
   {
     "name": "Englewood Avenue",
+    "type": "subway",
     "alt_name": ["Englewood Ave", "Englewood Av", "Englewood"],
     "id": "place-engav",
     "line": "Green-C",
@@ -1100,6 +1231,7 @@
   },
   {
     "name": "Cleveland Circle",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-clmnl",
     "line": "Green-C",
@@ -1108,6 +1240,7 @@
   },
   {
     "name": "Government Center (B)",
+    "type": "subway",
     "alt_name": ["Government Center B","Gov Center B", "GC B"],
     "id": "place-gover",
     "line": "Green-B",
@@ -1116,6 +1249,7 @@
   },
   {
     "name": "Park Street (B)",
+    "type": "subway",
     "alt_name": ["Park Street B", "Park St B", "Park B"],
     "id": "place-pktrm",
     "line": "Green-B",
@@ -1124,6 +1258,7 @@
   },
   {
     "name": "Boylston (B)",
+    "type": "subway",
     "alt_name": ["Boylston B"],
     "id": "place-boyls",
     "line": "Green-B",
@@ -1132,6 +1267,7 @@
   },
   {
     "name": "Arlington (B)",
+    "type": "subway",
     "alt_name": ["Arlington B"],
     "id": "place-armnl",
     "line": "Green-B",
@@ -1140,6 +1276,7 @@
   },
   {
     "name": "Copley (B)",
+    "type": "subway",
     "alt_name": ["Copley B"],
     "id": "place-coecl",
     "line": "Green-B",
@@ -1148,6 +1285,7 @@
   },
   {
     "name": "Hynes Convention Center (B)",
+    "type": "subway",
     "alt_name": ["Hynes Convention Center B", "Hynes B"],
     "id": "place-hymnl",
     "line": "Green-B",
@@ -1156,6 +1294,7 @@
   },
   {
     "name": "Kenmore (B)",
+    "type": "subway",
     "alt_name": ["Kenmore B"],
     "id": "place-kencl",
     "line": "Green-B",
@@ -1164,6 +1303,7 @@
   },
   {
     "name": "Blandford Street",
+    "type": "subway",
     "alt_name": ["Blandford St", "Blandford"],
     "id": "place-bland",
     "line": "Green-B",
@@ -1172,6 +1312,7 @@
   },
   {
     "name": "Boston University East",
+    "type": "subway",
     "alt_name": ["BU East"],
     "id": "place-buest",
     "line": "Green-B",
@@ -1180,6 +1321,7 @@
   },
   {
     "name": "Boston University Central",
+    "type": "subway",
     "alt_name": ["BU Central"],
     "id": "place-bucen",
     "line": "Green-B",
@@ -1188,6 +1330,7 @@
   },
   {
     "name": "Amory Street",
+    "type": "subway",
     "alt_name": ["Amory St", "Amory", "Boston University West", "BU West"],
     "id": "place-amory",
     "line": "Green-B",
@@ -1196,6 +1339,7 @@
   },
   {
     "name": "Babcock Street",
+    "type": "subway",
     "alt_name": ["Babcock St", "Babcock", "Pleasant Street", "Pleasant St"],
     "id": "place-babck",
     "line": "Green-B",
@@ -1204,6 +1348,7 @@
   },
   {
     "name": "Packard's Corner",
+    "type": "subway",
     "alt_name": [
       "Packard's",
       "Packards",
@@ -1218,6 +1363,7 @@
   },
   {
     "name": "Harvard Avenue",
+    "type": "subway",
     "alt_name": ["Harvard Ave", "Harvard Av"],
     "id": "place-harvd",
     "line": "Green-B",
@@ -1226,6 +1372,7 @@
   },
   {
     "name": "Griggs Street",
+    "type": "subway",
     "alt_name": ["Griggs St", "Griggs", "Griggs/Long"],
     "id": "place-grigg",
     "line": "Green-B",
@@ -1234,6 +1381,7 @@
   },
   {
     "name": "Allston Street",
+    "type": "subway",
     "alt_name": ["Allston St"],
     "id": "place-alsgr",
     "line": "Green-B",
@@ -1242,6 +1390,7 @@
   },
   {
     "name": "Warren Street",
+    "type": "subway",
     "alt_name": ["Warren St", "Warren"],
     "id": "place-wrnst",
     "line": "Green-B",
@@ -1250,6 +1399,7 @@
   },
   {
     "name": "Washington Street",
+    "type": "subway",
     "alt_name": ["Washington St"],
     "id": "place-wascm",
     "line": "Green-B",
@@ -1258,6 +1408,7 @@
   },
   {
     "name": "Sutherland Road",
+    "type": "subway",
     "alt_name": ["Sutherland Rd", "Sutherland"],
     "id": "place-sthld",
     "line": "Green-B",
@@ -1266,6 +1417,7 @@
   },
   {
     "name": "Chiswick Road",
+    "type": "subway",
     "alt_name": ["Chiswick Rd", "Chiswick"],
     "id": "place-chswk",
     "line": "Green-B",
@@ -1274,6 +1426,7 @@
   },
   {
     "name": "Chestnut Hill Avenue",
+    "type": "subway",
     "alt_name": ["Chestnut Hill Ave", "Chestnut Hill Av"],
     "id": "place-chill",
     "line": "Green-B",
@@ -1282,6 +1435,7 @@
   },
   {
     "name": "South Street",
+    "type": "subway",
     "alt_name": ["South St"],
     "id": "place-sougr",
     "line": "Green-B",
@@ -1290,6 +1444,7 @@
   },
   {
     "name": "Boston College",
+    "type": "subway",
     "alt_name": ["BC", "Lake Street", "Lake St", "Lake"],
     "id": "place-lake",
     "line": "Green-B",
@@ -1298,6 +1453,7 @@
   },
   {
     "name": "Park Street",
+    "type": "subway",
     "alt_name": ["Park St", "Park"],
     "id": "place-pktrm",
     "line": "Transfer",
@@ -1306,6 +1462,7 @@
   },
   {
     "name": "Downtown Crossing",
+    "type": "subway",
     "alt_name": ["Downtown Xing", "DTX"],
     "id": "place-dwnxg",
     "line": "Transfer",
@@ -1314,6 +1471,7 @@
   },
   {
     "name": "State",
+    "type": "subway",
     "alt_name": ["State Street", "State St"],
     "id": "place-state",
     "line": "Transfer",
@@ -1322,6 +1480,7 @@
   },
   {
     "name": "North Station",
+    "type": "subway",
     "alt_name": ["North"],
     "id": "place-north",
     "line": "Transfer",
@@ -1330,6 +1489,7 @@
   },
   {
     "name": "Haymarket",
+    "type": "subway",
     "alt_name": [],
     "id": "place-haecl",
     "line": "Transfer",
@@ -1338,6 +1498,7 @@
   },
   {
     "name": "Government Center",
+    "type": "subway",
     "alt_name": ["Gov Center", "GC"],
     "id": "place-gover",
     "line": "Transfer",
@@ -1346,6 +1507,7 @@
   },
   {
     "name": "Ashmont",
+    "type": "subway",
     "alt_name": [],
     "id": "place-asmnl",
     "line": "Transfer",
@@ -1354,6 +1516,7 @@
   },
   {
     "name": "Lechmere",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-lech",
     "line": "Green",
@@ -1362,6 +1525,7 @@
   },
   {
     "name": "Science Park/West End",
+    "type": "subway",
     "alt_name": ["Science Park"],
     "id": "place-spmnl",
     "line": "Green",
@@ -1370,6 +1534,7 @@
   },
   {
     "name": "North Station (Green Line)",
+    "type": "subway",
     "alt_name": ["North Station Green", "North Green"],
     "id": "place-north",
     "line": "Green",
@@ -1378,6 +1543,7 @@
   },
   {
     "name": "Haymarket (Green Line)",
+    "type": "subway",
     "alt_name": ["Haymarket Green"],
     "id": "place-haecl",
     "line": "Green",
@@ -1386,6 +1552,7 @@
   },
   {
     "name": "Government Center (Green Line)",
+    "type": "subway",
     "alt_name": ["Government Center Green", "Gov Center Green", "GC Green"],
     "id": "place-gover",
     "line": "Green",
@@ -1394,6 +1561,7 @@
   },
   {
     "name": "Park Street (Green Line)",
+    "type": "subway",
     "alt_name": ["Park Street Green", "Park St Green", "Park Green"],
     "id": "place-pktrm",
     "line": "Green",
@@ -1402,6 +1570,7 @@
   },
   {
     "name": "Boylston",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-boyls",
     "line": "Green",
@@ -1410,6 +1579,7 @@
   },
   {
     "name": "Arlington",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-armnl",
     "line": "Green",
@@ -1418,10 +1588,821 @@
   },
   {
     "name": "Copley",
+    "type": "subway",
     "alt_name": [""],
     "id": "place-coecl",
     "line": "Green",
     "destination_0": "Boston College/Cleveland Circle/Riverside/Heath Street",
     "destination_1": "Government Center/Union Square/Medford"
+  },
+  {
+    "name": "South Station",
+    "type": "commuter",
+    "alt_name": ["Boston"],
+    "id": "place-south"
+  },
+  {
+    "name": "Back Bay",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-bbsta"
+  },
+  {
+    "name": "Ruggles",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-rugg"
+  },
+  {
+    "name": "Forest Hills",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-forhl"
+  },
+  {
+    "name": "Hyde Park",
+    "type": "commuter",
+    "alt_name": ["Cleary Square"],
+    "id": "place-NEC-2203"
+  },
+  {
+    "name": "Route 128",
+    "type": "commuter",
+    "alt_name": ["128", "University"],
+    "id": "place-NEC-2173"
+  },
+  {
+    "name": "Canton Junction",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-NEC-2139"
+  },
+  {
+    "name": "Canton Center",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-SB-0156"
+  },
+  {
+    "name": "Stoughton",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-SB-0189"
+  },
+  {
+    "name": "Sharon",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-NEC-2108"
+  },
+  {
+    "name": "Mansfield",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-NEC-2040"
+  },
+  {
+    "name": "Attleboro",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-NEC-1969"
+  },
+  {
+    "name": "Pawtucket/Central Falls",
+    "type": "commuter",
+    "alt_name": ["Pawtucket"],
+    "id": "place-NEC-1891"
+  },
+  {
+    "name": "Providence",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-NEC-1851"
+  },
+  {
+    "name": "TF Green Airport",
+    "type": "commuter",
+    "alt_name": ["TF Green"],
+    "id": "place-NEC-1768"
+  },
+  {
+    "name": "Wickford Junction",
+    "type": "commuter",
+    "alt_name": ["Wickford"],
+    "id": "place-NEC-1659"
+  },
+  {
+    "name": "Readville",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-DB-0095"
+  },
+  {
+    "name": "Endicott",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-FB-0109"
+  },
+  {
+    "name": "Dedham Corporate Center",
+    "type": "commuter",
+    "alt_name": ["Dedham Corp"],
+    "id": "place-FB-0118"
+  },
+  {
+    "name": "Islington",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-FB-0125"
+  },
+  {
+    "name": "Norwood Depot",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-FB-0143"
+  },
+  {
+    "name": "Norwood Central",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-FB-0148"
+  },
+  {
+    "name": "Windsor Gardens",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-FB-0166"
+  },
+  {
+    "name": "Walpole",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-FB-0191"
+  },
+  {
+    "name": "Foxboro",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-FS-0049"
+  },
+  {
+    "name": "Norfolk",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-FB-0230"
+  },
+  {
+    "name": "Franklin",
+    "type": "commuter",
+    "alt_name": ["Franklin/Dean College"],
+    "id": "place-FB-0275"
+  },
+  {
+    "name": "Forge Park/495",
+    "type": "commuter",
+    "alt_name": ["Forge Park"],
+    "id": "place-FB-0303"
+  },
+  {
+    "name": "Roslindale Village",
+    "type": "commuter",
+    "alt_name": ["Roslindale", "Rozzie"],
+    "id": "place-NB-0064"
+  },
+  {
+    "name": "Bellevue",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-NB-0072"
+  },
+  {
+    "name": "Highland",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-NB-0076"
+  },
+  {
+    "name": "West Roxbury",
+    "type": "commuter",
+    "alt_name": ["West Rox"],
+    "id": "place-NB-0080"
+  },
+  {
+    "name": "Hersey",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-NB-0109"
+  },
+  {
+    "name": "Needham Junction",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-NB-0120"
+  },
+  {
+    "name": "Needham Center",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-NB-0127"
+  },
+  {
+    "name": "Needham Heights",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-NB-0137"
+  },
+  {
+    "name": "Lansdowne",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WML-0025"
+  },
+  {
+    "name": "Boston Landing",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WML-0035"
+  },
+  {
+    "name": "Newtonville",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WML-0081"
+  },
+  {
+    "name": "West Newton",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WML-0091"
+  },
+  {
+    "name": "Auburndale",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WML-0102"
+  },
+  {
+    "name": "Wellesley Farms",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WML-0125"
+  },
+  {
+    "name": "Wellesley Hills",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WML-0135"
+  },
+  {
+    "name": "Wellesley Square",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WML-0147"
+  },
+  {
+    "name": "Natick Center",
+    "type": "commuter",
+    "alt_name": ["Natick"],
+    "id": "place-WML-0177"
+  },
+  {
+    "name": "West Natick",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WML-0199"
+  },
+  {
+    "name": "Framingham",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WML-0214"
+  },
+  {
+    "name": "Ashland",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WML-0252"
+  },
+  {
+    "name": "Southborough",
+    "type": "commuter",
+    "alt_name": ["Southboro"],
+    "id": "place-WML-0274"
+  },
+  {
+    "name": "Westborough",
+    "type": "commuter",
+    "alt_name": ["Westboro"],
+    "id": "place-WML-0340"
+  },
+  {
+    "name": "Grafton",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WML-0364"
+  },
+  {
+    "name": "Worcester",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WML-0442"
+  },
+  {
+    "name": "Newmarket",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-DB-2265"
+  },
+  {
+    "name": "Uphams Corner",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-DB-2258"
+  },
+  {
+    "name": "Four Corners/Geneva",
+    "type": "commuter",
+    "alt_name": ["Four Corners"],
+    "id": "place-DB-2249"
+  },
+  {
+    "name": "Talbot Avenue",
+    "type": "commuter",
+    "alt_name": ["Talbot Ave", "Talbot"],
+    "id": "place-DB-2240"
+  },
+  {
+    "name": "Morton Street",
+    "type": "commuter",
+    "alt_name": ["Morton St", "Morton"],
+    "id": "place-DB-2230"
+  },
+  {
+    "name": "Blue Hill Avenue",
+    "type": "commuter",
+    "alt_name": ["Blue Hill Ave"],
+    "id": "place-DB-2222"
+  },
+  {
+    "name": "Fairmount",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-DB-2205"
+  },
+  {
+    "name": "JFK/UMass",
+    "type": "commuter",
+    "alt_name": ["JFK"],
+    "id": "place-jfk"
+  },
+  {
+    "name": "Quincy Center",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-qnctr"
+  },
+  {
+    "name": "Braintree",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-brntn"
+  },
+  {
+    "name": "Weymouth Landing/East Braintree",
+    "type": "commuter",
+    "alt_name": ["Weymouth Landing"],
+    "id": "place-GRB-0118"
+  },
+  {
+    "name": "East Weymouth",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-GRB-0146"
+  },
+  {
+    "name": "West Hingham",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-GRB-0162"
+  },
+  {
+    "name": "Nantasket Junction",
+    "type": "commuter",
+    "alt_name": ["Nantasket"],
+    "id": "place-GRB-0183"
+  },
+  {
+    "name": "Cohasset",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-GRB-0199"
+  },
+  {
+    "name": "North Scituate",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-GRB-0233"
+  },
+  {
+    "name": "Greenbush",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-GRB-0276"
+  },
+  {
+    "name": "South Weymouth",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-PB-0158"
+  },
+  {
+    "name": "Abington",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-PB-0194"
+  },
+  {
+    "name": "Whitman",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-PB-0212"
+  },
+  {
+    "name": "Hanson",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-PB-0245"
+  },
+  {
+    "name": "Halifax",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-PB-0281"
+  },
+  {
+    "name": "Kingston",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-KB-0351"
+  },
+  {
+    "name": "Holbrook/Randolph",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-MM-0150"
+  },
+  {
+    "name": "Montello",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-MM-0186"
+  },
+  {
+    "name": "Brockton",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-MM-0200"
+  },
+  {
+    "name": "Campello",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-MM-0219"
+  },
+  {
+    "name": "Bridgewater",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-MM-0277"
+  },
+  {
+    "name": "Middleborough/Lakeville",
+    "type": "commuter",
+    "alt_name": ["Middleborough", "Middleboro"],
+    "id": "place-MM-0356"
+  },
+  {
+    "name": "North Station",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-north"
+  },
+  {
+    "name": "Chelsea",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-chels"
+  },
+  {
+    "name": "River Works",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-ER-0099"
+  },
+  {
+    "name": "Lynn",
+    "type": "commuter",
+    "alt_name": ["Lynn Interim"],
+    "id": "place-ER-0117"
+  },
+  {
+    "name": "Swampscott",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-ER-0128"
+  },
+  {
+    "name": "Salem",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-ER-0168"
+  },
+  {
+    "name": "Beverly",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-ER-0183"
+  },
+  {
+    "name": "North Beverly",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-ER-0208"
+  },
+  {
+    "name": "Hamilton/Wenham",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-ER-0227"
+  },
+  {
+    "name": "Ipswich",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-ER-0276"
+  },
+  {
+    "name": "Rowley",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-ER-0312"
+  },
+  {
+    "name": "Newburyport",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-ER-0362"
+  },
+  {
+    "name": "Montserrat",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-GB-0198"
+  },
+  {
+    "name": "Beverly Farms",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-GB-0229"
+  },
+  {
+    "name": "Manchester",
+    "type": "commuter",
+    "alt_name": ["Manchester-by-the-Sea"],
+    "id": "place-GB-0254"
+  },
+  {
+    "name": "West Gloucester",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-GB-0296"
+  },
+  {
+    "name": "Gloucester",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-GB-0316"
+  },
+  {
+    "name": "Rockport",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-GB-0353"
+  },
+  {
+    "name": "Malden Center",
+    "type": "commuter",
+    "alt_name": ["Malden"],
+    "id": "place-mlmnl"
+  },
+  {
+    "name": "Oak Grove",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-ogmnl"
+  },
+  {
+    "name": "Wyoming Hill",
+    "type": "commuter",
+    "alt_name": ["Wyoming"],
+    "id": "place-WR-0062"
+  },
+  {
+    "name": "Melrose/Cedar Park",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WR-0067"
+  },
+  {
+    "name": "Melrose Highlands",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WR-0075"
+  },
+  {
+    "name": "Greenwood",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WR-0085"
+  },
+  {
+    "name": "Wakefield",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WR-0099"
+  },
+  {
+    "name": "Reading",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WR-0120"
+  },
+  {
+    "name": "North Wilmington",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WR-0163"
+  },
+  {
+    "name": "Ballardvale",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WR-0205"
+  },
+  {
+    "name": "Andover",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WR-0228"
+  },
+  {
+    "name": "Lawrence",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WR-0264"
+  },
+  {
+    "name": "Bradford",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WR-0325"
+  },
+  {
+    "name": "Haverhill",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-WR-0329"
+  },
+  {
+    "name": "West Medford",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-NHRML-0055"
+  },
+  {
+    "name": "Wedgemere",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-NHRML-0073"
+  },
+  {
+    "name": "Anderson/Woburn",
+    "type": "commuter",
+    "alt_name": ["Anderson", "Anderson RTC", "Woburn"],
+    "id": "place-NHRML-0127"
+  },
+  {
+    "name": "Wilmington",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-NHRML-0152"
+  },
+  {
+    "name": "North Billerica",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-NHRML-0218"
+  },
+  {
+    "name": "Lowell",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-NHRML-0254"
+  },
+  {
+    "name": "Porter",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-portr"
+  },
+  {
+    "name": "Belmont",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-FR-0064"
+  },
+  {
+    "name": "Waverly",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-FR-0074"
+  },
+  {
+    "name": "Waltham",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-FR-0098"
+  },
+  {
+    "name": "Brandeis/Roberts",
+    "type": "commuter",
+    "alt_name": ["Brandeis"],
+    "id": "place-FR-0115"
+  },
+  {
+    "name": "Kendal Green",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-FR-0132"
+  },
+  {
+    "name": "Lincoln",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-FR-0167"
+  },
+  {
+    "name": "Concord",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-FR-0201"
+  },
+  {
+    "name": "West Concord",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-FR-0219"
+  },
+  {
+    "name": "South Acton",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-FR-0253"
+  },
+  {
+    "name": "Littleton/Route 495",
+    "type": "commuter",
+    "alt_name": ["Littleton"],
+    "id": "place-FR-0301"
+  },
+  {
+    "name": "Ayer",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-FR-0361"
+  },
+  {
+    "name": "Shirley",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-FR-0394"
+  },
+  {
+    "name": "North Leominster",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-FR-0451"
+  },
+  {
+    "name": "Fitchburg",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-FR-0494"
+  },
+  {
+    "name": "Watchusett",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-FR-3338"
   }
 ]
