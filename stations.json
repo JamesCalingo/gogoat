@@ -19,7 +19,7 @@
   },
   {
     "name": "Porter",
-    "type": "subway",
+    "type": "subway/commuter",
     "alt_name": [""],
     "id": "place-portr",
     "line": "Red",
@@ -82,7 +82,7 @@
   },
   {
     "name": "South Station",
-    "type": "subway",
+    "type": "subway/commuter",
     "alt_name": [""],
     "id": "place-sstat",
     "line": "Red",
@@ -109,7 +109,7 @@
   },
   {
     "name": "JFK/UMass",
-    "type": "subway",
+    "type": "subway/commuter",
     "alt_name": ["JFK"],
     "id": "place-jfk",
     "line": "Red",
@@ -144,9 +144,9 @@
     "destination_1": "Alewife"
   },
   {
-    "name": "Ashmont (Red Line)",
+    "name": "Ashmont",
     "type": "subway",
-    "alt_name": ["Ashmont Red"],
+    "alt_name": ["Ashmont (Red Line), Ashmont Red"],
     "id": "place-asmnl",
     "line": "Red",
     "destination_0": "",
@@ -172,7 +172,7 @@
   },
   {
     "name": "Quincy Center",
-    "type": "subway",
+    "type": "subway/commuter",
     "alt_name": [""],
     "id": "place-qnctr",
     "line": "Red",
@@ -190,7 +190,7 @@
   },
   {
     "name": "Braintree",
-    "type": "subway",
+    "type": "subway/commuter",
     "alt_name": [""],
     "id": "place-brntn",
     "line": "Red",
@@ -271,7 +271,7 @@
   },
   {
     "name": "Oak Grove",
-    "type": "subway",
+    "type": "subway/commuter",
     "alt_name": [""],
     "id": "place-ogmnl",
     "line": "Orange",
@@ -280,7 +280,7 @@
   },
   {
     "name": "Malden Center",
-    "type": "subway",
+    "type": "subway/commuter",
     "alt_name": ["Malden"],
     "id": "place-mlmnl",
     "line": "Orange",
@@ -325,7 +325,7 @@
   },
   {
     "name": "North Station (Orange Line)",
-    "type": "subway",
+    "type": "subway/commuter",
     "alt_name": ["North Station Orange", "North Orange"],
     "id": "place-north",
     "line": "Orange",
@@ -359,7 +359,11 @@
   {
     "name": "Downtown Crossing (Orange Line)",
     "type": "subway",
-    "alt_name": ["Downtown Crossing Orange", "Downtown Xing Orange", "DTX Orange"],
+    "alt_name": [
+      "Downtown Crossing Orange",
+      "Downtown Xing Orange",
+      "DTX Orange"
+    ],
     "id": "place-dwnxg",
     "line": "Orange",
     "destination_0": "Forest Hills",
@@ -385,7 +389,7 @@
   },
   {
     "name": "Back Bay",
-    "type": "subway",
+    "type": "subway/commuter",
     "alt_name": ["Back Bay/South End", "Back Bay Station"],
     "id": "place-bbsta",
     "line": "Orange",
@@ -403,7 +407,7 @@
   },
   {
     "name": "Ruggles",
-    "type": "subway",
+    "type": "subway/commuter",
     "alt_name": [""],
     "id": "place-rugg",
     "line": "Orange",
@@ -448,7 +452,7 @@
   },
   {
     "name": "Forest Hills",
-    "type": "subway",
+    "type": "subway/commuter",
     "alt_name": [""],
     "id": "place-forhl",
     "line": "Orange",
@@ -634,7 +638,7 @@
   },
   {
     "name": "North Station (E)",
-    "type": "subway",
+    "type": "subway/commuter",
     "alt_name": ["North Station E", "North E"],
     "id": "place-north",
     "line": "Green-E",
@@ -653,7 +657,7 @@
   {
     "name": "Government Center (E)",
     "type": "subway",
-    "alt_name": ["Government Center E","Gov Center E", "GC E"],
+    "alt_name": ["Government Center E", "Gov Center E", "GC E"],
     "id": "place-gover",
     "line": "Green-E",
     "destination_0": "Heath Street",
@@ -662,7 +666,7 @@
   {
     "name": "Park Street (E)",
     "type": "subway",
-    "alt_name": ["Park Street E","Park St E", "Park E"],
+    "alt_name": ["Park Street E", "Park St E", "Park E"],
     "id": "place-pktrm",
     "line": "Green-E",
     "destination_0": "Heath Street",
@@ -828,7 +832,7 @@
   },
   {
     "name": "North Station (D)",
-    "type": "subway",
+    "type": "subway/commuter",
     "alt_name": ["North Station D", "North Green"],
     "id": "place-north",
     "line": "Green-D",
@@ -1196,7 +1200,7 @@
   {
     "name": "Washington Square",
     "type": "subway",
-    "alt_name": "Washington Sq",
+    "alt_name": ["Washington Sq"],
     "id": "place-bcnwa",
     "line": "Green-C",
     "destination_0": "Cleveland Circle",
@@ -1241,7 +1245,7 @@
   {
     "name": "Government Center (B)",
     "type": "subway",
-    "alt_name": ["Government Center B","Gov Center B", "GC B"],
+    "alt_name": ["Government Center B", "Gov Center B", "GC B"],
     "id": "place-gover",
     "line": "Green-B",
     "destination_0": "Boston College",
@@ -1596,9 +1600,9 @@
     "destination_1": "Government Center/Union Square/Medford"
   },
   {
-    "name": "South Station",
+    "name": "South Station Commuter",
     "type": "commuter",
-    "alt_name": ["Boston"],
+    "alt_name": ["Boston South Station", "Boston South"],
     "id": "place-south"
   },
   {
@@ -1663,6 +1667,12 @@
   },
   {
     "name": "Attleboro",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-NEC-1969"
+  },
+  {
+    "name": "South Attleboro",
     "type": "commuter",
     "alt_name": [],
     "id": "place-NEC-1969"
@@ -2084,7 +2094,7 @@
   {
     "name": "North Station",
     "type": "commuter",
-    "alt_name": [],
+    "alt_name": ["Boston North Station", "Boston North"],
     "id": "place-north"
   },
   {
@@ -2404,5 +2414,59 @@
     "type": "commuter",
     "alt_name": [],
     "id": "place-FR-3338"
+  },
+  {
+    "name": "Porter Commuter",
+    "type": "commuter",
+    "alt_name": ["Porter Fitchburg"],
+    "id": "place-portr"
+  },
+  {
+    "name": "JFK/UMass Commuter",
+    "type": "commuter",
+    "alt_name": ["JFK Commuter"],
+    "id": "place-jfk"
+  },
+  {
+    "name": "Quincy Center Commuter",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-qnctr"
+  },
+  {
+    "name": "Braintree Commuter",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-brntn"
+  },
+  {
+    "name": "Oak Grove Commuter",
+    "type": "commuter",
+    "alt_name": [""],
+    "id": "place-ogmnl"
+  },
+  {
+    "name": "Malden Center Commuter",
+    "type": "commuter",
+    "alt_name": ["Malden Commuter"],
+    "id": "place-mlmnl"
+  },
+  {
+    "name": "Back Bay Commuter",
+    "type": "commuter",
+    "alt_name": ["Back Bay Station Commuter", "Back Bay/South End Commuter"],
+    "id": "place-bbsta"
+  },
+  {
+    "name": "Ruggles Commuter",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-rugg"
+  },
+  {
+    "name": "Forest Hills Commuter",
+    "type": "commuter",
+    "alt_name": [],
+    "id": "place-forhl"
   }
 ]

@@ -41,16 +41,13 @@ func newMessage(discord *discordgo.Session, message *discordgo.MessageCreate) {
 		discord.ChannelMessageSend(message.ChannelID, "*working...*")
 	}
 
-	if message.Author.ID == discord.State.User.ID {
+	if message.Author.ID == discord.State.User.ID || (channel.Type != discordgo.ChannelTypeDM && message.ChannelID != "1235384282172620891") {
 		return
 	}
 	_, name := breakMessage(message.Content, " ")
 
 	station := findStation(name)
 	switch {
-
-	case channel.Type != discordgo.ChannelTypeDM:
-		discord.ChannelMessageSend(message.ChannelID, "To reduce \"clutter\", GogoaT only works in private messages. Please use the \"!start\" command to start a DM with GogoaT where you can access the information you need.")
 
 	// "start" - starts a private GogoaT instance
 	case strings.EqualFold(message.Content, "!start"):
@@ -74,6 +71,7 @@ func newMessage(discord *discordgo.Session, message *discordgo.MessageCreate) {
 	// "schedule" - links to a line's schedule
 	case strings.HasPrefix(strings.ToLower(message.Content), "schedule "):
 		loader()
+
 		discord.ChannelMessageSend(message.ChannelID, getSchedules(name))
 
 	// "next" with "to" - find the next train from a station to a direction/destination (subway)
@@ -88,6 +86,10 @@ func newMessage(discord *discordgo.Session, message *discordgo.MessageCreate) {
 	case strings.HasPrefix(strings.ToLower(message.Content), "next "):
 		loader()
 		discord.ChannelMessageSend(message.ChannelID, station.listNext())
+
+	// To keep things "neat" on the main Discord server, I've limited GogoaT's functionality to DMs. However, you need to start a DM with GogoaT, so the server message is here
+	case channel.Type != discordgo.ChannelTypeDM:
+		discord.ChannelMessageSend(message.ChannelID, "To reduce \"clutter\", GogoaT only works in private messages. Please use the \"!start\" command to start a DM with GogoaT where you can access the information you need.")
 
 	default:
 		discord.ChannelMessageSend(message.ChannelID, "I couldn't understand your request. Try again.")

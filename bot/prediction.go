@@ -18,6 +18,7 @@ func (s *Station) getPredictions() []models.Prediction {
 	var predictions models.Predictions
 
 	url := fmt.Sprintf("https://api-v3.mbta.com/predictions?sort=departure_time&filter[stop]=%s&filter[route]=%s&filter[revenue]=REVENUE", s.ID, s.Line)
+
 	res, err := http.Get(url)
 	checkError(err)
 	defer res.Body.Close()
@@ -28,7 +29,7 @@ func (s *Station) getPredictions() []models.Prediction {
 	filter := func(predictions models.Predictions) []models.Prediction {
 		var filtered []models.Prediction
 		for _, prediction := range predictions.Predictions {
-			if contains(subwayLines, prediction.Relationships.Route.Data.ID) && !prediction.Attributes.DepartureTime.IsZero() {
+			if !prediction.Attributes.DepartureTime.IsZero() {
 				filtered = append(filtered, prediction)
 			}
 		}
@@ -45,9 +46,20 @@ func (s *Station) listNext() string {
 	if s.checkForTransfer() {
 		return "This is a transfer station. Please specify a line for data."
 	}
+
 	if s.Type == "commuter" {
-		return "*This feature is still under construction.*"
+		return s.listStationSchedule()
 	}
+
+	return s.getStationPredictions()
+}
+
+func (s *Station) getStationPredictions() string {
+
+	if !s.checkForStation() {
+		return "Station not found. Check your station name and try again."
+	}
+
 	predictions := s.getPredictions()
 	var next0 []models.Prediction
 	var next1 []models.Prediction
@@ -57,10 +69,6 @@ func (s *Station) listNext() string {
 		} else {
 			next1 = append(next1, prediction)
 		}
-	}
-
-	if !s.checkForStation() {
-		return "Station not found. Check your station name and try again."
 	}
 
 	if len(next0) == 0 && len(next1) == 0 {
@@ -74,27 +82,35 @@ func (s *Station) listNext() string {
 		}
 		return fmt.Sprintf("%s\nThere is at least one alert that may be affecting service right now:\n%s", output, alerts)
 	}
+
+	toDestination := func(destination string) string {
+		return fmt.Sprintf("To %s", destination)
+	}
+
 	// Turn lists of times into single string so they can be broadcast
 	listTimes := func(destination string, predictions []models.Prediction) string {
 		//For terminal stations
 		if destination == "" {
 			return destination
 		}
-		output := fmt.Sprintf("**To %s:**\n", strings.ToUpper(destination))
+		output := fmt.Sprintf("**%s:**\n", strings.ToUpper(destination))
 		if len(predictions) == 0 {
 			output += "No trains found.\n\n"
 		}
 		for _, prediction := range predictions {
 			output += fmt.Sprintf("%s\n", prediction.Attributes.DepartureTime.Format(time.Kitchen))
 		}
+
+		if s.Type == "subway/commuter" {
+			output += "(for commuter rail schedules, add \"commuter\" to the station name (i.e. North Station Commuter))"
+		}
 		return output
 	}
 
 	if len(next0) == 0 {
-		return fmt.Sprintf("Next trains from %s:\n\n%s", s.Name, listTimes(s.Destination1, next1))
+		return fmt.Sprintf("Next trains from %s:\n\n%s", s.Name, listTimes(toDestination(s.Destination1), next1))
 	}
-	return fmt.Sprintf("Next trains from %s:\n\n%s\n%s", s.Name, listTimes(s.Destination0, next0), listTimes(s.Destination1, next1))
-
+	return fmt.Sprintf("Next trains from %s:\n\n%s\n%s", s.Name, listTimes(toDestination(s.Destination0), next0), listTimes(toDestination(s.Destination1), next1))
 }
 
 // Predict the next train from a given station to the terminus of the line
@@ -109,7 +125,7 @@ func (s *Station) predictDestination(destination string) string {
 		return "Please specify which branch you're looking for."
 	}
 	if s.Type == "commuter" {
-		return "This feature is still under construction."
+		return s.predictDirectionCommuter(destination)
 	}
 	//This allows the user to use a direction instead of the destination if they so choose
 	acceptedDirections := []string{"east", "west", "north", "south"}
@@ -160,7 +176,9 @@ func (s *Station) predictDestination(destination string) string {
 	caser := cases.Title(language.AmericanEnglish)
 	destinationName := caser.String(destination)
 
-	return fmt.Sprintf("The next train from %s to %s is expected around **%s**", s.Name, destinationName, next.Attributes.DepartureTime.Format(time.Kitchen))
+	output := fmt.Sprintf("The next train from %s to %s is expected around **%s**", s.Name, destinationName, next.Attributes.DepartureTime.Format(time.Kitchen))
+
+	return output
 }
 
 // Predict the next train from a given station that is heading in the specified direction
@@ -168,13 +186,12 @@ func (s *Station) predictDirection(direction string) string {
 	if !s.checkForStation() {
 		return "Station not found. Check it and try again."
 	}
-	if s.Type == "commuter" {
-		return "In progress."
-	}
+
 	predictions := s.getPredictions()
 	if ((s.Line == "Red" || s.Line == "Orange" || s.Line == "Mattapan") && (strings.EqualFold(direction, "east") || strings.EqualFold(direction, "west"))) || ((s.Line == "Blue" || strings.HasPrefix(s.Line, "Green")) && (strings.EqualFold(direction, "north") || strings.EqualFold(direction, "south"))) {
 		return "This line does not go in this direction (technically). Please use North/South for the Red, Orange, and Mattapan lines, and East/West for the Green ane Blue lines)"
 	}
+
 	directionInt := 0
 	// Flip the directionInt if the request is for direction 1 internally
 	if ((s.Line == "Red" || s.Line == "Orange" || s.Line == "Mattapan") && strings.EqualFold(direction, "north")) || ((s.Line == "Blue" || strings.HasPrefix(s.Line, "Green")) && strings.EqualFold(direction, "east")) {
