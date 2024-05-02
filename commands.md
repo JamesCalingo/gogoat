@@ -15,4 +15,5 @@ These are the commands you can use to have GogoaT fetch information for you. Whe
 |**next** \<*station name*\> **to** \<*destination*\> | get the next predicted train from that station to the specified destination<sup>1</sup>| *next Reservoir to Union Square* | Subway
 
 1: some stations require the addition of which line you are taking (or branch if it's a Green Line station which multiple branches run through)
+
 2: I realize this looks awkward, but this current version has things that rely on this specific formatting.
