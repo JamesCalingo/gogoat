@@ -41,6 +41,8 @@ func newMessage(discord *discordgo.Session, message *discordgo.MessageCreate) {
 		discord.ChannelMessageSend(message.ChannelID, "*working...*")
 	}
 
+	// The first part is to avoid the bot replying to itself
+	// The second part is to limit it to DMs or a specific channel on the GoaT Pen server
 	if message.Author.ID == discord.State.User.ID || (channel.Type != discordgo.ChannelTypeDM && message.ChannelID != "1235384282172620891") {
 		return
 	}
@@ -89,7 +91,7 @@ func newMessage(discord *discordgo.Session, message *discordgo.MessageCreate) {
 
 	// To keep things "neat" on the main Discord server, I've limited GogoaT's functionality to DMs. However, you need to start a DM with GogoaT, so the server message is here
 	case channel.Type != discordgo.ChannelTypeDM:
-		discord.ChannelMessageSend(message.ChannelID, "To reduce \"clutter\", GogoaT only works in private messages. Please use the \"!start\" command to start a DM with GogoaT where you can access the information you need.")
+		discord.ChannelMessageSend(message.ChannelID, "GogoaT works via direct message. Please use the \"!start\" command to start a DM with GogoaT where you can access the information you need.")
 
 	default:
 		discord.ChannelMessageSend(message.ChannelID, "I couldn't understand your request. Try again.")
