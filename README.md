@@ -1,16 +1,12 @@
 # gogoat
 
-Discord Bot for Public Transportation
-
-## Commands
-
-The commands for GogoaT can be found [here](./commands.md)
+Public Transportation information on the Go
 
 ## The Story
 
 I've always had an interest in trains since I was a kid.
 
-One day, when thinking of fun ideas to build, I came up with the idea of a bot based around informing users about their transportation info. 
+One day, when thinking of fun ideas to build, I came up with the idea of a bot based around informing users about their transportation info. Over time, that evolved into a web application for instant info.
 
 Will the bot be right all of the time? No. This is the T we're talkin about.
 
