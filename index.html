@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>GogoaT</title>
+
+</head>
+
+<body>
+
+    <h1>GogoaT</h1>
+    <h2>Find your train instantly!</h2>
+    <p>First, select your origin station:</p>
+    <select name="origin" id="origin" onchange="findDestinations(stations, value)">
+        <option disabled display="none" selected>Select a station</option>
+    </select>
+
+    <div id="second" hidden>
+        <p>Now, select the station you're headed towards:</p>
+        <select name="destination" id="destination" onchange="index(destinations, value)">
+        </select>
+    </div>
+    
+    <div id="buttondiv" hidden>
+        <button id="button">Go GoGoat!</button>
+    </div>
+
+    <div id="info"></div>
+
+</body>
+
+<script src="assets/gogoat.js"></script>
+
+</html>

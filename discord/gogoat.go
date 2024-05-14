@@ -9,7 +9,7 @@ import (
 )
 
 func getValueFromEnv(key string) string {
-	err := godotenv.Load(".env")
+	err := godotenv.Load("../.env")
 	if err != nil {
 		log.Fatal(err)
 	}

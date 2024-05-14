@@ -55,7 +55,7 @@ func breakMessage(message string, separator string) (pre string, post string) {
 func findStation(name string) Station {
 	var empty Station
 
-	stations := openFile("stations.json")
+	stations := openFile("../stations.json")
 	for _, station := range stations {
 		if strings.EqualFold(name, station.Name) || (verifyAltName(name, station.AltName)) {
 			return station
