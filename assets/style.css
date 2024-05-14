@@ -1,10 +1,12 @@
 body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 40pt; */
 }
 
 select {
-    width: 200px;
+    width: 300px;
+    /* font-size: 40pt; */
 }
 
 #buttondiv {
@@ -13,6 +15,6 @@ select {
 
 #info {
     font-weight: bold;
-    font-size: 70pt;
+    font-size: 36pt;
     margin: 20px
 }
