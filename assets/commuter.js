@@ -784,10 +784,10 @@ function schedule(start) {
                     console.log(data)
                     let next = data.data[0]
                     if(next) {
-                    document.querySelector("#info").innerHTML = `Your next train should be arriving arround<br>
+                    document.querySelector(".info").innerHTML = `Your train should be arriving arround<br>
                     <span class="time">${new Date(next.attributes.arrival_time).toLocaleTimeString([], {hour: 'numeric', minute: '2-digit'})}</span>`}
                     else {
-                        document.querySelector("#info").innerHTML = "No prediction found."
+                        document.querySelector(".info").innerHTML = "No prediction found."
                     }
                 })
         })

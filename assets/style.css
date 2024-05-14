@@ -15,14 +15,15 @@ select {
     margin: 10px;
 }
 
-#info {
-    font-weight: bold;
-    font-size: 36pt;
-    margin: 20px
+.info {
+    font-size: 24pt;
+    margin: 20px;
 }
 
 .time {
-    color: #80276C
+    font-weight: bold;
+    color: #80276C;
+    font-size: 36pt;
 }
 
 .red {
@@ -30,14 +31,16 @@ select {
 }
 
 .orange {
-    color:#ED8B00;
+    color: #ED8B00;
 }
 
 .blue {
     color: #003DA5;
 }
 
-.green-b, .green-c, .green-d, .green-e {
+.green-b,
+.green-c,
+.green-d,
+.green-e {
     color: #00843D;
 }
-

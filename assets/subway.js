@@ -1307,10 +1307,10 @@ function predict(start) {
                 .then(data => {
                     let next = data.data.find((elem) => new Date(elem.attributes.arrival_time).getTime() > new Date().getTime())
                     if(next) {
-                    document.querySelector("#info").innerHTML = `Your next train should be arriving arround<br>
+                    document.querySelector(".info").innerHTML = `Your train should be arriving arround<br>
                     <span class="time ${stop.line.toLowerCase()}">${new Date(next.attributes.arrival_time).toLocaleTimeString([], {hour: 'numeric', minute: '2-digit'})}</span>`}
                     else {
-                        document.querySelector("#info").innerHTML = "No prediction found."
+                        document.querySelector(".info").innerHTML = "No prediction found."
                     }
                 })
         })
