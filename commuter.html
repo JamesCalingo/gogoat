@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>GogoaT</title>
+</head>
+<body>
+    <h1>GogoaT</h1>
+    <h2>Find your train instantly!</h2>
+
+    <h3>Commuter Rail version</h3>
+
+    <p>First, select your origin station:</p>
+    <select name="origin" id="origin" onchange="findDestinations(stations, value)">
+        <option disabled display="none" selected>Select a station</option>
+    </select>
+
+    <div id="second" hidden>
+        <p>Now, select the direction you're heading in. Inbound is toward North or South Station; outbound is away from them:</p>
+        <select name="destination" id="destination" onchange="index(directions, value)">
+        </select>
+    </div>
+    
+    <div id="buttondiv" hidden>
+        <button class="button">Go GoGoat!</button>
+    </div>
+
+    <div id="info"></div>
+
+</body>
+
+
+<script src="assets/commuter.js"></script>
+</body>
+</html>

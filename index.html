@@ -13,25 +13,19 @@
 
     <h1>GogoaT</h1>
     <h2>Find your train instantly!</h2>
-    <p>First, select your origin station:</p>
-    <select name="origin" id="origin" onchange="findDestinations(stations, value)">
-        <option disabled display="none" selected>Select a station</option>
-    </select>
+    <p>First, which mode are you taking:</p>
 
-    <div id="second" hidden>
-        <p>Now, select the station you're headed towards:</p>
-        <select name="destination" id="destination" onchange="index(destinations, value)">
-        </select>
-    </div>
-    
-    <div id="buttondiv" hidden>
-        <button id="button">Go GoGoat!</button>
-    </div>
 
-    <div id="info"></div>
+ <a href="./subway.html">
+     <button class="button">Subway</button>
+ </a>
+
+ <a href="./commuter.html">
+     <button class="button">Commuter Rail</button>
+ </a>
 
 </body>
 
-<script src="assets/gogoat.js"></script>
+
 
 </html>
