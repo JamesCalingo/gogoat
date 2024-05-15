@@ -890,8 +890,8 @@
     "alt_name": ["Copley D"],
     "id": "place-coecl",
     "line": "Green-D",
-    "destination_0": "Boston College/Cleveland Circle/Riverside",
-    "destination_1": "Government Center/Union Square/Medford"
+    "destination_0": "Riverside",
+    "destination_1": "Union Square"
   },
   {
     "name": "Hynes Convention Center (D)",

@@ -22,7 +22,6 @@ const stations = [
     },
     {
         "name": "Harvard",
-        "alt_name": ["Harvard Square"],
         "id": "place-harsq",
         "line": "Red",
         "destination_0": "Ashmont/Braintree",
@@ -30,7 +29,6 @@ const stations = [
     },
     {
         "name": "Central",
-        "alt_name": ["Central Square"],
         "id": "place-cntsq",
         "line": "Red",
         "destination_0": "Ashmont/Braintree",
@@ -38,7 +36,6 @@ const stations = [
     },
     {
         "name": "Kendall",
-        "alt_name": ["Kendall/MIT", "Kendall Square"],
         "id": "place-knncl",
         "line": "Red",
         "destination_0": "Ashmont/Braintree",
@@ -46,7 +43,6 @@ const stations = [
     },
     {
         "name": "Charles/MGH",
-        "alt_name": ["Charles", "MGH"],
         "id": "place-chmnl",
         "line": "Red",
         "destination_0": "Ashmont/Braintree",
@@ -54,7 +50,6 @@ const stations = [
     },
     {
         "name": "Park Street (Red Line)",
-        "alt_name": ["Park Street Red", "Park St Red", "Park Red"],
         "id": "place-pktrm",
         "line": "Red",
         "destination_0": "Ashmont/Braintree",
@@ -62,7 +57,6 @@ const stations = [
     },
     {
         "name": "Downtown Crossing (Red Line)",
-        "alt_name": ["Downtown Crossing Red", "Downtown Xing Red", "DTX Red"],
         "id": "place-dwnxg",
         "line": "Red",
         "destination_0": "Ashmont/Braintree",
@@ -91,7 +85,6 @@ const stations = [
     },
     {
         "name": "JFK/UMass",
-        "alt_name": ["JFK"],
         "id": "place-jfk",
         "line": "Red",
         "destination_0": "Ashmont/Braintree",
@@ -119,8 +112,7 @@ const stations = [
         "destination_1": "Alewife"
     },
     {
-        "name": "Ashmont",
-        "alt_name": ["Ashmont (Red Line), Ashmont Red"],
+        "name": "Ashmont (Red Line)",
         "id": "place-asmnl",
         "line": "Red",
         "destination_0": "",
@@ -163,9 +155,8 @@ const stations = [
     },
     {
         "name": "Ashmont (Mattapan Line)",
-        "alt_name": ["Ashmont Trolley"],
         "id": "place-asmnl",
-        "line": "Red",
+        "line": "Mattapan",
         "destination_0": "Mattapan",
         "destination_1": ""
     },
@@ -192,7 +183,6 @@ const stations = [
     },
     {
         "name": "Central Avenue",
-        "alt_name": ["Central Ave", "Central Av"],
         "id": "place-cenav",
         "line": "Mattapan",
         "destination_0": "Mattapan",
@@ -200,7 +190,6 @@ const stations = [
     },
     {
         "name": "Valley Road",
-        "alt_name": ["Valley Rd"],
         "id": "place-valrd",
         "line": "Mattapan",
         "destination_0": "Mattapan",
@@ -208,7 +197,6 @@ const stations = [
     },
     {
         "name": "Capen Street",
-        "alt_name": ["Capen St", "Capen"],
         "id": "place-capst",
         "line": "Mattapan",
         "destination_0": "Mattapan",
@@ -230,7 +218,6 @@ const stations = [
     },
     {
         "name": "Malden Center",
-        "alt_name": ["Malden"],
         "id": "place-mlmnl",
         "line": "Orange",
         "destination_0": "Forest Hills",
@@ -238,7 +225,6 @@ const stations = [
     },
     {
         "name": "Wellington",
-        "alt_name": ["Welly"],
         "id": "place-welln",
         "line": "Orange",
         "destination_0": "Forest Hills",
@@ -253,7 +239,6 @@ const stations = [
     },
     {
         "name": "Sullivan Square",
-        "alt_name": ["Sullivan"],
         "id": "place-sull",
         "line": "Orange",
         "destination_0": "Forest Hills",
@@ -268,7 +253,6 @@ const stations = [
     },
     {
         "name": "North Station (Orange Line)",
-        "alt_name": ["North Station Orange", "North Orange"],
         "id": "place-north",
         "line": "Orange",
         "destination_0": "Forest Hills",
@@ -276,7 +260,6 @@ const stations = [
     },
     {
         "name": "Haymarket (Orange Line)",
-        "alt_name": ["Haymarket Orange"],
         "id": "place-haecl",
         "line": "Orange",
         "destination_0": "Forest Hills",
@@ -284,13 +267,6 @@ const stations = [
     },
     {
         "name": "State (Orange Line)",
-        "alt_name": [
-            "State Street (Orange Line)",
-            "State St (Orange Line",
-            "State Street Orange",
-            "State St Orange",
-            "State Orange"
-        ],
         "id": "place-state",
         "line": "Orange",
         "destination_0": "Forest Hills",
@@ -298,11 +274,6 @@ const stations = [
     },
     {
         "name": "Downtown Crossing (Orange Line)",
-        "alt_name": [
-            "Downtown Crossing Orange",
-            "Downtown Xing Orange",
-            "DTX Orange"
-        ],
         "id": "place-dwnxg",
         "line": "Orange",
         "destination_0": "Forest Hills",
@@ -317,7 +288,6 @@ const stations = [
     },
     {
         "name": "Tufts Medical Center",
-        "alt_name": ["Tufts Medical", "Tufts"],
         "id": "place-tumnl",
         "line": "Orange",
         "destination_0": "Forest Hills",
@@ -325,7 +295,6 @@ const stations = [
     },
     {
         "name": "Back Bay",
-        "alt_name": ["Back Bay/South End", "Back Bay Station"],
         "id": "place-bbsta",
         "line": "Orange",
         "destination_0": "Forest Hills",
@@ -333,7 +302,6 @@ const stations = [
     },
     {
         "name": "Massachusetts Avenue",
-        "alt_name": ["Massachusetts Ave", "Mass Ave"],
         "id": "place-masta",
         "line": "Orange",
         "destination_0": "Forest Hills",
@@ -348,7 +316,6 @@ const stations = [
     },
     {
         "name": "Roxbury Crossing",
-        "alt_name": ["Roxbury Xing", "Roxbury"],
         "id": "place-rcmnl",
         "line": "Orange",
         "destination_0": "Forest Hills",
@@ -356,7 +323,6 @@ const stations = [
     },
     {
         "name": "Jackson Square",
-        "alt_name": ["Jackson Sq", "Jackson"],
         "id": "place-jaksn",
         "line": "Orange",
         "destination_0": "Forest Hills",
@@ -371,7 +337,6 @@ const stations = [
     },
     {
         "name": "Green Street",
-        "alt_name": ["Green St"],
         "id": "place-grnst",
         "line": "Orange",
         "destination_0": "Forest Hills",
@@ -414,7 +379,6 @@ const stations = [
     },
     {
         "name": "Orient Heights",
-        "alt_name": ["Orient"],
         "id": "place-orhte",
         "line": "Blue",
         "destination_0": "Bowdoin",
@@ -436,7 +400,6 @@ const stations = [
     },
     {
         "name": "Maverick",
-        "alt_name": ["Mav"],
         "id": "place-mvbcl",
         "line": "Blue",
         "destination_0": "Bowdoin",
@@ -451,13 +414,6 @@ const stations = [
     },
     {
         "name": "State (Blue Line)",
-        "alt_name": [
-            "State Street (Blue Line)",
-            "State St (Blue Line)",
-            "State Street Blue",
-            "State St Blue",
-            "State Blue"
-        ],
         "id": "place-state",
         "line": "Blue",
         "destination_0": "Bowdoin",
@@ -465,7 +421,6 @@ const stations = [
     },
     {
         "name": "Government Center (Blue Line)",
-        "alt_name": ["Government Center Blue", "Gov Center Blue", "GC Blue"],
         "id": "place-gover",
         "line": "Blue",
         "destination_0": "Bowdoin",
@@ -480,7 +435,6 @@ const stations = [
     },
     {
         "name": "Medford/Tufts",
-        "alt_name": ["Medford"],
         "id": "place-mdftf",
         "line": "Green-E",
         "destination_0": "Heath Street",
@@ -488,7 +442,6 @@ const stations = [
     },
     {
         "name": "Ball Square",
-        "alt_name": ["Ball Sq"],
         "id": "place-balsq",
         "line": "Green-E",
         "destination_0": "Heath Street",
@@ -496,7 +449,6 @@ const stations = [
     },
     {
         "name": "Magoun Square",
-        "alt_name": ["Magoun Sq", "Magoun"],
         "id": "place-mgngl",
         "line": "Green-E",
         "destination_0": "Heath Street",
@@ -504,7 +456,6 @@ const stations = [
     },
     {
         "name": "Gilman Square",
-        "alt_name": ["Gilman Sq", "Gilman"],
         "id": "place-gilmn",
         "line": "Green-E",
         "destination_0": "Heath Street",
@@ -526,7 +477,6 @@ const stations = [
     },
     {
         "name": "Science Park/West End (E)",
-        "alt_name": ["Science Park E"],
         "id": "place-spmnl",
         "line": "Green-E",
         "destination_0": "Heath Street",
@@ -534,7 +484,6 @@ const stations = [
     },
     {
         "name": "North Station (E)",
-        "alt_name": ["North Station E", "North E"],
         "id": "place-north",
         "line": "Green-E",
         "destination_0": "Heath Street",
@@ -542,7 +491,6 @@ const stations = [
     },
     {
         "name": "Haymarket (E)",
-        "alt_name": ["Haymarket E"],
         "id": "place-haecl",
         "line": "Green-E",
         "destination_0": "Heath Street",
@@ -550,7 +498,6 @@ const stations = [
     },
     {
         "name": "Government Center (E)",
-        "alt_name": ["Government Center E", "Gov Center E", "GC E"],
         "id": "place-gover",
         "line": "Green-E",
         "destination_0": "Heath Street",
@@ -558,7 +505,6 @@ const stations = [
     },
     {
         "name": "Park Street (E)",
-        "alt_name": ["Park Street E", "Park St E", "Park E"],
         "id": "place-pktrm",
         "line": "Green-E",
         "destination_0": "Heath Street",
@@ -566,7 +512,6 @@ const stations = [
     },
     {
         "name": "Boylston (E)",
-        "alt_name": ["Boylston E"],
         "id": "place-boyls",
         "line": "Green-E",
         "destination_0": "Heath Street",
@@ -574,7 +519,6 @@ const stations = [
     },
     {
         "name": "Arlington (E)",
-        "alt_name": ["Arlington E"],
         "id": "place-armnl",
         "line": "Green-E",
         "destination_0": "Heath Street",
@@ -582,7 +526,6 @@ const stations = [
     },
     {
         "name": "Copley (E)",
-        "alt_name": ["Copley E"],
         "id": "place-coecl",
         "line": "Green-E",
         "destination_0": "Heath Street",
@@ -590,7 +533,6 @@ const stations = [
     },
     {
         "name": "Prudential",
-        "alt_name": ["Pru"],
         "id": "place-prmnl",
         "line": "Green-E",
         "destination_0": "Heath Street",
@@ -605,7 +547,6 @@ const stations = [
     },
     {
         "name": "Northeastern",
-        "alt_name": ["NU"],
         "id": "place-nuniv",
         "line": "Green-E",
         "destination_0": "Heath Street",
@@ -613,7 +554,6 @@ const stations = [
     },
     {
         "name": "Museum of Fine Arts",
-        "alt_name": ["MFA"],
         "id": "place-mfa",
         "line": "Green-E",
         "destination_0": "Heath Street",
@@ -621,7 +561,6 @@ const stations = [
     },
     {
         "name": "Longwood Medical Area",
-        "alt_name": ["Longwood Medical"],
         "id": "place-lngmd",
         "line": "Green-E",
         "destination_0": "Heath Street",
@@ -629,7 +568,6 @@ const stations = [
     },
     {
         "name": "Brigham Circle",
-        "alt_name": ["Brigham"],
         "id": "place-brmnl",
         "line": "Green-E",
         "destination_0": "Heath Street",
@@ -637,7 +575,6 @@ const stations = [
     },
     {
         "name": "Fenwood Road",
-        "alt_name": ["Fenwood Rd", "Fenwood"],
         "id": "place-fenwd",
         "line": "Green-E",
         "destination_0": "Heath Street",
@@ -666,12 +603,6 @@ const stations = [
     },
     {
         "name": "Heath Street",
-        "alt_name": [
-            "Heath St",
-            "Heath",
-            "Heath Street/VA Medical Center",
-            "Heath St/VA Medical Center"
-        ],
         "id": "place-hsmnl",
         "line": "Green-E",
         "destination_0": "",
@@ -679,7 +610,6 @@ const stations = [
     },
     {
         "name": "Union Square",
-        "alt_name": ["Union Sq", "Union"],
         "id": "place-unsqu",
         "line": "Green-D",
         "destination_0": "Riverside",
@@ -687,7 +617,6 @@ const stations = [
     },
     {
         "name": "Lechmere (D)",
-        "alt_name": ["Lechmere D"],
         "id": "place-lech",
         "line": "Green-D",
         "destination_0": "Riverside",
@@ -695,7 +624,6 @@ const stations = [
     },
     {
         "name": "Science Park/West End (D)",
-        "alt_name": ["Science Park D"],
         "id": "place-spmnl",
         "line": "Green-D",
         "destination_0": "Riverside",
@@ -703,7 +631,6 @@ const stations = [
     },
     {
         "name": "North Station (D)",
-        "alt_name": ["North Station D", "North Green"],
         "id": "place-north",
         "line": "Green-D",
         "destination_0": "Riverside",
@@ -711,7 +638,6 @@ const stations = [
     },
     {
         "name": "Haymarket (D)",
-        "alt_name": ["Haymarket D"],
         "id": "place-haecl",
         "line": "Green-D",
         "destination_0": "Riverside",
@@ -719,7 +645,6 @@ const stations = [
     },
     {
         "name": "Government Center (D)",
-        "alt_name": ["Government Center D", "Gov Center D", "GC D"],
         "id": "place-gover",
         "line": "Green-D",
         "destination_0": "Riverside",
@@ -727,7 +652,6 @@ const stations = [
     },
     {
         "name": "Park Street (D)",
-        "alt_name": ["Park Street D", "Park St D", "Park D"],
         "id": "place-pktrm",
         "line": "Green-D",
         "destination_0": "Riverside",
@@ -735,7 +659,6 @@ const stations = [
     },
     {
         "name": "Boylston (D)",
-        "alt_name": ["Boylston D"],
         "id": "place-boyls",
         "line": "Green-D",
         "destination_0": "Riverside",
@@ -743,7 +666,6 @@ const stations = [
     },
     {
         "name": "Arlington (D)",
-        "alt_name": ["Arlington D"],
         "id": "place-armnl",
         "line": "Green-D",
         "destination_0": "Riverside",
@@ -751,15 +673,13 @@ const stations = [
     },
     {
         "name": "Copley (D)",
-        "alt_name": ["Copley D"],
         "id": "place-coecl",
         "line": "Green-D",
-        "destination_0": "Boston College/Cleveland Circle/Riverside",
-        "destination_1": "Government Center/Union Square/Medford"
+        "destination_0": "Riverside",
+        "destination_1": "Union Square"
     },
     {
         "name": "Hynes Convention Center (D)",
-        "alt_name": ["Hynes Convention Center D", "Hynes D"],
         "id": "place-hymnl",
         "line": "Green-D",
         "destination_0": "Riverside",
@@ -767,7 +687,6 @@ const stations = [
     },
     {
         "name": "Kenmore (D)",
-        "alt_name": ["Kenmore D"],
         "id": "place-kencl",
         "line": "Green-D",
         "destination_0": "Riverside",
@@ -824,7 +743,6 @@ const stations = [
     },
     {
         "name": "Newton Centre",
-        "alt_name": ["Newton Center"],
         "id": "place-newto",
         "line": "Green-D",
         "destination_0": "Riverside",
@@ -867,7 +785,6 @@ const stations = [
     },
     {
         "name": "Government Center (C)",
-        "alt_name": ["Government Center C", "Gov Center C", "GC C"],
         "id": "place-gover",
         "line": "Green-C",
         "destination_0": "Cleveland Circle",
@@ -875,7 +792,6 @@ const stations = [
     },
     {
         "name": "Park Street (C)",
-        "alt_name": ["Park Street C", "Park St C", "Park C"],
         "id": "place-pktrm",
         "line": "Green-C",
         "destination_0": "Cleveland Circle",
@@ -883,7 +799,6 @@ const stations = [
     },
     {
         "name": "Boylston (C)",
-        "alt_name": ["Boylston C"],
         "id": "place-boyls",
         "line": "Green-C",
         "destination_0": "Cleveland Circle",
@@ -891,7 +806,6 @@ const stations = [
     },
     {
         "name": "Arlington (C)",
-        "alt_name": ["Arlington C"],
         "id": "place-armnl",
         "line": "Green-C",
         "destination_0": "Cleveland Circle",
@@ -899,7 +813,6 @@ const stations = [
     },
     {
         "name": "Copley (C)",
-        "alt_name": ["Copley C"],
         "id": "place-coecl",
         "line": "Green-C",
         "destination_0": "Cleveland Circle",
@@ -907,7 +820,6 @@ const stations = [
     },
     {
         "name": "Hynes Convention Center (C)",
-        "alt_name": ["Hynes Convention Center C", "Hynes C"],
         "id": "place-hymnl",
         "line": "Green-C",
         "destination_0": "Cleveland Circle",
@@ -915,7 +827,6 @@ const stations = [
     },
     {
         "name": "Kenmore (C)",
-        "alt_name": ["Kenmore C"],
         "id": "place-kencl",
         "line": "Green-C",
         "destination_0": "Cleveland Circle",
@@ -923,25 +834,6 @@ const stations = [
     },
     {
         "name": "Saint Mary's Street",
-        "alt_name": [
-            "Saint Marys Street",
-            "Saint Mary's St",
-            "Saint Marys St",
-            "Saint Mary's",
-            "Saint Marys",
-            "St Mary's Street",
-            "St Marys Street",
-            "St Mary's St",
-            "St Marys St",
-            "St Mary's",
-            "St Marys",
-            "St. Mary's Street",
-            "St. Marys Street",
-            "St. Mary's St",
-            "St. Marys St",
-            "St. Mary's",
-            "St. Marys"
-        ],
         "id": "place-smary",
         "line": "Green-C",
         "destination_0": "Cleveland Circle",
@@ -949,7 +841,6 @@ const stations = [
     },
     {
         "name": "Hawes Street",
-        "alt_name": ["Hawes St", "Hawes"],
         "id": "place-hwsst",
         "line": "Green-C",
         "destination_0": "Cleveland Circle",
@@ -957,7 +848,6 @@ const stations = [
     },
     {
         "name": "Kent Street",
-        "alt_name": ["Kent St", "Kent"],
         "id": "place-kntst",
         "line": "Green-C",
         "destination_0": "Cleveland Circle",
@@ -965,16 +855,6 @@ const stations = [
     },
     {
         "name": "Saint Paul Street",
-        "alt_name": [
-            "Saint Paul St",
-            "Saint Paul",
-            "St Paul Street",
-            "St Paul St",
-            "St Paul",
-            "St. Paul Street",
-            "St. Paul St",
-            "St. Paul"
-        ],
         "id": "place-stpul",
         "line": "Green-C",
         "destination_0": "Cleveland Circle",
@@ -982,7 +862,6 @@ const stations = [
     },
     {
         "name": "Coolidge Corner",
-        "alt_name": ["Coolidge"],
         "id": "place-cool",
         "line": "Green-C",
         "destination_0": "Cleveland Circle",
@@ -990,14 +869,6 @@ const stations = [
     },
     {
         "name": "Summit Avenue",
-        "alt_name": [
-            "Summit Ave",
-            "Summit Av",
-            "Summit",
-            "Winchester Street",
-            "Winchester St",
-            "Winchester/Summit"
-        ],
         "id": "place-sumav",
         "line": "Green-C",
         "destination_0": "Cleveland Circle",
@@ -1012,7 +883,6 @@ const stations = [
     },
     {
         "name": "Fairbanks Street",
-        "alt_name": ["Fairbanks St", "Fairbanks"],
         "id": "place-fbkst",
         "line": "Green-C",
         "destination_0": "Cleveland Circle",
@@ -1020,7 +890,6 @@ const stations = [
     },
     {
         "name": "Washington Square",
-        "alt_name": ["Washington Sq"],
         "id": "place-bcnwa",
         "line": "Green-C",
         "destination_0": "Cleveland Circle",
@@ -1028,7 +897,6 @@ const stations = [
     },
     {
         "name": "Tappan Street",
-        "alt_name": ["Tappan St", "Tappan"],
         "id": "place-tapst",
         "line": "Green-C",
         "destination_0": "Cleveland Circle",
@@ -1036,7 +904,6 @@ const stations = [
     },
     {
         "name": "Dean Road",
-        "alt_name": ["Dean Rd"],
         "id": "place-denrd",
         "line": "Green-C",
         "destination_0": "Cleveland Circle",
@@ -1044,7 +911,6 @@ const stations = [
     },
     {
         "name": "Englewood Avenue",
-        "alt_name": ["Englewood Ave", "Englewood Av", "Englewood"],
         "id": "place-engav",
         "line": "Green-C",
         "destination_0": "Cleveland Circle",
@@ -1059,7 +925,6 @@ const stations = [
     },
     {
         "name": "Government Center (B)",
-        "alt_name": ["Government Center B", "Gov Center B", "GC B"],
         "id": "place-gover",
         "line": "Green-B",
         "destination_0": "Boston College",
@@ -1067,7 +932,6 @@ const stations = [
     },
     {
         "name": "Park Street (B)",
-        "alt_name": ["Park Street B", "Park St B", "Park B"],
         "id": "place-pktrm",
         "line": "Green-B",
         "destination_0": "Boston College",
@@ -1075,7 +939,6 @@ const stations = [
     },
     {
         "name": "Boylston (B)",
-        "alt_name": ["Boylston B"],
         "id": "place-boyls",
         "line": "Green-B",
         "destination_0": "Boston College",
@@ -1083,7 +946,6 @@ const stations = [
     },
     {
         "name": "Arlington (B)",
-        "alt_name": ["Arlington B"],
         "id": "place-armnl",
         "line": "Green-B",
         "destination_0": "Boston College",
@@ -1091,7 +953,6 @@ const stations = [
     },
     {
         "name": "Copley (B)",
-        "alt_name": ["Copley B"],
         "id": "place-coecl",
         "line": "Green-B",
         "destination_0": "Boston College",
@@ -1099,7 +960,6 @@ const stations = [
     },
     {
         "name": "Hynes Convention Center (B)",
-        "alt_name": ["Hynes Convention Center B", "Hynes B"],
         "id": "place-hymnl",
         "line": "Green-B",
         "destination_0": "Boston College",
@@ -1107,7 +967,6 @@ const stations = [
     },
     {
         "name": "Kenmore (B)",
-        "alt_name": ["Kenmore B"],
         "id": "place-kencl",
         "line": "Green-B",
         "destination_0": "Boston College",
@@ -1115,7 +974,6 @@ const stations = [
     },
     {
         "name": "Blandford Street",
-        "alt_name": ["Blandford St", "Blandford"],
         "id": "place-bland",
         "line": "Green-B",
         "destination_0": "Boston College",
@@ -1123,7 +981,6 @@ const stations = [
     },
     {
         "name": "Boston University East",
-        "alt_name": ["BU East"],
         "id": "place-buest",
         "line": "Green-B",
         "destination_0": "Boston College",
@@ -1131,7 +988,6 @@ const stations = [
     },
     {
         "name": "Boston University Central",
-        "alt_name": ["BU Central"],
         "id": "place-bucen",
         "line": "Green-B",
         "destination_0": "Boston College",
@@ -1139,7 +995,6 @@ const stations = [
     },
     {
         "name": "Amory Street",
-        "alt_name": ["Amory St", "Amory", "Boston University West", "BU West"],
         "id": "place-amory",
         "line": "Green-B",
         "destination_0": "Boston College",
@@ -1147,7 +1002,6 @@ const stations = [
     },
     {
         "name": "Babcock Street",
-        "alt_name": ["Babcock St", "Babcock", "Pleasant Street", "Pleasant St"],
         "id": "place-babck",
         "line": "Green-B",
         "destination_0": "Boston College",
@@ -1155,13 +1009,6 @@ const stations = [
     },
     {
         "name": "Packard's Corner",
-        "alt_name": [
-            "Packard's",
-            "Packards",
-            "Brighton Avenue",
-            "Brighton Ave",
-            "Brighton Av"
-        ],
         "id": "place-brico",
         "line": "Green-B",
         "destination_0": "Boston College",
@@ -1169,7 +1016,6 @@ const stations = [
     },
     {
         "name": "Harvard Avenue",
-        "alt_name": ["Harvard Ave", "Harvard Av"],
         "id": "place-harvd",
         "line": "Green-B",
         "destination_0": "Boston College",
@@ -1184,7 +1030,6 @@ const stations = [
     },
     {
         "name": "Allston Street",
-        "alt_name": ["Allston St"],
         "id": "place-alsgr",
         "line": "Green-B",
         "destination_0": "Boston College",
@@ -1192,7 +1037,6 @@ const stations = [
     },
     {
         "name": "Warren Street",
-        "alt_name": ["Warren St", "Warren"],
         "id": "place-wrnst",
         "line": "Green-B",
         "destination_0": "Boston College",
@@ -1200,7 +1044,6 @@ const stations = [
     },
     {
         "name": "Washington Street",
-        "alt_name": ["Washington St"],
         "id": "place-wascm",
         "line": "Green-B",
         "destination_0": "Boston College",
@@ -1208,7 +1051,6 @@ const stations = [
     },
     {
         "name": "Sutherland Road",
-        "alt_name": ["Sutherland Rd", "Sutherland"],
         "id": "place-sthld",
         "line": "Green-B",
         "destination_0": "Boston College",
@@ -1216,7 +1058,6 @@ const stations = [
     },
     {
         "name": "Chiswick Road",
-        "alt_name": ["Chiswick Rd", "Chiswick"],
         "id": "place-chswk",
         "line": "Green-B",
         "destination_0": "Boston College",
@@ -1224,7 +1065,6 @@ const stations = [
     },
     {
         "name": "Chestnut Hill Avenue",
-        "alt_name": ["Chestnut Hill Ave", "Chestnut Hill Av"],
         "id": "place-chill",
         "line": "Green-B",
         "destination_0": "Boston College",
@@ -1232,7 +1072,6 @@ const stations = [
     },
     {
         "name": "South Street",
-        "alt_name": ["South St"],
         "id": "place-sougr",
         "line": "Green-B",
         "destination_0": "Boston College",
@@ -1240,7 +1079,6 @@ const stations = [
     },
     {
         "name": "Boston College",
-        "alt_name": ["BC", "Lake Street", "Lake St", "Lake"],
         "id": "place-lake",
         "line": "Green-B",
         "destination_0": "",
