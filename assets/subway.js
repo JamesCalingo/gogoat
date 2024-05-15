@@ -1106,9 +1106,11 @@ stations.forEach(station => {
 
 let start = origin.value
 const destination = document.querySelector("#destination")
+const info = document.querySelector(".info")
 let destinations = []
 
 function findDestinations(stations, origin) {
+    info.innerHTML = ""
     start = origin
     destination.innerHTML = "<option disabled display=\"none\" selected>Select a station</option>"
     console.log(origin)
@@ -1136,38 +1138,40 @@ function index(array, selected) {
 }
 
 function predict(start) {
+    document.querySelector("#second").hidden = true
+    
     const stop = stations.find(station => station.name === start)
     if (!stop) return
     let directionID = index(destinations, destination.value)
     fetch(`https://api-v3.mbta.com/predictions?sort=departure_time&page[limit]=5&filter[stop]=${stop.id}&filter[route]=${stop.line}&filter[direction_id]=${directionID}&filter[revenue]=REVENUE`)
-        .then(res => {
-            res.json()
-                .then(data => {
-                    let next = data.data.find((elem) => new Date(elem.attributes.arrival_time).getTime() > new Date().getTime())
-                    if (next) {
-                        document.querySelector(".info").innerHTML = `Your train should be arriving arround<br>
-                    <span class="time ${stop.line.toLowerCase()}">${new Date(next.attributes.arrival_time).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}</span>`
-                    }
-                    else {
-                        console.log("No prediction found. trying schedule")
-                        let currentTime = new Date().toTimeString().split(" ")[0].slice(0, 5)
-                        fetch(`https://api-v3.mbta.com/schedules?sort=departure_time&page[limit]=1&filter[min_time]=${currentTime}&filter[stop]=${stop.id}&filter[route]=${stop.line}&filter[direction_id]=${directionID}`)
-                            .then(res => {
-                                res.json()
-                                    .then(data => {
-                                        let next = data.data[0]
-                                        if (next) {
-                                            document.querySelector(".info").innerHTML = `Your train should be arriving arround<br>
-                                        <span class="time ${stop.line.toLowerCase()}">${new Date(next.attributes.departure_time).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}</span>`
-                                        }
-                                        else {
-                                            document.querySelector(".info").innerHTML = `No train found.`
-                                        }
-                                    })
-                            })
-                    }
+    .then(res => {
+        res.json()
+        .then(data => {
+            let next = data.data.find((elem) => new Date(elem.attributes.arrival_time).getTime() > new Date().getTime())
+            if (next) {
+                info.innerHTML = `Your train should be arriving arround<br>
+                <span class="time ${stop.line.toLowerCase()}">${new Date(next.attributes.arrival_time).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}</span>`
+            }
+            else {
+                let currentTime = new Date().toTimeString().split(" ")[0].slice(0, 5)
+                fetch(`https://api-v3.mbta.com/schedules?sort=departure_time&page[limit]=1&filter[min_time]=${currentTime}&filter[stop]=${stop.id}&filter[route]=${stop.line}&filter[direction_id]=${directionID}`)
+                .then(res => {
+                    res.json()
+                    .then(data => {
+                        let next = data.data[0]
+                        if (next) {
+                            info.innerHTML = `Your train should be arriving arround<br>
+                            <span class="time ${stop.line.toLowerCase()}">${new Date(next.attributes.departure_time).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}</span>`
+                        }
+                        else {
+                            info.innerHTML = `No train found.`
+                        }
+                    })
                 })
+            }
         })
+    })
+    document.querySelector("#buttondiv").hidden = true
 }
 
 const button = document.querySelector(".search")

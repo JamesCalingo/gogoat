@@ -586,6 +586,7 @@ stations.sort((a, b) => {
 })
 
 const origin = document.querySelector("#origin")
+const info = document.querySelector(".info")
 
 function createOption(station) {
     const option = document.createElement("option")
@@ -600,19 +601,18 @@ stations.forEach(station => {
 })
 
 let start = origin.value
+let second = document.querySelector("#second")
 let directions = ["Outbound", "Inbound"]
 
 function findDestinations(stations, origin) {
-    destination.innerHTML = "<option disabled display=\"none\" selected>Select a station</option>"
-    console.log(origin)
-    const station = stations.find(station => station.name == origin)
-    if (!station) return
+    info.innerHTML = ""
+    destination.innerHTML = "<option disabled display=\"none\" selected>Select a direction</option>"
 
     directions.forEach(direction => {
         option = createOption(direction)
         destination.appendChild(option)
     })
-    document.querySelector("#second").hidden = !false
+    second.hidden = false
     start = origin
 }
 
@@ -634,15 +634,17 @@ function schedule(start) {
                     console.log(data)
                     let next = data.data[0]
                     if (next) {
-                        document.querySelector(".info").innerHTML = `Your train should be arriving arround<br>
+                        info.innerHTML = `Your train should be arriving arround<br>
                     <span class="time">${new Date(next.attributes.arrival_time).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}</span>`
                     }
                     else {
-                        document.querySelector(".info").innerHTML = "No prediction found."
+                        info.innerHTML = "No prediction found."
                     }
                 })
         })
         .catch(err => console.error(err))
+    second.hidden = true
+    document.querySelector("#buttondiv").hidden = true
 }
 
 const button = document.querySelector(".search")

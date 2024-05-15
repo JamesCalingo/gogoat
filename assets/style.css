@@ -30,7 +30,7 @@ select {
     font-size: 36pt;
 }
 
-.red {
+.red, .mattapan {
     color: #DA291C;
 }
 
