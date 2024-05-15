@@ -10,6 +10,11 @@
     <h1>GogoaT</h1>
     <h2>Find your train instantly!</h2>
     <h3>Subway version <br>(Green, Orange, Red, Blue Lines)</h3>
+
+    <a href="./commuter.html">
+        <button class="switch">Switch to Commuter Rail</button>
+    </a>
+
     <p>Next, select your origin station:</p>
     <select name="origin" id="origin" onchange="findDestinations(stations, value)">
         <option disabled display="none" selected>Select a station</option>
@@ -22,7 +27,7 @@
     </div>
     
     <div id="buttondiv" hidden>
-        <button class="button">Go GoGoat!</button>
+        <button class="button search">Go GoGoat!</button>
     </div>
 
     <div class="info"></div>

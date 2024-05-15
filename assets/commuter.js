@@ -645,5 +645,5 @@ function schedule(start) {
         .catch(err => console.error(err))
 }
 
-const button = document.querySelector("button")
+const button = document.querySelector(".search")
 button.addEventListener("click", () => schedule(start))

@@ -15,6 +15,10 @@ select {
     margin: 10px;
 }
 
+.switch {
+    font-size: 16pt;
+}
+
 .info {
     font-size: 24pt;
     margin: 20px;

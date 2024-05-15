@@ -1144,15 +1144,31 @@ function predict(start) {
             res.json()
                 .then(data => {
                     let next = data.data.find((elem) => new Date(elem.attributes.arrival_time).getTime() > new Date().getTime())
-                    if(next) {
-                    document.querySelector(".info").innerHTML = `Your train should be arriving arround<br>
-                    <span class="time ${stop.line.toLowerCase()}">${new Date(next.attributes.arrival_time).toLocaleTimeString([], {hour: 'numeric', minute: '2-digit'})}</span>`}
+                    if (next) {
+                        document.querySelector(".info").innerHTML = `Your train should be arriving arround<br>
+                    <span class="time ${stop.line.toLowerCase()}">${new Date(next.attributes.arrival_time).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}</span>`
+                    }
                     else {
-                        document.querySelector(".info").innerHTML = "No prediction found."
+                        console.log("No prediction found. trying schedule")
+                        let currentTime = new Date().toTimeString().split(" ")[0].slice(0, 5)
+                        fetch(`https://api-v3.mbta.com/schedules?sort=departure_time&page[limit]=1&filter[min_time]=${currentTime}&filter[stop]=${stop.id}&filter[route]=${stop.line}&filter[direction_id]=${directionID}`)
+                            .then(res => {
+                                res.json()
+                                    .then(data => {
+                                        let next = data.data[0]
+                                        if (next) {
+                                            document.querySelector(".info").innerHTML = `Your train should be arriving arround<br>
+                                        <span class="time ${stop.line.toLowerCase()}">${new Date(next.attributes.departure_time).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}</span>`
+                                        }
+                                        else {
+                                            document.querySelector(".info").innerHTML = `No train found.`
+                                        }
+                                    })
+                            })
                     }
                 })
         })
 }
 
-const button = document.querySelector("button")
+const button = document.querySelector(".search")
 button.addEventListener("click", () => predict(start))
