@@ -567,10 +567,6 @@ const stations = [{
     "id": "place-mlmnl"
 },
 {
-    "name": "Back Bay",
-    "id": "place-bbsta"
-},
-{
     "name": "Ruggles",
     "id": "place-rugg"
 },
@@ -635,7 +631,7 @@ function schedule(start) {
                     let next = data.data[0]
                     if (next) {
                         info.innerHTML = `Your train should be arriving arround<br>
-                    <span class="time">${new Date(next.attributes.arrival_time).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}</span>`
+                    <span class="time">${new Date(next.attributes.arrival_time ? next.attributes.arrival_time : next.attributes.departure_time).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}</span>`
                     }
                     else {
                         info.innerHTML = "No prediction found."

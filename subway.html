@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
     <title>GogoaT</title>
 </head>
+
 <body>
     <h1>GogoaT</h1>
     <h2>Find your train instantly!</h2>
@@ -15,7 +17,7 @@
         <button class="switch">Switch to Commuter Rail</button>
     </a>
 
-    <p>Next, select your origin station:</p>
+    <p>First, select your origin station:</p>
     <select name="origin" id="origin" onchange="findDestinations(stations, value)">
         <option disabled display="none" selected>Select a station</option>
     </select>
@@ -25,16 +27,20 @@
         <select name="destination" id="destination" onchange="index(destinations, value)">
         </select>
     </div>
-    
+
     <div id="buttondiv" hidden>
         <button class="button search">Go GoGoat!</button>
     </div>
 
     <div class="info"></div>
 
+    <button class="toggle">Toggle Dark/Light mode</button>
+
 </body>
 
+<script src="assets/gogoat.js"></script>
 <script src="assets/subway.js"></script>
-  
+
 </body>
+
 </html>

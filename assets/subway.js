@@ -1150,7 +1150,7 @@ function predict(start) {
             let next = data.data.find((elem) => new Date(elem.attributes.arrival_time).getTime() > new Date().getTime())
             if (next) {
                 info.innerHTML = `Your train should be arriving arround<br>
-                <span class="time ${stop.line.toLowerCase()}">${new Date(next.attributes.arrival_time).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}</span>`
+                <span class="time ${stop.line.toLowerCase()}">${new Date(next.attributes.arrival_time ? next.attributes.arrival_time : next.attributes.departure_time).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}</span>`
             }
             else {
                 let currentTime = new Date().toTimeString().split(" ")[0].slice(0, 5)

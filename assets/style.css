@@ -4,6 +4,11 @@ body {
     /* font-size: 40pt; */
 }
 
+.dark {
+    background: rgb(60, 60, 60);
+    color: white
+}
+
 select {
     width: 300px;
     /* font-size: 40pt; */
